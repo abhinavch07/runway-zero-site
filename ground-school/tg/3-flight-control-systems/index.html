@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Control Systems: DGCA CPL Technical General notes, Module 3</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 3: Primary and secondary flight controls and the axes they work about, mechanical controls with cables and…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/3-flight-control-systems/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/3-flight-control-systems/" />
+    <meta property="og:title" content="Flight Control Systems: DGCA CPL Technical General notes, Module 3" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 3: Primary and secondary flight controls and the axes they work about, mechanical controls with cables and…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Flight Control Systems: DGCA CPL Technical General notes, Module 3" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Flight Control Systems","item":"https://www.runwayzero.in/ground-school/tg/3-flight-control-systems/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Flight Control Systems (DGCA CPL Technical General, Module 3)","description":"Free DGCA CPL Technical General notes, Module 3: Primary and secondary flight controls and the axes they work about, mechanical controls with cables and…","url":"https://www.runwayzero.in/ground-school/tg/3-flight-control-systems/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Primary and secondary controls","Mechanical controls","Powered controls and artificial feel","Fly-by-wire","Trim","Flaps, slats, spoilers and speed brakes","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 3</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 3 · CAR 1.1</p>
+        <h1>Flight Control Systems</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Flight%20Control%20Systems%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%203%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F3-flight-control-systems%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/3-flight-control-systems/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/3/slides">Slides</a><a href="/ground-school.html#/tg/3/practice">Practice (25)</a><a href="/ground-school.html#/tg/3/cards">Flashcards (14)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-primary">Primary and secondary controls</a></li><li><a href="#sec-manual">Mechanical controls</a></li><li><a href="#sec-powered">Powered controls and artificial feel</a></li><li><a href="#sec-fbw">Fly-by-wire</a></li><li><a href="#sec-trim">Trim</a></li><li><a href="#sec-secondary">Flaps, slats, spoilers and speed brakes</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">Primary and secondary flight controls and the axes they work about, mechanical controls with cables and push rods, powered controls (reversible and irreversible) with artificial feel, fly-by-wire and its protections, trim systems and the trimmable stabiliser, flaps, slats, spoilers and speed brakes, gust locks, and the warnings that protect them.</p>
+          <section id="sec-primary"><h2>Primary and secondary controls</h2><figure class="gs-fig"><svg viewBox="0 0 640 380" role="img" aria-label="Control surfaces on an airliner seen from above"><path class="gf-shape" d="M320,20 C334,30 338,60 338,90 L338,320 L330,360 L310,360 L302,320 L302,90 C302,60 306,30 320,20 Z"/><path class="gf-shape" d="M302,140 L70,230 L70,250 L302,200 Z"/><path class="gf-shape" d="M338,140 L570,230 L570,250 L338,200 Z"/><path class="gf-shape" d="M302,300 L230,335 L230,348 L302,335 Z"/><path class="gf-shape" d="M338,300 L410,335 L410,348 L338,335 Z"/><line class="gf-line2" x1="350" y1="145" x2="560" y2="226" style="stroke-width:6"/><line class="gf-arrow" x1="345" y1="198" x2="470" y2="222" style="stroke-width:6"/><line class="gf-arrowr" x1="490" y1="226" x2="565" y2="247" style="stroke-width:6"/><rect class="gf-shapew" x="200" y="190" width="60" height="10" transform="rotate(-22 230 195)"/><line class="gf-arrowr" x1="342" y1="336" x2="405" y2="346" style="stroke-width:6"/><line class="gf-arrowr" x1="320" y1="300" x2="320" y2="356" style="stroke-width:5"/><text class="gf-label" x="470" y="160">Slats</text><text class="gf-label" x="380" y="250">Flaps</text><text class="gf-label" x="520" y="275">Aileron</text><text class="gf-small" x="120" y="290">Spoilers (top of wing)</text><line class="gf-thin" x1="180" y1="278" x2="226" y2="204"/><text class="gf-label" x="420" y="365">Elevator</text><text class="gf-label" x="250" y="372" text-anchor="end">Rudder (on the fin)</text><line class="gf-thin" x1="255" y1="367" x2="316" y2="345"/><text class="gf-small" x="20" y="30">Red: primary controls</text><text class="gf-small" x="20" y="50">Other colours: secondary controls</text></svg><figcaption>Primary controls move the aircraft about its axes. Secondary controls change lift and drag.</figcaption></figure><div class="gs-tablewrap"><table><caption>All three axes pass through the centre of gravity.</caption><thead><tr><th>Control</th><th>Moves the aircraft in</th><th>About the</th><th>Cockpit control</th></tr></thead><tbody><tr><td><b>Ailerons</b></td><td><b>Roll</b></td><td><b>Longitudinal</b> axis</td><td>Control wheel turned, or stick sideways</td></tr><tr><td><b>Elevator</b> (or stabilator)</td><td><b>Pitch</b></td><td><b>Lateral</b> axis</td><td>Control column or stick fore and aft</td></tr><tr><td><b>Rudder</b></td><td><b>Yaw</b></td><td><b>Normal (vertical)</b> axis</td><td>Rudder pedals</td></tr></tbody></table></div><ul><li><b>Secondary controls</b>: <b>flaps</b> and <b>slats</b> (more lift for slow flight), <b>spoilers</b> and <b>speed brakes</b> (dump lift, add drag), and <b>trim</b> (removes control forces).</li><li>A <b>stabilator</b> (all-moving tailplane) does the job of tailplane and elevator in one. <b>Elevons</b> combine elevator and aileron (on tailless aircraft). <b>Ruddervators</b> combine rudder and elevator (V-tail).</li><li>Large aircraft may have <b>inboard ailerons</b> (used at high speed, to avoid twisting the wing tip) and <b>outboard ailerons</b> (locked out at high speed, used at low speed), plus <b>roll spoilers</b>.</li></ul></section>
+          <section id="sec-manual"><h2>Mechanical controls</h2><ul><li>Controls are linked to the surfaces by <b>cables</b> (over pulleys, through fairleads), <b>push-pull rods</b>, <b>bell cranks</b> and <b>torque tubes</b>.</li><li><b>Turnbuckles</b> set the cable tension. <b>Cable tension regulators</b> keep the tension steady as the airframe (aluminium) and cables (steel) expand and contract differently with <b>temperature</b>.</li><li><b>Control stops</b> limit the surface movement: <b>primary stops</b> at the surface, <b>secondary stops</b> at the cockpit control.</li><li>Cable runs are set up so a cable failure is unlikely to jam the control, and each control is checked for <b>full and free movement in the correct sense</b> before flight.</li><li><b>Gust locks</b> hold the surfaces still on the ground so wind cannot slam them against the stops. They must be removed before flight. Many lock the throttles too, so take-off with locks in is impossible.</li></ul></section>
+          <section id="sec-powered"><h2>Powered controls and artificial feel</h2><p>On large or fast aircraft the air loads are too high for the pilot to move the surfaces by hand. <b>Hydraulic actuators (power control units, PCUs)</b> move them instead.</p><div class="gs-tablewrap"><table><thead><tr><th>System</th><th>How it works</th><th>Feel</th></tr></thead><tbody><tr><td><b>Power assisted (reversible)</b></td><td>The pilot moves the surface, and a hydraulic jack <b>helps</b>. Some of the air load comes back to the pilot</td><td><b>Natural</b> feel, a share of the real load</td></tr><tr><td><b>Fully powered (irreversible)</b></td><td>The jack does <b>all</b> the work. Air loads <b>cannot move</b> the control back</td><td><b>None</b> from the surface, so <b>artificial feel</b> is needed</td></tr></tbody></table></div><ul><li><b>Artificial feel</b> gives the pilot a sense of how hard he is pulling. Simple systems use <b>springs</b>. <b>Q-feel</b> systems make the force grow with <b>dynamic pressure (q)</b>, so the controls feel heavier at high speed, like a manual aircraft.</li><li>Powered controls need <b>more than one hydraulic system</b> (often 2 or 3), with each surface driven by more than one actuator, so a single failure does not lose control.</li><li><b>Mach trim</b> moves the elevator or stabiliser automatically at high Mach numbers to stop the nose dropping (Mach tuck, see Module 19).</li></ul></section>
+          <section id="sec-fbw"><h2>Fly-by-wire</h2><ul><li>In <b>fly-by-wire (FBW)</b> the pilot's control sends an <b>electrical signal</b> to <b>flight control computers</b>, which command the actuators. There is no direct mechanical link (or only a small backup).</li><li>Advantages: <b>less weight</b>, less maintenance, <b>flight envelope protection</b> (limits on bank, pitch, load factor, high angle of attack and overspeed), automatic trim and gust load relief.</li><li>Control is usually through a <b>sidestick</b>. Many systems command a <b>rate</b> of pitch or roll or a <b>load factor</b>, not a surface position.</li><li>Systems have <b>several computers</b> and power sources. If they fail, the aircraft drops to <b>lower laws</b> with fewer protections, and finally to a <b>mechanical backup</b> (for example trim and rudder).</li><li>Signals may also go by <b>optical fibre</b> (fly-by-light), which is immune to electrical interference.</li></ul></section>
+          <section id="sec-trim"><h2>Trim</h2><ul><li>Trim <b>removes the steady force</b> the pilot would have to hold. It does not change the aircraft's stability.</li><li><b>Trim tabs</b> on light aircraft: a small tab on the elevator, moved <b>opposite</b> to the way the elevator should go. To hold the elevator up (nose up), the tab goes <b>down</b>.</li><li>Large aircraft trim pitch with a <b>trimmable horizontal stabiliser (THS)</b>: the whole tailplane changes its angle, driven by a screw jack. This keeps full elevator travel for manoeuvres and is powerful enough for big CG and speed ranges.</li><li><b>Stabiliser trim runaway</b> is an emergency. Crews stop it with the trim cut-out switches and trim by hand.</li><li>Before take-off the stabiliser trim must be set in the <b>green band</b> for the CG. A wrong setting sets off the <b>take-off configuration warning</b>.</li></ul><aside class="gs-tip"><h4>Memory trick</h4><p>Tabs work backwards: tab down, surface up. Move the trim wheel the way you are pushing or pulling and the force goes away.</p></aside></section>
+          <section id="sec-secondary"><h2>Flaps, slats, spoilers and speed brakes</h2><div class="gs-tablewrap"><table><thead><tr><th>Surface</th><th>Job</th><th>Notes</th></tr></thead><tbody><tr><td><b>Trailing edge flaps</b></td><td>More <b>lift</b> (and drag) for take-off and landing, so lower speeds</td><td>Usually hydraulic or electric. <b>Asymmetry</b> protection stops them if one side gets ahead</td></tr><tr><td><b>Leading edge slats and Krueger flaps</b></td><td>Let the wing reach a <b>higher angle of attack</b> before stalling</td><td>Extend before the trailing edge flaps and retract after them</td></tr><tr><td><b>Flight spoilers (speed brakes)</b></td><td>Raised <b>together</b> in flight to add drag and lose lift, to descend or slow down</td><td>Limited in flight. Also help the ailerons in roll</td></tr><tr><td><b>Roll spoilers</b></td><td>Rise on the <b>down-going wing</b> only, to help roll</td><td>Used with the ailerons</td></tr><tr><td><b>Ground spoilers (lift dumpers)</b></td><td>Rise fully <b>on landing</b> to dump lift, put weight on the wheels and help the brakes</td><td>Armed before landing. Deploy on touchdown signal (wheel spin-up or squat switch)</td></tr></tbody></table></div><ul><li>Flap and slat <b>speed limits</b> (VFE) protect the structure. Some aircraft retract flaps automatically if the speed is too high (<b>flap load relief</b>).</li><li>The <b>take-off configuration warning</b> sounds if the thrust levers are advanced on the ground with flaps, slats, spoilers, stabiliser trim or parking brake not set correctly for take-off.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Ailerons: <b>roll</b> about the <b>longitudinal</b> axis. Elevator: <b>pitch</b> about the <b>lateral</b> axis. Rudder: <b>yaw</b> about the <b>normal</b> axis.</li><li>Cable tension regulators: keep tension steady as the <b>temperature</b> changes.</li><li>Gust locks: hold surfaces on the ground. <b>Remove before flight</b>.</li><li>Reversible: pilot feels part of the load. <b>Irreversible</b>: no feedback, needs <b>artificial feel</b>.</li><li><b>Q-feel</b>: force grows with dynamic pressure (speed).</li><li>FBW: electrical signals and computers, <b>envelope protection</b>, lighter.</li><li>Trim tab moves <b>opposite</b> to the surface.</li><li>Big jets trim pitch with the <b>trimmable stabiliser</b>.</li><li>Slats: higher stalling angle. Flaps: more lift. <b>Ground spoilers</b>: dump lift on landing.</li><li>Take-off configuration warning: flaps, slats, trim, spoilers or parking brake wrong.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Axes and controls</h3><ul><li>Ailerons: <b>roll</b>, longitudinal axis</li><li>Elevator: <b>pitch</b>, lateral axis</li><li>Rudder: <b>yaw</b>, normal axis</li><li>All axes through the CG</li></ul><h3>Mechanical controls</h3><ul><li>Cables, pulleys, push rods, bell cranks</li><li>Tension regulators: temperature changes</li><li>Primary and secondary stops</li><li>Gust locks: remove before flight</li></ul><h3>Powered controls</h3><ul><li>Reversible: some feedback</li><li><b>Irreversible</b>: no feedback</li><li><b>Artificial feel</b>: springs or <b>q-feel</b></li><li>More than one hydraulic system</li></ul><h3>Fly-by-wire</h3><ul><li>Electrical signals to computers</li><li><b>Envelope protection</b></li><li>Lighter, less maintenance</li><li>Lower laws after failures</li></ul><h3>Trim</h3><ul><li>Removes steady stick force</li><li>Tab moves <b>opposite</b> to surface</li><li>Jets: <b>trimmable stabiliser</b></li><li>Set in green band for take-off</li></ul><h3>Secondary controls</h3><ul><li>Flaps: more lift, more drag</li><li>Slats: higher stalling angle</li><li>Speed brakes, roll spoilers</li><li>Ground spoilers dump lift</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 25 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> The ailerons control the aircraft in:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Pitch, about the lateral axis</li><li>Roll, about the longitudinal axis</li><li>Yaw, about the normal axis</li><li>Roll, about the lateral axis</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> Ailerons roll the aircraft about the longitudinal (nose to tail) axis.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> In a fully powered (irreversible) flight control system:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>The pilot feels the real air loads</li><li>Air loads on the surface cannot move the pilot's control, so artificial feel is needed</li><li>There is no hydraulic system</li><li>The surfaces cannot move at high speed</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> The actuator does all the work and blocks feedback, so feel is made by springs or a q-feel unit.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> To trim an aircraft nose up with an elevator trim tab, the tab moves:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Up</li><li>Down</li><li>It depends on the speed</li><li>It does not move, the elevator moves</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> The tab moves opposite to the surface. Tab down pushes the elevator up, which raises the nose.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Leading edge slats:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Reduce lift for landing</li><li>Control roll at high speed</li><li>Act as speed brakes</li><li>Allow the wing to reach a higher angle of attack before it stalls</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> They re-energise the airflow over the top surface, delaying separation.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> On some large aircraft the outboard ailerons are locked out at high speed to:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Save hydraulic fluid</li><li>Reduce drag only</li><li>Increase roll rate</li><li>Stop the wing tip twisting and aileron reversal</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> At high speed the outboard wing twists under aileron load. Inboard ailerons and spoilers do the work instead.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/3/practice">Practise all 25 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/3/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/2-landing-gear-wheels-tyres-and-brakes/">← Module 2: Landing Gear, Wheels, Tyres and Brakes</a>
+            <a href="/ground-school/tg/4-hydraulics-and-pneumatics/">Module 4: Hydraulics and Pneumatics →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F3-flight-control-systems%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

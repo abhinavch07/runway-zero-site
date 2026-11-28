@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Free online flight computer for student pilots · Runway Zero</title>
+    <meta name="description" content="Free online flight computer for student pilots: wind triangle, TAS, density altitude, fuel, 1 in 60, weight and balance, with DGCA style practice." />
+    <link rel="canonical" href="https://www.runwayzero.in/flight-computer.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/flight-computer.html" />
+    <meta property="og:title" content="Free online flight computer for student pilots · Runway Zero" />
+    <meta property="og:description" content="Free online flight computer for student pilots: wind triangle, TAS, density altitude, fuel, 1 in 60, weight and balance, with DGCA style practice." />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/fc.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Free online flight computer for student pilots" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/fc.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Apply the saved theme before the page paints. Light is the default.
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/fc-D1h37sn7.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-OatvUVQ2.js">
+    <link rel="modulepreload" crossorigin href="./assets/pwa-ClKDh_MO.js">
+    <link rel="stylesheet" crossorigin href="./assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="./assets/fc-Dpgj9vew.css">
+  </head>
+  <body class="welcome rz-paper fc-page">
+    <header class="w-top">
+      <a class="w-brand" href="./">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="ground-school.html">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="guides/">Guides</a>
+        <a href="dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="flight-computer.html" aria-current="page">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="fc-main">
+      <div class="fc-head">
+        <h1>Flight computer</h1>
+        <p class="fc-lead">
+          A free electronic flight computer for your exams and flight planning. Pick a menu, type the numbers,
+          and see the working step by step.
+        </p>
+      </div>
+
+      <div class="fc-layout">
+        <section class="fc-left" aria-label="Flight computer">
+          <div class="fc-mode" role="radiogroup" aria-label="Mode">
+            <button type="button" role="radio" data-mode="practice">Practice mode</button>
+            <button type="button" role="radio" data-mode="exam">Exam mode</button>
+          </div>
+          <div class="fc-device" id="fc-device">
+            <div class="fc-badge"><span>RUNWAY ZERO</span><b>FLIGHT COMPUTER</b></div>
+            <div class="fc-screen" id="fc-screen" aria-live="polite"></div>
+            <div class="fc-keys" id="fc-keys"></div>
+          </div>
+          <p class="fc-kbd">On a computer you can use the keyboard: numbers, arrow keys, Enter, Backspace, Esc for back, U for unit.</p>
+        </section>
+
+        <section class="fc-right" aria-label="Help, history and practice">
+          <div class="fc-tabs" role="tablist">
+            <button type="button" role="tab" data-tab="work">Working</button>
+            <button type="button" role="tab" data-tab="hist">History</button>
+            <button type="button" role="tab" data-tab="log">Flight log</button>
+            <button type="button" role="tab" data-tab="drill">Practice drills</button>
+          </div>
+          <div class="fc-panel" id="fc-panel"></div>
+        </section>
+      </div>
+
+      <p class="fc-note">
+        Built for learning and exam practice. Answers use the ICAO standard atmosphere and may differ a little
+        from a slide rule or another calculator. For a real flight, always cross check with your approved
+        flight planning method. Spotted a mistake? <a href="feedback.html?ref=Flight%20computer">Tell us here</a>.
+      </p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="feedback.html">Send feedback or report a problem</a>
+    </footer>
+
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

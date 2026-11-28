@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DGCA CPL ground school: free notes, MCQs and mock tests · Runway Zero</title>
+    <meta name="description" content="Free DGCA CPL ground school for Indian student pilots: simple notes, slides, practice MCQs with explanations, timed mock tests and RTR speaking practice." />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school.html" />
+    <meta property="og:title" content="DGCA CPL ground school: free notes, MCQs and mock tests · Runway Zero" />
+    <meta property="og:description" content="Free DGCA CPL ground school for Indian student pilots: simple notes, slides, practice MCQs with explanations, timed mock tests and RTR speaking practice." />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/ground.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DGCA CPL Ground School, free notes, MCQs and mock tests" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/ground.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Apply the saved reading theme before the page paints. Light is the default.
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/ground-C1r38XK8.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-OatvUVQ2.js">
+    <link rel="modulepreload" crossorigin href="./assets/pwa-ClKDh_MO.js">
+    <link rel="modulepreload" crossorigin href="./assets/progress-ccE91w-W.js">
+    <link rel="modulepreload" crossorigin href="./assets/readback-LDUMrcmX.js">
+    <link rel="modulepreload" crossorigin href="./assets/terms-C-mpBqrW.js">
+    <link rel="modulepreload" crossorigin href="./assets/recent-DMdapN6t.js">
+    <link rel="stylesheet" crossorigin href="./assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-D5Js0Z9m.css">
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="./">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="guides/">Guides</a>
+        <a href="dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main" id="gs-root"></main>
+
+    <nav class="gs-main gs-pagelinks" aria-label="Notes pages"><h2>Read the notes</h2><p><a href="/dgca-notices/">Latest DGCA notices</a> <a href="/guides/">Guides: how to become a pilot, DGCA exams, Class 1 medical, RTR</a> <a href="/ground-school/met/">DGCA CPL Meteorology</a> <a href="/ground-school/regs/">DGCA CPL Air Regulations</a> <a href="/ground-school/regs/flashcards/">Air Regulations flashcards</a> <a href="/ground-school/nav/">DGCA CPL Air Navigation</a> <a href="/ground-school/tg/">DGCA CPL Technical General</a> <a href="/ground-school/tg/flashcards/">Technical General flashcards</a></p></nav>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="feedback.html">Send feedback or report a problem</a>
+    </footer>
+
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

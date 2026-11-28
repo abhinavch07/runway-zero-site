@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Old links opened a lesson on this address (the A320 used to live here). Send them on.
+      if (new URLSearchParams(location.search).has("lesson")) location.replace("a320.html" + location.search);
+    </script>
+    <title>Runway Zero · Free cockpit trainer and DGCA ground school</title>
+    <meta name="description" content="Free cockpit trainer and DGCA ground school for Indian student pilots: A320, B737, C172 and PA-28 lessons, CPL notes, MCQs, mock tests and RTR practice." />
+    <link rel="canonical" href="https://www.runwayzero.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/" />
+    <meta property="og:title" content="Runway Zero · Free cockpit trainer and DGCA ground school" />
+    <meta property="og:description" content="Free cockpit trainer and DGCA ground school for Indian student pilots: A320, B737, C172 and PA-28 lessons, CPL notes, MCQs, mock tests and RTR practice." />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/home.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Runway Zero: DGCA Ground School and cockpit trainer, free" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/home.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Apply the saved theme before the page paints. Light is the default.
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+  
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebSite","name":"Runway Zero","alternateName":"RunwayZero","url":"https://www.runwayzero.in/","inLanguage":"en-IN","description":"Free cockpit procedures trainer and DGCA ground school for Indian student pilots."}
+    </script>
+    <script type="module" crossorigin src="./assets/main-DC_J1fMR.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-OatvUVQ2.js">
+    <link rel="modulepreload" crossorigin href="./assets/pwa-ClKDh_MO.js">
+    <link rel="modulepreload" crossorigin href="./assets/progress-BUdzIhsY.js">
+    <link rel="modulepreload" crossorigin href="./assets/progress-ccE91w-W.js">
+    <link rel="modulepreload" crossorigin href="./assets/recent-DMdapN6t.js">
+    <link rel="stylesheet" crossorigin href="./assets/pwa-BabgPCBS.css">
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="./">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="ground-school.html">Ground School</a>
+        <a href="#cockpit">Cockpit trainer</a>
+        <a href="guides/">Guides</a>
+        <a href="dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="h-main">
+      <section class="h-hero" aria-labelledby="hero-title">
+        <p class="h-kicker">Free for every cadet in India</p>
+        <h1 id="hero-title">Your pilot journey starts here</h1>
+        <p class="h-sub">DGCA exam prep and a cockpit trainer, right in your browser. Pick where to start. No login, nothing to install.</p>
+      </section>
+
+      <section class="h-doors" aria-label="Choose where to start">
+        <a class="h-door h-door-gs" href="ground-school.html">
+          <span class="h-door-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span>
+          <h2>Pass your CPL theory</h2>
+          <p>DGCA Ground School: notes, practice MCQs and timed mock tests.</p>
+          <span class="h-chips" id="h-gs-chips"><span>4 subjects</span><span>65 modules</span><span>2,548 practice MCQs</span><span>9 mock papers</span></span>
+          <span class="h-door-btn">Start Ground School</span>
+        </a>
+        <a class="h-door h-door-ck" href="#cockpit">
+          <img class="h-door-art" src="img/a320-side.svg" alt="" aria-hidden="true" />
+          <span class="h-door-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M3 13l9-4 9 4"/><path d="M8 21l4-2 4 2"/></svg></span>
+          <h2>Fly the procedures</h2>
+          <p>Cockpit trainer: switch by switch, with a guide beside you.</p>
+          <span class="h-chips" id="h-ck-chips"><span>5 aircraft</span><span>50 guided lessons</span><span>Real checklists</span></span>
+          <span class="h-door-btn">Try a cockpit lesson</span>
+        </a>
+      </section>
+      <p class="h-new">New to all this? <a href="guides/how-to-become-a-pilot-in-india/">How to become a pilot in India</a></p>
+
+      <section class="h-continue" id="h-continue" aria-label="Continue where you left off" hidden></section>
+
+      <section class="h-stats" aria-label="What is inside">
+        <div><b id="h-n-modules">65</b><span>DGCA modules</span></div>
+        <div><b id="h-n-mcqs">2,548</b><span>practice questions</span></div>
+        <div><b id="h-n-lessons">50</b><span>cockpit lessons</span></div>
+        <div><b>₹0</b><span>free, always</span></div>
+      </section>
+
+      <section class="h-section" id="ground" aria-labelledby="ground-title">
+        <div class="h-head"><h2 id="ground-title">Ground School</h2><a href="ground-school.html">All subjects and mock tests</a></div>
+        <div class="h-subjects" id="h-subjects">
+          <a class="h-subject" data-subject="met" href="ground-school/met/" style="--c: #276c82"><h3>Meteorology</h3><p class="h-meta">DGCA CPL notes and MCQs</p><span class="h-bar"><span></span></span></a>
+          <a class="h-subject" data-subject="regs" href="ground-school/regs/" style="--c: #2f7a4f"><h3>Air Regulations</h3><p class="h-meta">DGCA CPL notes and MCQs</p><span class="h-bar"><span></span></span></a>
+          <a class="h-subject" data-subject="nav" href="ground-school/nav/" style="--c: #2f5e99"><h3>Air Navigation</h3><p class="h-meta">DGCA CPL notes and MCQs</p><span class="h-bar"><span></span></span></a>
+          <a class="h-subject" data-subject="tg" href="ground-school/tg/" style="--c: #6b58a6"><h3>Technical General</h3><p class="h-meta">DGCA CPL notes and MCQs</p><span class="h-bar"><span></span></span></a>
+        </div>
+      </section>
+
+      <section class="h-section" id="cockpit" aria-labelledby="cockpit-title">
+        <div class="h-head"><h2 id="cockpit-title">Cockpit trainer</h2><a href="lessons/">See every lesson</a></div>
+        <div class="h-planes" id="h-planes"></div>
+        <p class="h-credits" id="h-credits"></p>
+        <div class="h-paths" id="h-paths"><span class="h-paths-label">Not sure? Pick a path:</span></div>
+      </section>
+
+      <section class="h-section" id="how" aria-labelledby="how-title">
+        <h2 id="how-title" class="h-h2-small">How a cockpit lesson works</h2>
+        <ol class="h-steps">
+          <li><span>1</span>Read the step and why</li>
+          <li><span>2</span>Find the switch glowing yellow</li>
+          <li><span>3</span>Pass a 5-question quiz</li>
+        </ol>
+      </section>
+
+      <section class="h-section h-journey" aria-label="DGCA notices and guides">
+        <a class="h-notice" id="h-notice" href="dgca-notices/">
+          <span class="h-notice-label">Latest DGCA notice</span>
+          <b id="h-notice-title">See the latest DGCA Pariksha notices</b>
+          <span class="h-notice-meta" id="h-notice-meta">All notices and key dates</span>
+        </a>
+        <div class="h-guides">
+          <span class="h-guides-label">Guides</span>
+          <ul>
+            <li><a href="guides/how-to-become-a-pilot-in-india/">How to become a pilot in India</a></li>
+            <li><a href="guides/dgca-cpl-exams/">DGCA CPL exams and computer number</a></li>
+            <li><a href="guides/dgca-class-1-medical/">DGCA Class 1 medical</a></li>
+            <li><a href="guides/rtr-a-exam/">RTR(A) radio exam</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-foot h-foot">
+      <span class="h-foot-brand">Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="feedback.html">Send feedback or report a problem</a>
+      <details class="h-official" id="dgca-links">
+        <summary>Official DGCA links</summary>
+        <ul>
+          <li><a href="https://pariksha.dgca.gov.in/" target="_blank" rel="noopener">Pariksha: apply for and book DGCA exams</a></li>
+          <li><a href="https://www.dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp" target="_blank" rel="noopener">eGCA: your DGCA account for licences and medicals</a></li>
+          <li><a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/personal/medical/class1/Class1.pdf" target="_blank" rel="noopener">Class 1 medical examiners (PDF)</a></li>
+          <li><a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/personal/medical/class2/Class2.pdf" target="_blank" rel="noopener">Class 2 medical examiners (PDF)</a></li>
+          <li><a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/personal/medical/class3/Class3.pdf" target="_blank" rel="noopener">Class 3 medical examiners (PDF)</a></li>
+          <li><a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/personal/training/pilot/flrTrainOrgs/flyclub.pdf" target="_blank" rel="noopener">Approved flying training organisations (PDF)</a></li>
+        </ul>
+      </details>
+      <p class="h-disclaimer"><b>For learning only.</b> Runway Zero is not approved for flight training credit or real-world operations. Lessons and checklists are simplified, written in our own words, and are not airline, manufacturer or POH procedures. Radio frequencies, navaids and waypoints are made up for training. Not affiliated with Airbus, Boeing, Cessna, Textron, Piper, Garmin, CFM or any airline.</p>
+    </footer>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

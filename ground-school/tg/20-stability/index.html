@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stability: DGCA CPL Technical General notes, Module 20</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 20: Equilibrium and trim, static and dynamic stability, longitudinal stability (tailplane, CG, neutral…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/20-stability/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/20-stability/" />
+    <meta property="og:title" content="Stability: DGCA CPL Technical General notes, Module 20" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 20: Equilibrium and trim, static and dynamic stability, longitudinal stability (tailplane, CG, neutral…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Stability: DGCA CPL Technical General notes, Module 20" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Stability","item":"https://www.runwayzero.in/ground-school/tg/20-stability/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Stability (DGCA CPL Technical General, Module 20)","description":"Free DGCA CPL Technical General notes, Module 20: Equilibrium and trim, static and dynamic stability, longitudinal stability (tailplane, CG, neutral…","url":"https://www.runwayzero.in/ground-school/tg/20-stability/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Equilibrium and kinds of stability","Longitudinal stability (pitch)","Directional stability (yaw)","Lateral stability (roll)","Roll and yaw together: spiral and Dutch roll","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 20</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 20 · CAR 2.3</p>
+        <h1>Stability</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Stability%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%2020%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F20-stability%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/20-stability/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/20/slides">Slides</a><a href="/ground-school.html#/tg/20/practice">Practice (25)</a><a href="/ground-school.html#/tg/20/cards">Flashcards (13)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-basics">Equilibrium and kinds of stability</a></li><li><a href="#sec-long">Longitudinal stability (pitch)</a></li><li><a href="#sec-dir">Directional stability (yaw)</a></li><li><a href="#sec-lat">Lateral stability (roll)</a></li><li><a href="#sec-dynlat">Roll and yaw together: spiral and Dutch roll</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">Equilibrium and trim, static and dynamic stability, longitudinal stability (tailplane, CG, neutral point, static margin, stick force per g, phugoid and short period), directional stability (fin, side area, sweep), lateral stability (dihedral, high wing, sweep, fin), anhedral, the link between roll and yaw, spiral instability and Dutch roll, yaw dampers, and how altitude, ice and the CG change stability.</p>
+          <section id="sec-basics"><h2>Equilibrium and kinds of stability</h2><ul><li><b>Equilibrium</b>: all the forces and all the moments about the CG <b>balance</b>. In steady level flight, <b>lift = weight</b> and <b>thrust = drag</b>, and the <b>pitching moments</b> cancel (the tailplane load balances the wing's pitching moment and the lift/weight couple).</li><li><b>Trim</b> keeps that balance without the pilot holding a force. Methods: trim tabs, an adjustable stabiliser, moving fuel (trim tanks), or spring bias.</li><li><b>Stability</b> is how the aircraft behaves after a <b>disturbance</b> (such as a gust), <b>without</b> the pilot doing anything.</li></ul><figure class="gs-fig"><svg viewBox="0 0 660 330" role="img" aria-label="Positive, neutral and negative static stability, and damped, undamped and divergent oscillations"><path class="gf-outline" d="M30,60 Q110,150 190,60"/><circle class="gf-shapew" cx="110" cy="94" r="12"/><line class="gf-outline" x1="250" y1="106" x2="410" y2="106"/><circle class="gf-shapew" cx="330" cy="94" r="12"/><path class="gf-outline" d="M470,120 Q550,30 630,120"/><circle class="gf-shapew" cx="550" cy="63" r="12"/><text class="gf-label" x="110" y="140" text-anchor="middle">Positive</text><text class="gf-small" x="110" y="156" text-anchor="middle">returns</text><text class="gf-label" x="330" y="140" text-anchor="middle">Neutral</text><text class="gf-small" x="330" y="156" text-anchor="middle">stays where put</text><text class="gf-label" x="550" y="140" text-anchor="middle">Negative</text><text class="gf-small" x="550" y="156" text-anchor="middle">moves further away</text><text class="gf-small" x="20" y="22">Static stability: the first tendency after a disturbance</text><line class="gf-dash" x1="30" y1="240" x2="195" y2="240"/><path class="gf-line" d="M30.0,206.0 L34.0,210.1 L38.0,216.9 L42.0,225.2 L46.0,234.0 L50.0,242.3 L54.0,249.1 L58.0,254.1 L62.0,256.9 L66.0,257.5 L70.0,256.1 L74.0,253.2 L78.0,249.3 L82.0,244.9 L86.0,240.6 L90.0,236.8 L94.0,233.8 L98.0,231.9 L102.0,231.2 L106.0,231.5 L110.0,232.6 L114.0,234.4 L118.0,236.6 L122.0,238.8 L126.0,240.9 L130.0,242.5 L134.0,243.7 L138.0,244.3 L142.0,244.4 L146.0,244.0 L150.0,243.2 L154.0,242.2 L158.0,241.1 L162.0,240.0 L166.0,239.0 L170.0,238.3 L174.0,237.9 L178.0,237.8 L182.0,237.9 L186.0,238.2 L190.0,238.7"/><line class="gf-dash" x1="250" y1="240" x2="415" y2="240"/><path class="gf-line" d="M250.0,216.0 L254.0,217.3 L258.0,221.1 L262.0,227.0 L266.0,234.4 L270.0,242.3 L274.0,250.0 L278.0,256.6 L282.0,261.3 L286.0,263.8 L290.0,263.6 L294.0,260.8 L298.0,255.7 L302.0,248.9 L306.0,241.1 L310.0,233.2 L314.0,226.0 L318.0,220.4 L322.0,217.0 L326.0,216.0 L330.0,217.7 L334.0,221.9 L338.0,228.1 L342.0,235.5 L346.0,243.5 L350.0,251.1 L354.0,257.4 L358.0,261.9 L362.0,263.9 L366.0,263.3 L370.0,260.1 L374.0,254.8 L378.0,247.8 L382.0,239.9 L386.0,232.0 L390.0,225.1 L394.0,219.7 L398.0,216.6 L402.0,216.1 L406.0,218.2 L410.0,222.7"/><line class="gf-dash" x1="470" y1="240" x2="635" y2="240"/><path class="gf-line" d="M470.0,230.0 L474.0,230.1 L478.0,231.3 L482.0,233.7 L486.0,237.1 L490.0,241.2 L494.0,245.6 L498.0,249.8 L502.0,253.3 L506.0,255.5 L510.0,256.2 L514.0,255.0 L518.0,251.9 L522.0,247.1 L526.0,240.9 L530.0,234.0 L534.0,227.1 L538.0,220.9 L542.0,216.4 L546.0,214.2 L550.0,214.8 L554.0,218.5 L558.0,225.1 L562.0,234.1 L566.0,244.8 L570.0,256.1 L574.0,266.6 L578.0,275.1 L582.0,280.4 L586.0,281.4 L590.0,277.6 L594.0,269.0 L598.0,255.5 L602.0,239.8 L606.0,224.1 L610.0,210.2 L614.0,199.5 L618.0,193.3 L622.0,192.2 L626.0,196.4 L630.0,205.4"/><text class="gf-label" x="110" y="310" text-anchor="middle">Damped</text><text class="gf-small" x="110" y="326" text-anchor="middle">dynamically stable</text><text class="gf-label" x="330" y="310" text-anchor="middle">Undamped</text><text class="gf-small" x="330" y="326" text-anchor="middle">dynamically neutral</text><text class="gf-label" x="550" y="310" text-anchor="middle">Divergent</text><text class="gf-small" x="550" y="326" text-anchor="middle">dynamically unstable</text><text class="gf-small" x="20" y="184">Dynamic stability: what happens over time</text></svg><figcaption>Top: static stability. Bottom: dynamic stability.</figcaption></figure><div class="gs-tablewrap"><table><caption>An aircraft must be statically stable to be dynamically stable, but a statically stable aircraft can still be dynamically unstable.</caption><thead><tr><th>Kind</th><th>Meaning</th></tr></thead><tbody><tr><td><b>Static stability</b></td><td>The <b>first tendency</b> after a disturbance. <b>Positive</b>: tends to return. <b>Neutral</b>: stays in the new position. <b>Negative</b>: moves further away</td></tr><tr><td><b>Dynamic stability</b></td><td>What happens <b>over time</b>. Positive: the oscillations <b>die away</b> (damped). Neutral: they <b>carry on</b> the same. Negative: they <b>grow</b> (divergent)</td></tr></tbody></table></div><p>More stability means the aircraft is <b>steadier</b> but <b>harder to manoeuvre</b>. Less stability means it is <b>more manoeuvrable</b> but needs more pilot attention. Designers aim for enough stability, not as much as possible.</p></section>
+          <section id="sec-long"><h2>Longitudinal stability (pitch)</h2><ul><li>Stability in <b>pitch</b>, about the <b>lateral axis</b>. Given mainly by the <b>tailplane</b>.</li><li>If a gust pitches the nose up, the <b>tailplane's AoA rises</b>, so it makes <b>more lift</b> (or less down force). Acting a long way behind the CG, this gives a <b>nose down</b> moment, bringing the aircraft back.</li><li>The <b>neutral point</b> is the CG position at which the aircraft would have <b>neutral</b> longitudinal stability. The <b>CG must be ahead of the neutral point</b> for stability.</li><li>The distance from the CG forward of the neutral point is the <b>static margin</b>. A bigger static margin means <b>more</b> stability.</li><li>Stability increases with a <b>larger tailplane</b> or a <b>longer tail arm</b>, and with the <b>CG further forward</b>.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>CG position</th><th>Effect</th></tr></thead><tbody><tr><td><b>Forward</b></td><td><b>More stable</b>, <b>heavier</b> control forces (more <b>stick force per g</b>), harder to flare, <b>higher stall speed</b>, more trim drag</td></tr><tr><td><b>Aft</b></td><td><b>Less stable</b>, <b>lighter</b> forces, risk of over-controlling and overstressing, lower stall speed, harder spin recovery</td></tr><tr><td><b>At the neutral point</b></td><td><b>Neutral</b> stability</td></tr><tr><td><b>Behind the neutral point</b></td><td><b>Unstable</b> in pitch</td></tr></tbody></table></div><ul><li><b>Stick force per g</b> (manoeuvre stability): how hard the pilot must pull to raise the load factor by 1 g. It <b>falls as the CG moves aft</b>. Too low and the pilot can overstress the aircraft easily.</li><li><b>Pitching moment curve</b>: a stable aircraft has a <b>negative slope</b> of pitching moment against CL (or AoA): more AoA gives a nose down moment.</li><li>In a stable aircraft, a <b>higher speed</b> needs the elevator <b>more nose down</b> (and a slower speed more nose up), and needs a <b>push</b> force to hold it faster than trimmed.</li><li><b>Phugoid</b>: a <b>long, slow</b> oscillation of <b>speed and height</b> at almost constant AoA, lasting a minute or so. It is <b>lightly damped</b>, but slow enough for the pilot to control easily.</li><li><b>Short period oscillation</b>: a <b>fast</b> pitching movement (a second or two) at almost constant speed. It is <b>heavily damped</b>. The pilot should <b>not</b> try to follow it, as that can make it worse (pilot induced oscillation). Hold the controls still.</li><li><b>Ice on the tailplane</b> reduces its effectiveness and can make it <b>stall</b> when the flaps are lowered (more downwash), giving a sudden nose down pitch.</li><li><b>Airframe deformation</b> and heavy rain also change the stability slightly.</li></ul></section>
+          <section id="sec-dir"><h2>Directional stability (yaw)</h2><ul><li>Stability in <b>yaw</b>, about the <b>normal axis</b>. Also called <b>weathercock</b> stability.</li><li>If the aircraft yaws, it is in a <b>sideslip</b>, and the airflow hits the <b>fin</b> at an angle. The fin makes a sideways force behind the CG that <b>yaws the nose back</b> into the airflow.</li><li>Directional stability is increased by a <b>larger fin</b> or <b>longer arm</b>, <b>more side area behind the CG</b>, a <b>dorsal fin</b>, a <b>ventral fin</b>, and <b>sweepback</b> (the advancing wing has more drag).</li><li>Side area <b>ahead</b> of the CG (long nose, large engine nacelles) <b>reduces</b> directional stability.</li></ul></section>
+          <section id="sec-lat"><h2>Lateral stability (roll)</h2><ul><li>Stability in <b>roll</b>, about the <b>longitudinal axis</b>. There is no direct restoring force for a bank angle on its own. But a bank leads to a <b>sideslip</b> towards the lower wing, and lateral stability is the tendency to <b>roll away from the sideslip</b>, levelling the wings.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Feature</th><th>How it helps lateral stability</th></tr></thead><tbody><tr><td><b>Dihedral</b></td><td>In a sideslip, the <b>lower (leading) wing</b> meets the air at a <b>higher AoA</b> and makes more lift, rolling the wings level</td></tr><tr><td><b>High wing</b></td><td>In a sideslip the airflow round the fuselage raises the AoA of the leading wing (and the low CG acts like a pendulum). High wings need <b>less dihedral</b></td></tr><tr><td><b>Sweepback</b></td><td>The leading wing in a sideslip has <b>less effective sweep</b>, so it makes <b>more lift</b>. Swept wings may even need <b>anhedral</b> to stop too much lateral stability</td></tr><tr><td><b>Tall fin</b></td><td>The fin's sideways force acts <b>above</b> the CG, giving a rolling moment away from the slip</td></tr></tbody></table></div><ul><li><b>Anhedral</b> (wings angled down) <b>reduces</b> lateral stability. It is used on <b>high wing, swept</b> aircraft that would otherwise be too stable laterally (and so prone to Dutch roll).</li><li>A <b>low wing</b> gives <b>less</b> lateral stability than a high wing, so low wing aircraft need <b>more dihedral</b>.</li></ul></section>
+          <section id="sec-dynlat"><h2>Roll and yaw together: spiral and Dutch roll</h2><p>Rolling and yawing are linked. Yaw makes one wing go faster, which makes it roll. Roll causes sideslip, which makes the aircraft yaw. So the <b>balance</b> between directional and lateral stability decides how the aircraft behaves.</p><div class="gs-tablewrap"><table><thead><tr><th>Motion</th><th>Cause</th><th>What happens</th></tr></thead><tbody><tr><td><b>Spiral instability</b></td><td><b>Strong directional</b>, <b>weak lateral</b> stability</td><td>A wing drops, the fin yaws the nose into the turn, the outer wing speeds up and rolls the aircraft further. A <b>slowly tightening spiral dive</b>. Easy for the pilot to correct</td></tr><tr><td><b>Dutch roll</b></td><td><b>Strong lateral</b>, <b>weak directional</b> stability. Common on <b>swept</b> wings</td><td>A <b>yawing and rolling oscillation</b>: the wing tips trace an ellipse. It is <b>worse at high altitude</b>. Corrected by a <b>yaw damper</b></td></tr></tbody></table></div><ul><li>A <b>yaw damper</b> senses yaw rate with a gyro and moves the <b>rudder</b> automatically to damp out Dutch roll. If it fails, the crew may need to fly lower and slower, and correct with <b>ailerons</b> (not rudder, which can make it worse).</li><li>At <b>high altitude</b>, air damping is weaker (lower density, higher TAS), so oscillations last longer. Dutch roll is worse up high.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Static: <b>first tendency</b>. Dynamic: <b>over time</b> (damped, undamped, divergent).</li><li>Static stability is needed for dynamic stability, but does not guarantee it.</li><li>Longitudinal: <b>pitch</b>, lateral axis, <b>tailplane</b>.</li><li>CG must be <b>ahead of the neutral point</b>. Static margin = CG to neutral point.</li><li>Forward CG: more stable, heavier forces, <b>higher stall speed</b>. Aft CG: less stable, light forces.</li><li>Stick force per g <b>falls</b> as the CG moves aft.</li><li><b>Phugoid</b>: long, slow, speed and height, lightly damped. <b>Short period</b>: fast pitch, heavily damped.</li><li>Directional: <b>yaw</b>, normal axis, <b>fin</b>, side area behind the CG, sweepback.</li><li>Lateral: <b>roll</b>, longitudinal axis. <b>Dihedral</b>, <b>high wing</b>, <b>sweepback</b>, tall fin. <b>Anhedral</b> reduces it.</li><li><b>Spiral instability</b>: strong directional, weak lateral.</li><li><b>Dutch roll</b>: strong lateral, weak directional. <b>Yaw damper</b>. Worse at <b>altitude</b>.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Kinds of stability</h3><ul><li>Static: first tendency</li><li>Dynamic: over time</li><li>Positive, neutral, negative</li><li>Damped, undamped, divergent</li></ul><h3>Pitch</h3><ul><li><b>Tailplane</b> restores</li><li>CG ahead of <b>neutral point</b></li><li>Forward CG: stable, heavy</li><li>Aft CG: light, less stable</li></ul><h3>Pitch modes</h3><ul><li><b>Phugoid</b>: slow, speed and height</li><li>Lightly damped, easy to fly</li><li><b>Short period</b>: fast pitch</li><li>Heavily damped, hold still</li></ul><h3>Yaw</h3><ul><li>Weathercock: <b>fin</b></li><li>Side area behind CG</li><li>Dorsal fin, sweepback</li><li>Area ahead of CG reduces it</li></ul><h3>Roll</h3><ul><li><b>Dihedral</b>: lower wing more AoA</li><li><b>High wing</b>: more stable</li><li><b>Sweepback</b>: adds stability</li><li><b>Anhedral</b>: reduces it</li></ul><h3>Spiral and Dutch roll</h3><ul><li>Spiral: strong yaw, weak roll stability</li><li>Dutch roll: strong roll, weak yaw</li><li><b>Yaw damper</b></li><li>Dutch roll worse at altitude</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 25 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> Static stability describes:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>How oscillations change over time</li><li>The aircraft's first tendency after a disturbance</li><li>The aircraft's top speed</li><li>The CG range</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> Static is the initial tendency. Dynamic is what happens over time.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> For an aircraft to be longitudinally stable, its CG must be:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Behind the neutral point</li><li>At the neutral point</li><li>Ahead of the neutral point</li><li>At the trailing edge</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> At the neutral point it is neutral. Behind it, it is unstable.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> The phugoid is:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>A fast pitching oscillation, heavily damped</li><li>A yaw and roll oscillation</li><li>A long, slow oscillation of speed and height, lightly damped</li><li>A spiral dive</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> It lasts a minute or so and is easily controlled by the pilot.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Sweepback has what effect on lateral stability?</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Reduces it</li><li>Makes it neutral</li><li>No effect</li><li>Increases it</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> In a sideslip the leading wing has less effective sweep, so it makes more lift.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> Dutch roll is damped by a:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Mach trim</li><li>Stick shaker</li><li>Yaw damper moving the rudder</li><li>Trim tab</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> It senses the yaw rate and applies rudder automatically.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/20/practice">Practise all 25 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/20/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/19-high-speed-flight/">← Module 19: High Speed Flight</a>
+            <a href="/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/">Module 21: Control, Flight Envelope and Flight Mechanics →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F20-stability%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

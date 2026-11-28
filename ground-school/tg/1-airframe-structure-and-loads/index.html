@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airframe Structure and Loads: DGCA CPL Technical General notes, Module 1</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 1: The loads on an airframe (tension, compression, shear, bending, torsion), stress and strain, limit and…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/1-airframe-structure-and-loads/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/1-airframe-structure-and-loads/" />
+    <meta property="og:title" content="Airframe Structure and Loads: DGCA CPL Technical General notes, Module 1" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 1: The loads on an airframe (tension, compression, shear, bending, torsion), stress and strain, limit and…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Airframe Structure and Loads: DGCA CPL Technical General notes, Module 1" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Airframe Structure and Loads","item":"https://www.runwayzero.in/ground-school/tg/1-airframe-structure-and-loads/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Airframe Structure and Loads (DGCA CPL Technical General, Module 1)","description":"Free DGCA CPL Technical General notes, Module 1: The loads on an airframe (tension, compression, shear, bending, torsion), stress and strain, limit and…","url":"https://www.runwayzero.in/ground-school/tg/1-airframe-structure-and-loads/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Loads on the structure","Design loads and design philosophy","The fuselage","Wings and tail","Materials and locating parts","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 1</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 1 · CAR 1.1</p>
+        <h1>Airframe Structure and Loads</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Airframe%20Structure%20and%20Loads%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%201%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F1-airframe-structure-and-loads%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/1-airframe-structure-and-loads/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/1/slides">Slides</a><a href="/ground-school.html#/tg/1/practice">Practice (28)</a><a href="/ground-school.html#/tg/1/cards">Flashcards (16)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-loads">Loads on the structure</a></li><li><a href="#sec-design">Design loads and design philosophy</a></li><li><a href="#sec-fuselage">The fuselage</a></li><li><a href="#sec-wings">Wings and tail</a></li><li><a href="#sec-materials">Materials and locating parts</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">The loads on an airframe (tension, compression, shear, bending, torsion), stress and strain, limit and ultimate load, safe life, fail safe and damage tolerant design, fatigue, fuselage construction (truss, monocoque, semi-monocoque), frames, stringers and bulkheads, pressurisation stresses, windows, wing spars, ribs and the torsion box, tail surfaces, flutter, materials and station numbers.</p>
+          <section id="sec-loads"><h2>Loads on the structure</h2><figure class="gs-fig"><svg viewBox="0 0 660 210" role="img" aria-label="Tension, compression, shear, bending and torsion on a structural member"><defs><marker id="ld1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-head"/></marker></defs><rect class="gf-shape" x="25" y="85" width="70" height="24"/><line class="gf-arrow" x1="25" y1="97" x2="2" y2="97" marker-end="url(#ld1)"/><line class="gf-arrow" x1="95" y1="97" x2="118" y2="97" marker-end="url(#ld1)"/><text class="gf-label" x="60" y="190" text-anchor="middle">Tension</text><text class="gf-small" x="60" y="206" text-anchor="middle">stretches (tie)</text><rect class="gf-shape" x="160" y="85" width="70" height="24"/><line class="gf-arrow" x1="136" y1="97" x2="158" y2="97" marker-end="url(#ld1)"/><line class="gf-arrow" x1="254" y1="97" x2="232" y2="97" marker-end="url(#ld1)"/><text class="gf-label" x="195" y="190" text-anchor="middle">Compression</text><text class="gf-small" x="195" y="206" text-anchor="middle">squeezes (strut)</text><rect class="gf-shape" x="285" y="78" width="70" height="18"/><rect class="gf-shapew" x="295" y="98" width="70" height="18"/><line class="gf-arrow" x1="300" y1="70" x2="340" y2="70" marker-end="url(#ld1)"/><line class="gf-arrow" x1="350" y1="126" x2="310" y2="126" marker-end="url(#ld1)"/><text class="gf-label" x="325" y="190" text-anchor="middle">Shear</text><text class="gf-small" x="325" y="206" text-anchor="middle">faces slide (rivets)</text><path class="gf-shape" d="M415,80 Q455,110 495,80 L495,100 Q455,130 415,100 Z"/><line class="gf-arrow" x1="415" y1="50" x2="415" y2="76" marker-end="url(#ld1)"/><line class="gf-arrow" x1="495" y1="50" x2="495" y2="76" marker-end="url(#ld1)"/><line class="gf-arrow" x1="455" y1="160" x2="455" y2="126" marker-end="url(#ld1)"/><text class="gf-label" x="455" y="190" text-anchor="middle">Bending</text><text class="gf-small" x="455" y="206" text-anchor="middle">tension + compression</text><rect class="gf-shape" x="545" y="82" width="80" height="30" rx="6"/><ellipse class="gf-outline" cx="545" cy="97" rx="7" ry="15"/><path class="gf-arrow" d="M532,74 A16,22 0 0 0 532,122" fill="none" marker-end="url(#ld1)"/><path class="gf-arrow" d="M638,122 A16,22 0 0 0 638,74" fill="none" marker-end="url(#ld1)"/><text class="gf-label" x="585" y="190" text-anchor="middle">Torsion</text><text class="gf-small" x="585" y="206" text-anchor="middle">twisting</text></svg><figcaption>The five basic loads. Bending and torsion are made up of the first three.</figcaption></figure><div class="gs-tablewrap"><table><thead><tr><th>Load</th><th>What it does</th><th>Member that resists it</th></tr></thead><tbody><tr><td><b>Tension</b></td><td>Tries to <b>stretch</b> a member</td><td>A <b>tie</b></td></tr><tr><td><b>Compression</b></td><td>Tries to <b>shorten</b> or squash a member</td><td>A <b>strut</b></td></tr><tr><td><b>Shear</b></td><td>Tries to make one face <b>slide</b> over the next</td><td><b>Rivets</b> are designed to take shear</td></tr><tr><td><b>Bending</b></td><td><b>Tension</b> on the outer (stretched) side, <b>compression</b> on the inner side, and <b>shear</b> across</td><td>Spars, longerons</td></tr><tr><td><b>Torsion</b></td><td><b>Twisting</b>. Tension at the outside, compression inside, and shear across</td><td>The <b>torsion box</b></td></tr></tbody></table></div><ul><li><b>Stress</b> is the internal force <b>per unit area</b>, measured in <b>N/mm²</b> or MN/m².</li><li><b>Strain</b> is the <b>change in size</b> caused by stress, given as a fraction or percentage of the original size.</li><li><b>Elasticity</b>: a material goes back to its original shape when the load is removed. Beyond the <b>elastic limit</b> the deformation is <b>permanent</b>.</li><li><b>Buckling</b>: thin sheet under a <b>compressive</b> end load bends out of shape sideways.</li></ul></section>
+          <section id="sec-design"><h2>Design loads and design philosophy</h2><div class="gs-tablewrap"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody><tr><td><b>Design limit load (DLL)</b></td><td>The <b>highest load</b> the aircraft is expected to meet in service. No permanent deformation is allowed up to it</td></tr><tr><td><b>Safety factor</b></td><td>Ultimate load divided by limit load. At least <b>1.5</b></td></tr><tr><td><b>Design ultimate load (DUL)</b></td><td><b>DLL x safety factor</b>. The structure must carry it (for a few seconds) <b>without breaking</b>, though it may deform</td></tr></tbody></table></div><p class="gs-formula">DUL = DLL x 1.5 (safety factor)</p><div class="gs-tablewrap"><table><thead><tr><th>Philosophy</th><th>Idea</th><th>In practice</th></tr></thead><tbody><tr><td><b>Safe life</b></td><td>The part will not fail within a known life</td><td>Replaced after a set number of <b>hours, landings or pressure cycles</b>, whatever its condition. Used for parts like landing gear</td></tr><tr><td><b>Fail safe</b></td><td>If one member fails, <b>another takes its load</b> (redundancy, more than one load path)</td><td>Heavier because of the extra members. Damage found at inspection</td></tr><tr><td><b>Damage tolerant</b></td><td>Load is <b>spread over a large area</b>, so a crack grows slowly and is found at a normal inspection before it is dangerous</td><td>Lighter than fail safe. Needs a set <b>inspection programme</b></td></tr></tbody></table></div><p><b>Fatigue</b> is weakening of a material by <b>repeated changes of stress</b>. A part can break after many cycles even though each stress was far below its ultimate strength. Each <b>pressurisation</b> and <b>landing</b> is a fatigue cycle. Cracks often start at <b>stress raisers</b> such as holes, sharp corners and scratches.</p></section>
+          <section id="sec-fuselage"><h2>The fuselage</h2><div class="gs-tablewrap"><table><thead><tr><th>Construction</th><th>How it works</th><th>Used on</th></tr></thead><tbody><tr><td><b>Truss (framework)</b></td><td>Welded <b>steel tubes</b> form a frame that takes the loads. Covered with fabric or light alloy</td><td>Light, unpressurised aircraft</td></tr><tr><td><b>Monocoque</b></td><td>The <b>skin carries all the loads</b>. Only light formers give the shape. A small dent badly weakens it</td><td>Small aircraft, fuel tanks, engine cowls</td></tr><tr><td><b>Semi-monocoque (stressed skin)</b></td><td>Skin plus <b>frames</b>, <b>stringers</b> and <b>longerons</b> share the loads. A damaged area can be carried by the members around it</td><td><b>Most aircraft</b> today</td></tr></tbody></table></div><div class="gs-tablewrap"><table><thead><tr><th>Part</th><th>Job</th></tr></thead><tbody><tr><td><b>Frames (formers)</b></td><td>Ring shaped. Give the fuselage its <b>shape</b> and take <b>hoop stress</b>. Stringers and skin are fixed to them</td></tr><tr><td><b>Stringers</b></td><td>Light members running <b>lengthwise</b>. <b>Stiffen the skin</b> so it does not buckle</td></tr><tr><td><b>Longerons</b></td><td>Heavier lengthwise members that take <b>bending</b> loads</td></tr><tr><td><b>Bulkheads</b></td><td>Like frames but <b>solid</b> (may have a door). <b>Pressure bulkheads</b> close the pressure hull at the front and rear</td></tr><tr><td><b>Firewall</b></td><td>Separates the <b>engine</b> from the cabin and crew</td></tr><tr><td><b>Skin</b></td><td>In a stressed skin aircraft it is <b>primary structure</b>, carrying much of the load</td></tr></tbody></table></div><ul><li><b>Pressurisation</b> puts the fuselage in <b>tension</b>. <b>Hoop stress</b> tries to make the cross section bigger. <b>Axial (longitudinal) stress</b> tries to make it longer. Hoop stress is about <b>twice</b> the axial stress.</li><li>A <b>circular</b> cross section carries pressure best, as the load is shared evenly with no flat panels to bulge.</li><li><b>Flight deck windows</b> are layers of toughened <b>glass</b> with <b>vinyl interlayers</b> (often five layers), fixed with rubber pressure seals. A <b>conductive coating</b> heats them, which stops ice and fogging and makes them more <b>resilient</b> to <b>bird strikes</b>.</li><li>The <b>direct vision (DV) window</b> can be opened when the aircraft is <b>unpressurised</b> to give a view if the windscreen is obscured. On some types it is also an emergency exit.</li><li>Doors that open <b>inwards</b> (plug doors) are pushed into their frame by cabin pressure, so they cannot open in flight.</li></ul></section>
+          <section id="sec-wings"><h2>Wings and tail</h2><figure class="gs-fig"><svg viewBox="0 0 620 215" role="img" aria-label="Wing structure with spars, ribs, stringers and skin forming a torsion box"><path class="gf-shape" d="M180,80 C200,30 320,18 420,38 L540,70 C440,88 270,102 180,80 Z"/><path class="gf-shape" d="M120,115 C140,65 260,53 360,73 L480,105 C380,123 210,137 120,115 Z"/><path class="gf-shape" d="M60,150 C80,100 200,88 300,108 L420,140 C320,158 150,172 60,150 Z"/><line class="gf-line" x1="130" y1="104" x2="250" y2="34"/><line class="gf-line" x1="130" y1="162" x2="250" y2="92"/><line class="gf-line" x1="130" y1="104" x2="130" y2="162"/><line class="gf-line" x1="300" y1="108" x2="420" y2="38"/><line class="gf-line" x1="300" y1="154" x2="420" y2="84"/><line class="gf-line" x1="300" y1="108" x2="300" y2="154"/><line class="gf-thin" x1="180" y1="97" x2="300" y2="27"/><line class="gf-thin" x1="230" y1="100" x2="350" y2="30"/><line class="gf-thin" x1="270" y1="100" x2="390" y2="30"/><text class="gf-label" x="105" y="200" text-anchor="middle">Front spar</text><line class="gf-thin" x1="120" y1="186" x2="130" y2="162"/><text class="gf-label" x="320" y="200" text-anchor="middle">Rear spar</text><line class="gf-thin" x1="310" y1="186" x2="300" y2="156"/><text class="gf-label" x="560" y="40">Rib</text><line class="gf-thin" x1="565" y1="46" x2="520" y2="66"/><text class="gf-label" x="300" y="22">Stringers</text><line class="gf-thin" x1="330" y1="28" x2="360" y2="40"/></svg><figcaption>Spars, ribs, stringers and skin. The box between the spars resists bending and twisting.</figcaption></figure><div class="gs-tablewrap"><table><thead><tr><th>Part</th><th>Job</th></tr></thead><tbody><tr><td><b>Spars</b></td><td>The main spanwise members. Take <b>bending</b> (and with the skin, <b>torsion</b>) loads. Bend <b>down</b> on the ground and <b>up</b> in flight</td></tr><tr><td><b>Ribs</b></td><td>Keep the <b>aerofoil shape</b>, support the skin and stringers against buckling, and pass concentrated loads (engines, gear, flaps) into the spars and skin. <b>Lightening holes</b> save weight and stiffen the rib</td></tr><tr><td><b>Stringers</b></td><td>Spanwise. Stiffen the skin, especially in <b>compression</b></td></tr><tr><td><b>Skin</b></td><td>Takes the air loads and, between the spars, forms the <b>torsion box</b></td></tr></tbody></table></div><ul><li>A <b>cantilever</b> wing is held at the root only, with <b>no external struts</b> or wires. A <b>braced</b> wing has struts. A <b>biplane</b> is very stiff but has high drag.</li><li>The <b>largest bending moment</b> is at the <b>wing root</b>.</li><li><b>Bending relief</b>: <b>engines on the wing</b> and <b>fuel in the wing</b> put weight where the lift is. So the <b>wing tank fuel is used last</b>.</li><li>The <b>maximum zero fuel mass (MZFM)</b> limits the load in the fuselage, because with no fuel in the wings there is no bending relief.</li><li>Tail surfaces: a fixed <b>tailplane (horizontal stabiliser)</b> and <b>fin (vertical stabiliser)</b> with movable elevator and rudder. A <b>V-tail</b> combines both into two surfaces with <b>ruddervators</b>. A <b>T-tail</b> puts the tailplane on top of the fin.</li></ul><p><b>Flutter</b> is a fast, <b>self-feeding vibration</b> of a wing or control surface, caused by the interaction of air loads, the elastic structure and its inertia. It can destroy the structure in seconds. It is prevented by <b>stiff structure</b> and <b>mass balance</b>: a weight ahead of the hinge line so the surface's <b>CG is on or ahead of the hinge</b>. Flutter risk rises with <b>speed</b>.</p></section>
+          <section id="sec-materials"><h2>Materials and locating parts</h2><div class="gs-tablewrap"><table><thead><tr><th>Material</th><th>Where and why</th></tr></thead><tbody><tr><td><b>Aluminium alloy</b> (such as duralumin, aluminium with copper)</td><td>Most of the skin, frames and rivets. Light and strong. <b>Alclad</b> sheet has a thin pure aluminium coat against corrosion</td></tr><tr><td><b>Titanium</b></td><td>Hot areas and high strength parts, such as engine mounts and firewalls</td></tr><tr><td><b>Steel</b></td><td>Where very high strength is needed: landing gear, bolts, fittings</td></tr><tr><td><b>Composites</b> (carbon or glass fibre in resin)</td><td>Control surfaces, fairings, and now whole wings and fuselages. Light, strong and do not corrode, but damage can be hidden inside</td></tr></tbody></table></div><div class="gs-tablewrap"><table><caption>Used to find structure and parts for maintenance and repair.</caption><thead><tr><th>Reference</th><th>Gives the position</th></tr></thead><tbody><tr><td><b>Station (fuselage station)</b></td><td>Along the <b>length</b>, in inches from a datum</td></tr><tr><td><b>Water line</b></td><td><b>Height</b> above a horizontal datum</td></tr><tr><td><b>Buttock line</b></td><td><b>Left or right</b> of the centre line</td></tr></tbody></table></div></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Tie resists <b>tension</b>. Strut resists <b>compression</b>. Rivets take <b>shear</b>.</li><li>Stress = force per unit area (<b>N/mm²</b>). Beyond the <b>elastic limit</b>: permanent set.</li><li><b>Ultimate load = limit load x 1.5</b>. Must not break at ultimate load.</li><li><b>Safe life</b>: replaced at a set life. <b>Fail safe</b>: more than one load path. <b>Damage tolerant</b>: load spread, cracks found at inspection.</li><li>Fatigue: <b>repeated</b> stress cycles. Each pressurisation is one cycle.</li><li>Most aircraft: <b>semi-monocoque</b> (stressed skin). Monocoque: skin takes all the load.</li><li>Frames: <b>shape</b> and hoop stress. Stringers: <b>stiffen the skin</b>. Bulkheads: solid, pressure bulkheads seal the hull.</li><li>Pressurised fuselage: <b>circular</b>, hoop and axial stress.</li><li>Spar: <b>bending</b> and torsion. Rib: <b>shape</b> and support. Max bending at the <b>root</b>.</li><li>Wing fuel used <b>last</b> for bending relief. <b>MZFM</b> protects the wing root.</li><li>Flutter: prevented by <b>mass balance</b> ahead of the hinge and stiffness.</li><li>Station = along, water line = up, buttock line = sideways.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Five loads</h3><ul><li><b>Tension</b> (tie), <b>compression</b> (strut)</li><li><b>Shear</b>: rivets</li><li><b>Bending</b>: tension + compression + shear</li><li><b>Torsion</b>: twisting</li></ul><h3>Design loads</h3><ul><li>Limit load: most expected in service</li><li><b>Ultimate = limit x 1.5</b></li><li>Stress = force / area</li><li>Beyond elastic limit: permanent set</li></ul><h3>Design philosophy</h3><ul><li><b>Safe life</b>: replace at set life</li><li><b>Fail safe</b>: spare load paths</li><li><b>Damage tolerant</b>: spread load, inspect</li><li>Fatigue: repeated stress cycles</li></ul><h3>Fuselage</h3><ul><li>Truss, <b>monocoque</b>, <b>semi-monocoque</b></li><li>Frames: shape, hoop stress</li><li>Stringers stiffen the skin</li><li>Pressurised: <b>circular</b>, hoop and axial stress</li></ul><h3>Wing</h3><ul><li>Spars: bending and torsion</li><li>Ribs: shape and support</li><li>Torsion box between the spars</li><li>Max bending at the <b>root</b>. Wing fuel used last</li></ul><h3>Flutter and materials</h3><ul><li>Flutter: self-feeding vibration</li><li>Cure: <b>mass balance</b>, stiffness</li><li>Aluminium alloy, titanium, steel, composites</li><li>Station, water line, buttock line</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 28 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> A structural member designed to resist tension is called a:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Strut</li><li>Tie</li><li>Longeron</li><li>Former</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> A tie resists tension. A strut resists compression.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> A safe life structure is one that:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Has more than one load path</li><li>Is replaced after a set number of hours or cycles, whatever its condition</li><li>Is never inspected</li><li>Spreads the load over a large area</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> Safe life parts are removed when their life is used up, before fatigue failure is expected.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> In monocoque construction:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Steel tubes carry the loads</li><li>The skin carries all the loads, with only light formers for shape</li><li>Stringers carry all the loads</li><li>The floor carries the loads</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> Even a small dent weakens a monocoque, so it is used only for small structures.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> The main purpose of a wing spar is to:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Keep the aerofoil shape</li><li>Stiffen the skin</li><li>Take bending and torsion loads</li><li>House the fuel pumps</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Spars are the main spanwise beams. With the skin they form the torsion box.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> The maximum zero fuel mass is set mainly to protect the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Wing root from too much bending</li><li>Landing gear</li><li>Engines</li><li>Tyres</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> With no fuel in the wings, all the payload weight in the fuselage bends the wing root. MZFM limits it.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/1/practice">Practise all 28 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/1/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/">← All Technical General modules</a>
+            <a href="/ground-school/tg/2-landing-gear-wheels-tyres-and-brakes/">Module 2: Landing Gear, Wheels, Tyres and Brakes →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F1-airframe-structure-and-loads%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

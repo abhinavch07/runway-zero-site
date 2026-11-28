@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC Electrics and Basic Logic: DGCA CPL Technical General notes, Module 9</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 9: Why big aircraft use AC, frequency, RMS and peak values, three phase supplies, inductance, capacitance…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/9-ac-electrics-and-basic-logic/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/9-ac-electrics-and-basic-logic/" />
+    <meta property="og:title" content="AC Electrics and Basic Logic: DGCA CPL Technical General notes, Module 9" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 9: Why big aircraft use AC, frequency, RMS and peak values, three phase supplies, inductance, capacitance…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AC Electrics and Basic Logic: DGCA CPL Technical General notes, Module 9" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"AC Electrics and Basic Logic","item":"https://www.runwayzero.in/ground-school/tg/9-ac-electrics-and-basic-logic/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"AC Electrics and Basic Logic (DGCA CPL Technical General, Module 9)","description":"Free DGCA CPL Technical General notes, Module 9: Why big aircraft use AC, frequency, RMS and peak values, three phase supplies, inductance, capacitance…","url":"https://www.runwayzero.in/ground-school/tg/9-ac-electrics-and-basic-logic/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["AC basics","AC generators and constant frequency","Generator control and paralleling","Transformers, TRUs and inverters","Basic logic","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 9</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 9 · CAR 1.2</p>
+        <h1>AC Electrics and Basic Logic</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=AC%20Electrics%20and%20Basic%20Logic%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%209%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F9-ac-electrics-and-basic-logic%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/9-ac-electrics-and-basic-logic/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/9/slides">Slides</a><a href="/ground-school.html#/tg/9/practice">Practice (26)</a><a href="/ground-school.html#/tg/9/cards">Flashcards (14)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-ac">AC basics</a></li><li><a href="#sec-gen">AC generators and constant frequency</a></li><li><a href="#sec-control">Generator control and paralleling</a></li><li><a href="#sec-convert">Transformers, TRUs and inverters</a></li><li><a href="#sec-logic">Basic logic</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">Why big aircraft use AC, frequency, RMS and peak values, three phase supplies, inductance, capacitance and power factor (kVA and kW), AC generators and the frequency formula, constant speed drives and IDGs, brushless generators, generator control and paralleling, transformers, transformer rectifier units and inverters, emergency power, ground power, and logic gates and their truth tables.</p>
+          <section id="sec-ac"><h2>AC basics</h2><ul><li><b>Alternating current (AC)</b> keeps reversing direction. One complete wave is a <b>cycle</b>. Cycles per second is the <b>frequency</b> in <b>hertz (Hz)</b>.</li><li>Large aircraft use <b>115 V, 400 Hz, three phase AC</b> (200 V between phases). Higher voltage means less current for the same power, so <b>thinner, lighter wires</b>. <b>400 Hz</b> lets motors and transformers be much <b>smaller and lighter</b> than at 50 Hz.</li><li><b>Peak value</b>: the top of the wave. <b>RMS (root mean square)</b> value: the steady DC value that gives the same heating. <b>RMS = 0.707 x peak</b>. AC meters read RMS, so 115 V AC is RMS.</li><li><b>Three phase</b>: three outputs 120° apart, from three sets of windings. It gives smoother power and suits large motors.</li><li><b>Phase sequence</b>: the order in which the phases peak. Getting it wrong makes three phase motors <b>run backwards</b>.</li></ul><p class="gs-formula">RMS = 0.707 x peak. Peak = 1.414 x RMS</p><div class="gs-tablewrap"><table><caption>Memory aid CIVIL: in a Capacitor, I leads V. V leads I in an inductor (L).</caption><thead><tr><th>Effect</th><th>What it does in an AC circuit</th></tr></thead><tbody><tr><td><b>Resistance</b></td><td>Opposes current. Voltage and current stay <b>in phase</b></td></tr><tr><td><b>Inductance</b> (coils)</td><td>Opposes <b>changes</b> in current. Current <b>lags</b> the voltage. Its opposition (<b>inductive reactance</b>) <b>rises with frequency</b></td></tr><tr><td><b>Capacitance</b></td><td>Current <b>leads</b> the voltage. Its opposition (<b>capacitive reactance</b>) <b>falls with frequency</b></td></tr><tr><td><b>Impedance (Z)</b></td><td>Total opposition to AC: resistance and reactance together, in ohms</td></tr></tbody></table></div><ul><li><b>Apparent power</b> = volts x amps, in <b>kVA</b>. <b>True (real) power</b>, the power that does work, is in <b>kW</b>. The difference is <b>reactive</b> power (kVAR), which flows back and forth.</li><li><b>Power factor</b> = true power / apparent power = kW / kVA. For a pure resistance it is 1. Aircraft generators are rated in <b>kVA</b>.</li></ul></section>
+          <section id="sec-gen"><h2>AC generators and constant frequency</h2><p class="gs-formula">Frequency (Hz) = rpm x number of pole pairs / 60</p><aside class="gs-example"><h4>Worked example: Generator with 4 poles at 12,000 rpm</h4><ol><li>4 poles = 2 pole pairs</li><li>f = 12,000 x 2 / 60 = <b>400 Hz</b></li></ol></aside><ul><li>Frequency depends on <b>speed</b>. Engine speed varies, so a <b>constant speed drive (CSD)</b> between the engine gearbox and the generator turns the generator at a <b>constant rpm</b> to give <b>400 Hz</b>. It works hydraulically with its own oil.</li><li>An <b>integrated drive generator (IDG)</b> is a CSD and generator in <b>one case</b>.</li><li>A CSD (or IDG) can be <b>disconnected</b> in flight by the crew if it overheats or loses oil pressure. It usually <b>cannot be reconnected in flight</b>, only on the ground.</li><li>Some newer aircraft use <b>variable frequency</b> generators driven straight from the engine, with equipment designed to accept the changing frequency.</li><li>A <b>brushless generator</b> has no brushes or slip rings to wear or spark: a <b>permanent magnet generator</b> feeds the <b>exciter</b>, whose output is rectified by <b>diodes on the rotor</b> to feed the <b>main field</b>. The main output is taken from the <b>stator</b>.</li><li>Voltage is controlled by changing the <b>field current</b> (the voltage regulator in the <b>generator control unit, GCU</b>).</li></ul></section>
+          <section id="sec-control"><h2>Generator control and paralleling</h2><ul><li>The <b>GCU</b> regulates voltage and protects against over and under voltage, over and under frequency and faults by opening the <b>generator control relay</b> (field) and <b>generator breaker</b>.</li><li><b>Split bus system</b>: each generator feeds its own bus. Generators are <b>not</b> paralleled. A <b>bus tie breaker</b> joins buses if a generator fails. Common on modern twins.</li><li><b>Parallel system</b>: all generators feed a common <b>tie bus</b> and share the load. Before connecting, a generator's <b>voltage, frequency and phase sequence</b> must match, and it must be <b>in phase</b>.</li><li><b>Load sharing</b> in a parallel system: <b>real load (kW)</b> is shared by adjusting the <b>CSD speed</b> (frequency). <b>Reactive load (kVAR)</b> is shared by adjusting the <b>field excitation</b> (voltage).</li><li><b>Ground power units</b> plug in through an external power socket. The system checks voltage, frequency and phase before connecting it.</li></ul></section>
+          <section id="sec-convert"><h2>Transformers, TRUs and inverters</h2><div class="gs-tablewrap"><table><thead><tr><th>Unit</th><th>Changes</th><th>Use</th></tr></thead><tbody><tr><td><b>Transformer</b></td><td>AC voltage up or down. Works <b>only on AC</b></td><td>26 V AC for instruments, from 115 V AC</td></tr><tr><td><b>Transformer rectifier unit (TRU)</b></td><td><b>AC to DC</b> (115 V AC to 28 V DC)</td><td>Feeds the DC buses and charges the battery on AC aircraft</td></tr><tr><td><b>Inverter</b></td><td><b>DC to AC</b></td><td>Gives AC from the battery in an emergency. <b>Static</b> (electronic) or <b>rotary</b> (motor and generator)</td></tr><tr><td><b>Rectifier (diodes)</b></td><td>AC to DC</td><td>Inside alternators and TRUs</td></tr></tbody></table></div><ul><li>A transformer's voltages are in the ratio of the <b>turns</b> on its windings. More turns on the secondary: <b>step up</b>. Fewer: <b>step down</b>. Power stays about the same, so stepping up the voltage steps down the current.</li><li>A transformer cannot work on steady DC, because induction needs a <b>changing</b> field.</li></ul><p class="gs-formula">Secondary volts / primary volts = secondary turns / primary turns</p><ul><li>Emergency AC sources: the <b>APU generator</b>, a <b>ram air turbine (RAT)</b> generator, and the battery through a <b>static inverter</b> for essential loads.</li></ul></section>
+          <section id="sec-logic"><h2>Basic logic</h2><p>Computers work with <b>binary</b> signals: <b>1</b> (on, high voltage) or <b>0</b> (off). <b>Logic gates</b> combine signals. They are used in warning and control systems, for example: warn if the gear is NOT down AND the throttles are closed.</p><figure class="gs-fig"><svg viewBox="0 0 660 210" role="img" aria-label="Symbols of AND, OR and NOT logic gates and when each gives an output"><line class="gf-outline" x1="30" y1="60" x2="60" y2="60"/><line class="gf-outline" x1="30" y1="90" x2="60" y2="90"/><path class="gf-shape" d="M60,45 L95,45 A30,30 0 0 1 95,105 L60,105 Z"/><line class="gf-outline" x1="125" y1="75" x2="155" y2="75"/><text class="gf-label" x="95" y="140" text-anchor="middle">AND</text><text class="gf-small" x="95" y="160" text-anchor="middle">1 only if all</text><text class="gf-small" x="95" y="176" text-anchor="middle">inputs are 1</text><line class="gf-outline" x1="240" y1="60" x2="270" y2="60"/><line class="gf-outline" x1="240" y1="90" x2="270" y2="90"/><path class="gf-shape" d="M255,45 Q300,45 330,75 Q300,105 255,105 Q272,75 255,45 Z"/><line class="gf-outline" x1="330" y1="75" x2="360" y2="75"/><text class="gf-label" x="300" y="140" text-anchor="middle">OR</text><text class="gf-small" x="300" y="160" text-anchor="middle">1 if any</text><text class="gf-small" x="300" y="176" text-anchor="middle">input is 1</text><line class="gf-outline" x1="440" y1="75" x2="470" y2="75"/><path class="gf-shape" d="M470,45 L520,75 L470,105 Z"/><circle class="gf-shape" cx="527" cy="75" r="7"/><line class="gf-outline" x1="534" y1="75" x2="564" y2="75"/><text class="gf-label" x="500" y="140" text-anchor="middle">NOT (inverter)</text><text class="gf-small" x="500" y="160" text-anchor="middle">output is the</text><text class="gf-small" x="500" y="176" text-anchor="middle">opposite of the input</text><text class="gf-small" x="20" y="202">A small circle on an output means NOT. So NAND = AND then NOT, NOR = OR then NOT.</text></svg><figcaption>The three basic gates. All others are made from them.</figcaption></figure><div class="gs-tablewrap"><table><thead><tr><th>Gate</th><th>Output is 1 when</th></tr></thead><tbody><tr><td><b>AND</b></td><td><b>All</b> inputs are 1</td></tr><tr><td><b>OR</b></td><td><b>Any</b> input is 1 (one or more)</td></tr><tr><td><b>NOT</b></td><td>The input is <b>0</b> (it inverts)</td></tr><tr><td><b>NAND</b></td><td><b>Not all</b> inputs are 1. Output is 0 only when all inputs are 1</td></tr><tr><td><b>NOR</b></td><td><b>All</b> inputs are 0</td></tr><tr><td><b>Exclusive OR (XOR)</b></td><td>The inputs are <b>different</b> (one 1, one 0)</td></tr></tbody></table></div><div class="gs-tablewrap"><table><caption>Truth table for two inputs.</caption><thead><tr><th>A</th><th>B</th><th>AND</th><th>OR</th><th>NAND</th><th>NOR</th><th>XOR</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Aircraft AC: <b>115 V, 400 Hz, three phase</b> (200 V between phases). 400 Hz: lighter motors and transformers.</li><li><b>RMS = 0.707 x peak</b>. Meters read RMS.</li><li>Inductor: current <b>lags</b>. Capacitor: current <b>leads</b> (CIVIL).</li><li>Generators rated in <b>kVA</b>. Power factor = kW / kVA.</li><li><b>f = rpm x pole pairs / 60</b>.</li><li><b>CSD</b> keeps generator speed and frequency constant. <b>IDG</b> = CSD + generator.</li><li>CSD disconnected in flight: <b>cannot be reconnected</b> in flight.</li><li>Brushless: PMG, exciter, rotating diodes, main generator.</li><li>Paralleling: match <b>voltage, frequency, phase sequence</b>, and be in phase.</li><li>Real load shared by <b>CSD speed</b>. Reactive load by <b>excitation</b>.</li><li>Transformer: AC only, turns ratio. <b>TRU</b>: AC to DC. <b>Inverter</b>: DC to AC.</li><li>AND: all 1. OR: any 1. NOT: inverts. NAND: 0 only when all 1. NOR: 1 only when all 0. XOR: inputs differ.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Aircraft AC</h3><ul><li><b>115 V, 400 Hz, three phase</b></li><li>400 Hz: lighter units</li><li>RMS = 0.707 x peak</li><li>Phase sequence matters for motors</li></ul><h3>Reactance and power</h3><ul><li>Inductor: current <b>lags</b></li><li>Capacitor: current <b>leads</b></li><li>kVA apparent, kW true</li><li>Power factor = kW / kVA</li></ul><h3>Generators</h3><ul><li>f = rpm x pole pairs / 60</li><li><b>CSD</b> or <b>IDG</b> gives 400 Hz</li><li>Disconnect: no reconnect in flight</li><li>Brushless: PMG, exciter, diodes</li></ul><h3>Control and paralleling</h3><ul><li>GCU: voltage, faults</li><li>Split bus or parallel</li><li>Match V, f, phase sequence</li><li>kW by CSD, kVAR by excitation</li></ul><h3>Converters</h3><ul><li>Transformer: AC only, turns ratio</li><li><b>TRU</b>: AC to DC</li><li><b>Inverter</b>: DC to AC</li><li>Emergency: APU, RAT, static inverter</li></ul><h3>Logic gates</h3><ul><li>AND: all inputs 1</li><li>OR: any input 1</li><li>NOT: inverts</li><li>NAND, NOR, XOR</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 26 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> The normal AC supply of a large transport aircraft is:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>28 V, 50 Hz, single phase</li><li>115 V, 400 Hz, three phase</li><li>230 V, 50 Hz, single phase</li><li>14 V DC</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> 115 V phase to neutral, 200 V between phases, at 400 Hz.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> As frequency rises, inductive reactance:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Falls</li><li>Rises</li><li>Stays the same</li><li>Becomes zero</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> A coil opposes faster changes more strongly. Capacitive reactance does the opposite.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> An integrated drive generator (IDG) is:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>A generator with a battery</li><li>A TRU</li><li>A CSD and a generator in one unit</li><li>An APU</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Combining them saves weight and space.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> In a parallel AC system, reactive load (kVAR) sharing is controlled by adjusting the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>CSD speed</li><li>Bus tie breaker</li><li>Generator field excitation</li><li>Frequency meter</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Excitation sets the generated voltage, which controls reactive current.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> A transformer has 100 turns on the primary and 20 on the secondary. With 115 V on the primary, the secondary gives:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>575 V</li><li>5 V</li><li>115 V</li><li>23 V</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> Volts are in the turns ratio: 115 x 20 / 100 = 23 V.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/9/practice">Practise all 26 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/9/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/8-dc-electrics/">← Module 8: DC Electrics</a>
+            <a href="/ground-school/tg/10-piston-engines/">Module 10: Piston Engines →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F9-ac-electrics-and-basic-logic%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

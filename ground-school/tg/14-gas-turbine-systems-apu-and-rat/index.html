@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Turbine Systems, APU and RAT: DGCA CPL Technical General notes, Module 14</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 14: The engine fuel system and fuel control (FCU and FADEC), ignition, starting and the start sequence…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/14-gas-turbine-systems-apu-and-rat/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/14-gas-turbine-systems-apu-and-rat/" />
+    <meta property="og:title" content="Gas Turbine Systems, APU and RAT: DGCA CPL Technical General notes, Module 14" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 14: The engine fuel system and fuel control (FCU and FADEC), ignition, starting and the start sequence…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Gas Turbine Systems, APU and RAT: DGCA CPL Technical General notes, Module 14" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Gas Turbine Systems, APU and RAT","item":"https://www.runwayzero.in/ground-school/tg/14-gas-turbine-systems-apu-and-rat/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gas Turbine Systems, APU and RAT (DGCA CPL Technical General, Module 14)","description":"Free DGCA CPL Technical General notes, Module 14: The engine fuel system and fuel control (FCU and FADEC), ignition, starting and the start sequence…","url":"https://www.runwayzero.in/ground-school/tg/14-gas-turbine-systems-apu-and-rat/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Engine fuel system and control","Ignition","Starting","Lubrication and gearbox","Engine instruments and thrust","APU and RAT","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 14</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 14 · CAR 1.3</p>
+        <h1>Gas Turbine Systems, APU and RAT</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Gas%20Turbine%20Systems%2C%20APU%20and%20RAT%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%2014%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F14-gas-turbine-systems-apu-and-rat%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/14-gas-turbine-systems-apu-and-rat/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/14/slides">Slides</a><a href="/ground-school.html#/tg/14/practice">Practice (26)</a><a href="/ground-school.html#/tg/14/cards">Flashcards (14)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-fuel">Engine fuel system and control</a></li><li><a href="#sec-ign">Ignition</a></li><li><a href="#sec-start">Starting</a></li><li><a href="#sec-oil">Lubrication and gearbox</a></li><li><a href="#sec-instr">Engine instruments and thrust</a></li><li><a href="#sec-apu">APU and RAT</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">The engine fuel system and fuel control (FCU and FADEC), ignition, starting and the start sequence, start problems (hot, hung, wet start, tailpipe fire), lubrication, the accessory gearbox, engine instruments (N1, N2, EGT, EPR, fuel flow, vibration), thrust, flat rating and the effect of temperature, altitude and bleed air, the auxiliary power unit and the ram air turbine.</p>
+          <section id="sec-fuel"><h2>Engine fuel system and control</h2><ul><li>Fuel path: aircraft booster pumps, <b>LP shut-off (fire) valve</b>, engine <b>LP pump</b>, <b>fuel heater</b> (fuel/oil heat exchanger, which also cools the oil), <b>filter</b>, <b>HP pump</b>, <b>fuel control unit (FCU)</b>, <b>HP shut-off valve</b>, fuel flow meter, then the <b>spray nozzles</b>.</li><li>The <b>FCU</b> meters fuel to match the thrust lever position, allowing for air pressure, temperature and rpm. It <b>limits</b> acceleration and deceleration so the engine does not surge or flame out, and protects against overspeed and over-temperature.</li><li><b>FADEC</b> (full authority digital engine control): a computer that controls the engine fully, giving automatic starts, protection against limits, and best fuel use. It usually has <b>two channels</b>.</li><li>The <b>HP fuel shut-off valve</b> is worked by the <b>start lever</b> (fuel control switch) in the cockpit, and is used to start and stop the engine. The <b>LP valve</b> is closed by the <b>fire handle</b>.</li></ul></section>
+          <section id="sec-ign"><h2>Ignition</h2><ul><li>Once lit, a gas turbine flame <b>keeps itself burning</b>, so ignition is needed only for <b>starting</b> and as a safeguard.</li><li><b>High energy ignition units</b> store energy in a <b>capacitor</b> and discharge it as a powerful spark through an <b>igniter plug</b>. Each engine has <b>two</b> igniters. The energy is dangerous: never touch the system when it is live.</li><li><b>Continuous (or flight) ignition</b> is used when a <b>flameout</b> is possible: <b>take-off and landing</b>, <b>heavy rain</b>, <b>icing</b>, <b>severe turbulence</b>, and bird strike risk. On many engines it switches on automatically.</li><li><b>Relight</b> in flight is done within a <b>relight envelope</b> of altitude and speed. A windmilling engine at higher speed may relight on its own ignition. Otherwise the starter helps (starter assisted relight).</li></ul></section>
+          <section id="sec-start"><h2>Starting</h2><ul><li>Large engines use an <b>air turbine starter (ATS)</b> driven by air from the <b>APU</b>, another running engine (<b>cross bleed</b>) or a <b>ground air cart</b>. Small engines use an <b>electric starter-generator</b>.</li><li>The starter turns the <b>HP spool (N2)</b> through the <b>accessory gearbox</b>.</li></ul><div class="gs-tablewrap"><table><caption>Typical values only. Each engine has its own figures.</caption><thead><tr><th>Step</th><th>What happens</th></tr></thead><tbody><tr><td><b>1. Starter on</b></td><td>N2 starts to rise. Check oil pressure rising</td></tr><tr><td><b>2. Fuel and ignition on</b></td><td>At about <b>15 to 25% N2</b> the start lever opens the HP valve and the igniters fire</td></tr><tr><td><b>3. Light-up</b></td><td><b>EGT rises</b> within a set time (about 10 to 20 seconds)</td></tr><tr><td><b>4. Self sustaining</b></td><td>The turbine now gives enough power to keep the engine accelerating</td></tr><tr><td><b>5. Starter cut-out</b></td><td>At about <b>50% N2</b> the starter disengages, then the engine reaches <b>idle</b> (about 60% N2 and 25% N1)</td></tr></tbody></table></div><div class="gs-tablewrap"><table><thead><tr><th>Start problem</th><th>What it is</th><th>Action</th></tr></thead><tbody><tr><td><b>Hot start</b></td><td>EGT <b>rises too fast</b> and goes over the start limit. Often from too much fuel, low starter air, tailwind</td><td><b>Shut off fuel</b> at once. Keep motoring to cool</td></tr><tr><td><b>Hung start</b></td><td>The engine lights but <b>stops accelerating</b> below idle (EGT may be high)</td><td>Shut down</td></tr><tr><td><b>Wet start (no light-up)</b></td><td>Fuel goes in but <b>does not light</b>. No EGT rise</td><td>Shut off fuel and ignition, then <b>dry motor</b> (crank with no fuel or ignition) to blow out the fuel</td></tr><tr><td><b>Tailpipe (torching) fire</b></td><td>Fuel collected in the jet pipe after a wet start or shutdown burns there</td><td>Fuel off, <b>dry motor</b> to blow out the flames. Use the fire extinguisher only if needed, as the fire is not inside the engine nacelle</td></tr></tbody></table></div></section>
+          <section id="sec-oil"><h2>Lubrication and gearbox</h2><ul><li>Gas turbines use a <b>self-contained recirculating</b> system with its own tank, <b>pressure pump</b>, several <b>scavenge pumps</b>, filters and an oil cooler. The oil is <b>synthetic</b> (it copes with high bearing temperatures).</li><li>Oil lubricates and <b>cools</b> the main bearings, the gearboxes and seals.</li><li><b>Magnetic chip detectors</b> in the scavenge lines catch metal particles, an early warning of bearing or gear wear.</li><li>Oil <b>quantity</b> is checked soon after shutdown (usually within about 30 minutes), as oil drains back to the tank. Wait too long and it may read wrongly.</li><li>Indications: oil <b>pressure</b>, <b>temperature</b> and <b>quantity</b>, low pressure warning and filter bypass.</li><li>The <b>accessory gearbox</b>, driven from the <b>HP spool</b>, drives the fuel pumps, oil pumps, hydraulic pump, generator (IDG) and is turned by the starter.</li></ul></section>
+          <section id="sec-instr"><h2>Engine instruments and thrust</h2><div class="gs-tablewrap"><table><thead><tr><th>Indication</th><th>Meaning</th></tr></thead><tbody><tr><td><b>N1</b></td><td>LP spool (fan) speed in %. The main <b>thrust setting</b> on many turbofans</td></tr><tr><td><b>N2</b> (and N3 on three spool engines)</td><td>HP spool speed in %</td></tr><tr><td><b>EGT / TGT</b></td><td>Exhaust or turbine gas temperature. The key <b>temperature limit</b></td></tr><tr><td><b>EPR</b></td><td><b>Engine pressure ratio</b> = jet pipe pressure / intake pressure. Used to set thrust on some engines</td></tr><tr><td><b>Fuel flow</b></td><td>Fuel use per hour, per engine</td></tr><tr><td><b>Vibration</b></td><td>Shows imbalance, such as a damaged fan after a bird strike</td></tr><tr><td><b>Torque</b></td><td>On turboprops, shows the power going to the propeller</td></tr></tbody></table></div><figure class="gs-fig"><svg viewBox="0 0 620 280" role="img" aria-label="Thrust and EGT against outside air temperature for a flat rated engine"><line class="gf-axis" x1="70" y1="230" x2="590" y2="230"/><line class="gf-axis" x1="70" y1="230" x2="70" y2="30"/><text class="gf-tick" x="330" y="262" text-anchor="middle">outside air temperature</text><line class="gf-dash" x1="340" y1="40" x2="340" y2="230"/><text class="gf-small" x="345" y="250">flat rating temperature (e.g. ISA + 15)</text><path class="gf-line" d="M80,80 L340,80 L580,125"/><text class="gf-label" x="90" y="70">Thrust: held constant</text><text class="gf-small" x="470" y="90">then falls</text><path class="gf-line2" d="M80,215 L340,155 L580,155"/><text class="gf-label" x="150" y="215">EGT rises</text><text class="gf-small" x="420" y="175">EGT at its limit</text></svg><figcaption>A flat rated engine gives full rated thrust up to its flat rating temperature.</figcaption></figure><ul><li><b>Thrust falls</b> as <b>air temperature rises</b> (less dense air) and as <b>altitude</b> increases. A hot day, high airfield gives the least take-off thrust.</li><li><b>Flat rating</b>: the engine is limited to the <b>same rated thrust</b> up to a set <b>outside temperature</b> (the flat rating temperature, often about ISA + 15°C). Below it the engine could give more, but is held back. Above it, <b>EGT reaches its limit</b> and thrust falls.</li><li>Taking <b>bleed air</b> (for air conditioning or anti-ice) takes air from the core that would have made thrust. So thrust falls (or for the same thrust, <b>EGT and fuel flow rise</b>).</li><li><b>Specific fuel consumption (SFC)</b>: fuel used per unit of thrust per hour. Lower is better. High bypass engines have low SFC.</li><li>Jet engine thrust stays fairly constant with <b>speed</b>, so its <b>power</b> (thrust x speed) increases with speed. A propeller's thrust falls with speed.</li></ul></section>
+          <section id="sec-apu"><h2>APU and RAT</h2><ul><li>The <b>auxiliary power unit (APU)</b> is a small <b>gas turbine</b> (often with a <b>centrifugal</b> compressor) usually in the <b>tail cone</b>. It gives <b>electrical power</b> (its own generator) and <b>bleed air</b> for engine starting and air conditioning, on the ground and in flight (within limits).</li><li>It means the aircraft does not need ground power or air carts, and gives a back-up generator in flight.</li><li>It runs at a <b>constant speed</b> (about 100%) whatever the load, controlled by its own ECU. The crew sees few indications.</li><li>It <b>shuts down automatically</b> for problems such as <b>fire</b>, <b>overspeed</b>, <b>low oil pressure</b>, <b>high EGT</b> or loss of control. On the ground an APU fire usually also <b>fires the extinguisher automatically</b>, and a horn sounds in the nose wheel bay.</li><li>APU bleed air is not normally used above a set altitude, as the thin air limits it. The electrical generator can be used higher.</li></ul><ul><li>The <b>ram air turbine (RAT)</b> is a small <b>propeller</b> that <b>drops out</b> of the fuselage or wing into the airflow in an emergency.</li><li>It deploys <b>automatically</b> if <b>both engines fail</b> or all main <b>AC power</b> or <b>hydraulic</b> power is lost, and can be deployed by hand.</li><li>It drives a <b>hydraulic pump</b> and/or an <b>electrical generator</b>, giving enough power for the <b>flight controls</b> and <b>essential instruments</b>. It needs <b>airspeed</b> to work, so its power falls as the aircraft slows.</li><li>Once deployed, it normally <b>cannot be stowed</b> in flight.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>FCU or <b>FADEC</b>: meters fuel, limits acceleration, protects limits.</li><li>Fuel heater (fuel/oil heat exchanger): stops ice crystals, cools oil.</li><li>Two <b>high energy</b> igniters per engine. <b>Continuous ignition</b>: take-off, landing, heavy rain, icing, turbulence.</li><li>Air starter turns <b>N2</b>. Fuel and ignition at about <b>15 to 25% N2</b>. Starter cuts out about <b>50%</b>.</li><li><b>Hot start</b>: EGT too high, fuel off. <b>Hung start</b>: stuck below idle. <b>Wet start</b>: no light-up, <b>dry motor</b>.</li><li>Tailpipe fire: fuel off, <b>dry motor</b>.</li><li>Oil: self-contained, synthetic. <b>Chip detectors</b> show wear. Check quantity soon after shutdown.</li><li>N1 = fan speed, <b>EPR</b> = jet pipe / intake pressure. <b>EGT</b> is the key limit.</li><li>Thrust falls with <b>higher temperature</b> and <b>altitude</b>. <b>Bleed air</b> on: thrust down or EGT up.</li><li><b>Flat rated</b>: constant thrust up to a set OAT, then falls as EGT hits its limit.</li><li><b>APU</b>: small gas turbine, electric power and bleed air, auto shutdown for fire and limits.</li><li><b>RAT</b>: drops out automatically if engines or power are lost. Hydraulic and electric. Needs airspeed.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Fuel control</h3><ul><li>LP pump, heater, filter, HP pump</li><li><b>FCU</b> or <b>FADEC</b></li><li>Start lever: HP valve</li><li>Fire handle: LP valve</li></ul><h3>Ignition</h3><ul><li>Two <b>high energy</b> igniters</li><li>Needed for start and safeguard</li><li><b>Continuous</b>: take-off, rain, ice</li><li>Relight envelope</li></ul><h3>Starting</h3><ul><li>Air starter turns <b>N2</b></li><li>Fuel and ignition ~15 to 25% N2</li><li>EGT rise = light-up</li><li>Starter cut-out ~50% N2</li></ul><h3>Start problems</h3><ul><li><b>Hot</b>: EGT over limit</li><li><b>Hung</b>: stuck below idle</li><li><b>Wet</b>: no light-up, dry motor</li><li>Tailpipe fire: dry motor</li></ul><h3>Thrust</h3><ul><li>N1, EPR set thrust. EGT limit</li><li>Hot, high: less thrust</li><li><b>Flat rated</b> to a set OAT</li><li>Bleed on: EGT and fuel flow up</li></ul><h3>APU and RAT</h3><ul><li>APU: electric power and bleed air</li><li>Auto shutdown: fire, overspeed, oil</li><li><b>RAT</b>: drops out automatically</li><li>Hydraulic and electric, needs speed</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 26 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> The main job of the fuel control unit (FCU) of a jet engine is to:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Pump fuel from the tanks</li><li>Meter fuel to match the thrust demanded while keeping within limits</li><li>Heat the fuel</li><li>Start the engine</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> It schedules fuel with pressure, temperature and rpm, and limits acceleration to prevent surge.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> On a large turbofan, the air turbine starter turns the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Fan (N1)</li><li>HP spool (N2)</li><li>Propeller</li><li>APU</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> It drives the HP spool through the accessory gearbox.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> The correct action for a tailpipe fire during a start is to:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Fire both extinguisher bottles at once</li><li>Switch on continuous ignition</li><li>Open the thrust lever</li><li>Shut off fuel and dry motor the engine to blow out the flames</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> The fire is in the jet pipe, so airflow is the best tool. The extinguisher goes into the nacelle, not the jet pipe.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> The most important temperature limit on a jet engine is the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Oil temperature</li><li>Fuel temperature</li><li>Exhaust or turbine gas temperature</li><li>Intake temperature</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> EGT or TGT protects the turbine blades from overheating and creep.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> The APU on a transport aircraft provides:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Electrical power and bleed air, on the ground and in flight within limits</li><li>Thrust for take-off</li><li>Hydraulic power only</li><li>Fuel</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> It makes the aircraft independent of ground power and air carts.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/14/practice">Practise all 26 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/14/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/13-gas-turbine-engines/">← Module 13: Gas Turbine Engines</a>
+            <a href="/ground-school/tg/15-emergency-equipment-fire-and-oxygen/">Module 15: Emergency Equipment, Fire and Oxygen →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F14-gas-turbine-systems-apu-and-rat%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+var e=`runway-zero-recent`;function t(t){try{localStorage.setItem(e,JSON.stringify({...t,at:Date.now()}))}catch{}}function n(){try{let t=localStorage.getItem(e);return t?JSON.parse(t):null}catch{return null}}export{t as n,n as t};

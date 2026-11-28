@@ -1,0 +1,23 @@
+{
+  "name": "Runway Zero: cockpit trainer and DGCA ground school",
+  "short_name": "Runway Zero",
+  "description": "Free DGCA CPL ground school and cockpit procedures trainer. Ground School and the glossary work offline.",
+  "id": "/",
+  "start_url": "/ground-school.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#f6f4ee",
+  "lang": "en-IN",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Ground School", "url": "/ground-school.html", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Glossary", "url": "/glossary.html", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "DGCA notices", "url": "/dgca-notices/", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

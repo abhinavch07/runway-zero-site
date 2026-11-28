@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direction, Magnetism and the Compass: DGCA CPL Air Navigation notes, Module 3</title>
+    <meta name="description" content="Free DGCA CPL Air Navigation notes, Module 3: True, magnetic and compass north, variation and deviation and how to convert between them, the Earth's…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/nav/3-direction-magnetism-and-the-compass/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/nav/3-direction-magnetism-and-the-compass/" />
+    <meta property="og:title" content="Direction, Magnetism and the Compass: DGCA CPL Air Navigation notes, Module 3" />
+    <meta property="og:description" content="Free DGCA CPL Air Navigation notes, Module 3: True, magnetic and compass north, variation and deviation and how to convert between them, the Earth's…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/nav.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Direction, Magnetism and the Compass: DGCA CPL Air Navigation notes, Module 3" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/nav.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Air Navigation","item":"https://www.runwayzero.in/ground-school/nav/"},{"@type":"ListItem","position":3,"name":"Direction, Magnetism and the Compass","item":"https://www.runwayzero.in/ground-school/nav/3-direction-magnetism-and-the-compass/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Direction, Magnetism and the Compass (DGCA CPL Air Navigation, Module 3)","description":"Free DGCA CPL Air Navigation notes, Module 3: True, magnetic and compass north, variation and deviation and how to convert between them, the Earth's…","url":"https://www.runwayzero.in/ground-school/nav/3-direction-magnetism-and-the-compass/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Three norths","Converting between true, magnetic and compass","The Earth's magnetic field","Aircraft magnetism and the compass swing","The direct reading compass","Acceleration and turning errors","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/nav/">Air Navigation</a> <i>/</i> <span>Module 3</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Air Navigation · Module 3</p>
+        <h1>Direction, Magnetism and the Compass</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Direction%2C%20Magnetism%20and%20the%20Compass%3A%20DGCA%20CPL%20Air%20Navigation%20notes%2C%20Module%203%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Fnav%2F3-direction-magnetism-and-the-compass%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/nav/3-direction-magnetism-and-the-compass/" aria-current="page">Notes</a><a href="/ground-school.html#/nav/3/slides">Slides</a><a href="/ground-school.html#/nav/3/practice">Practice (27)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-norths">Three norths</a></li><li><a href="#sec-convert">Converting between true, magnetic and compass</a></li><li><a href="#sec-field">The Earth's magnetic field</a></li><li><a href="#sec-aircraft">Aircraft magnetism and the compass swing</a></li><li><a href="#sec-drc">The direct reading compass</a></li><li><a href="#sec-errors">Acceleration and turning errors</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">True, magnetic and compass north, variation and deviation and how to convert between them, the Earth's magnetic field and dip, aircraft magnetism and the compass swing, and the direct reading compass with its acceleration and turning errors.</p>
+          <section id="sec-norths"><h2>Three norths</h2><figure class="gs-fig"><svg viewBox="0 0 600 280" role="img" aria-label="True north, magnetic north to the east of it, compass north further east"><defs><marker id="tv1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-headb"/></marker></defs><defs><marker id="tv2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-headr"/></marker></defs><line class="gf-arrowb" x1="300" y1="250" x2="300" y2="50" marker-end="url(#tv1)"/><text class="gf-label" x="292" y="42" text-anchor="end">True north</text><line class="gf-arrowr" x1="300" y1="250" x2="348.4" y2="55.9" marker-end="url(#tv2)"/><text class="gf-label" x="356.4" y="51.9">Magnetic north</text><line class="gf-arrowthin" x1="300" y1="250" x2="381.3" y2="67.3"/><text class="gf-label" x="389.3" y="81.3">Compass north</text><text class="gf-small" x="286" y="110" text-anchor="end">variation (east):</text><text class="gf-small" x="286" y="126" text-anchor="end">true to magnetic</text><text class="gf-small" x="390" y="170">deviation (east):</text><text class="gf-small" x="390" y="186">magnetic to compass</text><text class="gf-small" x="40" y="266">Variation east, magnetic least. Deviation east, compass least.</text></svg><figcaption>True north, magnetic north and compass north. Here variation and deviation are both east.</figcaption></figure><div class="gs-tablewrap"><table><thead><tr><th>North</th><th>Points to</th><th>Difference</th></tr></thead><tbody><tr><td><b>True north</b></td><td>The <b>geographic North Pole</b>, along the meridian</td><td></td></tr><tr><td><b>Magnetic north</b></td><td>Where a freely hung magnet points: towards the <b>north magnetic pole</b></td><td><b>Variation</b>: the angle from true to magnetic north</td></tr><tr><td><b>Compass north</b></td><td>Where the aircraft's <b>compass</b> points, pulled aside by the aircraft's own magnetism</td><td><b>Deviation</b>: the angle from magnetic to compass north</td></tr></tbody></table></div><ul><li>Variation and deviation are <b>east (+)</b> if the north they lead to lies <b>east</b> of the one before, and <b>west (-)</b> if it lies west.</li><li>Directions are measured <b>clockwise</b> from north, from 000 to 360 degrees. <b>(T)</b> is true, <b>(M)</b> magnetic, <b>(C)</b> compass.</li><li><b>Variation</b> depends on <b>where you are</b> and changes slowly with time (the <b>annual change</b>), because the magnetic poles move.</li><li><b>Deviation</b> depends on the <b>aircraft</b> and on its <b>heading</b>. It is listed on a <b>deviation card</b> in the cockpit.</li></ul></section>
+          <section id="sec-convert"><h2>Converting between true, magnetic and compass</h2><p class="gs-formula">True = Magnetic + Variation East (or - West)</p><p class="gs-formula">Magnetic = Compass + Deviation East (or - West)</p><ul><li>Going from <b>true towards compass</b>, you <b>subtract east</b> and <b>add west</b>.</li><li>Going from <b>compass towards true</b>, you <b>add east</b> and <b>subtract west</b>.</li></ul><aside class="gs-tip"><h4>Memory trick</h4><p>Variation east, magnetic least. Variation west, magnetic best. The same works for deviation: deviation east, compass least. Deviation west, compass best.</p></aside><aside class="gs-example"><h4>Worked example: T, V, M, D, C</h4><ol><li>True heading <b>100</b>, variation <b>5W</b>: magnetic = 100 + 5 = <b>105(M)</b> (west is best).</li><li>Magnetic heading <b>105</b>, deviation <b>2E</b>: compass = 105 - 2 = <b>103(C)</b> (east is least).</li><li>Compass heading <b>270</b>, deviation <b>3W</b>, variation <b>1E</b>: magnetic = 270 - 3 = 267, true = 267 + 1 = <b>268(T)</b>.</li><li>Delhi has a small <b>east</b> variation. A runway on a true heading of 270 there points about 269(M).</li></ol></aside></section>
+          <section id="sec-field"><h2>The Earth's magnetic field</h2><ul><li>The Earth acts like a giant bar magnet. Its <b>magnetic poles</b> are not at the geographic poles and they <b>move</b> a little each year.</li><li>The field at any place has a <b>horizontal</b> part (<b>H</b>) and a <b>vertical</b> part (<b>Z</b>). Only <b>H</b> gives the compass its direction.</li><li><b>Dip</b> (inclination) is the angle the field makes with the horizontal. <b>Zero</b> at the <b>magnetic equator</b>, <b>90 degrees</b> at the magnetic poles.</li><li><b>H</b> is <b>strongest at the magnetic equator</b> and <b>zero at the magnetic poles</b>. So a compass becomes <b>sluggish and useless</b> close to the magnetic poles (roughly within 1,000 nm).</li><li><b>Z</b> is zero at the magnetic equator and strongest at the poles. Z is what causes the compass errors below.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Lines on a chart</th><th>Join places of</th></tr></thead><tbody><tr><td><b>Isogonals</b></td><td>Equal <b>variation</b></td></tr><tr><td><b>Agonic line</b></td><td><b>Zero</b> variation</td></tr><tr><td><b>Isoclinals</b></td><td>Equal <b>dip</b></td></tr><tr><td><b>Aclinic line</b></td><td><b>Zero</b> dip: the <b>magnetic equator</b></td></tr></tbody></table></div></section>
+          <section id="sec-aircraft"><h2>Aircraft magnetism and the compass swing</h2><ul><li>Steel parts and electrical currents make the aircraft a magnet of its own. This causes <b>deviation</b>.</li><li><b>Hard iron</b> magnetism is <b>permanent</b>, from the aircraft's build. <b>Soft iron</b> magnetism is <b>induced</b> by the Earth's field and changes with heading and latitude.</li><li>Deviation changes with <b>heading</b>, so it is measured on several headings in a <b>compass swing</b>, and the remaining errors are written on the <b>deviation card</b>.</li><li>Compass swing results are split into <b>coefficients</b>: <b>A</b> (the same on all headings, often a misaligned <b>lubber line</b>), <b>B</b> (biggest on <b>east and west</b>) and <b>C</b> (biggest on <b>north and south</b>).</li></ul><div class="gs-tablewrap"><table><thead><tr><th>A compass swing is needed</th><th></th></tr></thead><tbody><tr><td>When the compass is <b>new or replaced</b></td><td>After a <b>lightning strike</b> or heavy landing</td></tr><tr><td>After <b>major repairs</b> or new electrical or steel parts near the compass</td><td>When the aircraft moves to a <b>very different latitude</b> to be based there</td></tr><tr><td>After the aircraft has <b>stood</b> on one heading for a long time</td><td>At the <b>intervals</b> set in the maintenance programme</td></tr></tbody></table></div><p>A swing is done at a <b>compass base</b>, a quiet area of the aerodrome away from steel, power lines and radio, where magnetic directions have been surveyed.</p></section>
+          <section id="sec-drc"><h2>The direct reading compass</h2><ul><li>The <b>standby</b> compass in almost every aircraft. Its magnets sit in a bowl of liquid with a card or scale read against a <b>lubber line</b>.</li><li><b>Horizontality</b>: the magnet should stay level. The <b>centre of gravity is hung below the pivot</b> (pendulous), so its weight fights the pull of dip. This works well except near the magnetic poles.</li><li><b>Sensitivity</b>: it must find magnetic north quickly. Several small magnets give strength without weight. The liquid also takes weight off the pivot, cutting friction.</li><li><b>Aperiodicity</b>: after a disturbance it must settle <b>without swinging</b> back and forth. Damping by the <b>liquid</b> and by damping wires does this.</li><li>The liquid (such as a silicone fluid or alcohol) must be <b>clear</b>, have a <b>low freezing point</b>, low viscosity, low expansion and must <b>not corrode</b> the parts.</li></ul></section>
+          <section id="sec-errors"><h2>Acceleration and turning errors</h2><p>Because the magnet's weight hangs <b>below</b> the pivot while dip pulls the north end <b>down</b> (in the northern hemisphere), any acceleration or turn tilts the magnet, and the vertical part of the field (Z) then swings it off north. These errors are bigger at <b>higher latitudes</b>, where dip is greater, and are <b>zero at the magnetic equator</b>.</p><div class="gs-tablewrap"><table><thead><tr><th></th><th>Acceleration error</th><th>Turning error</th></tr></thead><tbody><tr><td><b>Biggest on</b></td><td><b>East and west</b> headings</td><td><b>North and south</b> headings</td></tr><tr><td><b>Zero on</b></td><td><b>North and south</b> headings</td><td><b>East and west</b> headings</td></tr><tr><td><b>Northern hemisphere rule</b></td><td><b>ANDS</b>: Accelerate, shows a turn <b>North</b>. Decelerate, shows a turn <b>South</b></td><td><b>UNOS</b>: <b>Undershoot North</b>, <b>Overshoot South</b>. When turning onto north, roll out <b>before</b> the compass reads north. Turning onto south, roll out <b>after</b></td></tr><tr><td><b>Southern hemisphere</b></td><td>The <b>opposite</b>: accelerate shows a turn south</td><td>The opposite: undershoot south, overshoot north</td></tr></tbody></table></div><ul><li>Through <b>north</b> in the northern hemisphere, the compass card is <b>sluggish</b> (it lags behind the turn). Through <b>south</b>, it is <b>lively</b> (it runs ahead of the turn).</li><li><b>Liquid swirl</b> in a turn drags the magnet along with the turn. It <b>adds to</b> the error when the compass is sluggish and <b>reduces</b> it when the compass is lively.</li><li>The answer is to read the compass only in <b>straight, level and steady</b> flight, and to use the <b>heading indicator</b> for turns.</li></ul><aside class="gs-tip"><h4>Memory trick</h4><p>ANDS: Accelerate North, Decelerate South. UNOS: Undershoot North, Overshoot South. Both for the northern hemisphere, and reversed in the south.</p></aside></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Variation: true to magnetic. Deviation: magnetic to compass. East is <b>+</b>, west is <b>-</b> (going towards true).</li><li><b>Variation east, magnetic least. West, magnetic best.</b> Same for deviation and compass.</li><li>Isogonal: equal variation. Agonic: zero variation. Isoclinal: equal dip. Aclinic: zero dip (magnetic equator).</li><li>Dip <b>0</b> at the magnetic equator, <b>90</b> at the magnetic poles. <b>H</b> strongest at the magnetic equator, zero at the poles.</li><li>Deviation changes with <b>heading</b>. Hard iron is permanent, soft iron is induced.</li><li>Coefficient <b>A</b>: same on all headings (lubber line). <b>B</b>: east and west. <b>C</b>: north and south.</li><li>Ideal compass: <b>horizontality</b>, <b>sensitivity</b>, <b>aperiodicity</b>.</li><li>Acceleration error: biggest on <b>E and W</b>, zero on N and S. <b>ANDS</b> in the north.</li><li>Turning error: biggest on <b>N and S</b>, zero on E and W. <b>UNOS</b> in the north.</li><li>All dip errors are <b>zero at the magnetic equator</b> and reverse in the southern hemisphere.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Three norths</h3><ul><li>True: geographic pole</li><li>Magnetic: where a magnet points</li><li>Compass: aircraft's compass</li><li>Variation, then deviation</li></ul><h3>Converting</h3><ul><li>True = Mag + Var E</li><li>Mag = Comp + Dev E</li><li><b>East is least, west is best</b></li><li>Towards true: add east</li></ul><h3>Earth's field</h3><ul><li>Dip 0 at magnetic equator, 90 at poles</li><li><b>H</b> gives direction</li><li>Compass useless near the magnetic poles</li><li>Isogonal, agonic, isoclinal, aclinic</li></ul><h3>Deviation and the swing</h3><ul><li>Hard iron and soft iron</li><li>Changes with heading</li><li>Coefficients A, B, C</li><li>Swing after repairs, new compass, lightning</li></ul><h3>Direct reading compass</h3><ul><li>Horizontality: pendulous</li><li>Sensitivity: small magnets</li><li>Aperiodicity: damping liquid</li><li>Read only straight and level</li></ul><h3>Compass errors</h3><ul><li>Acceleration: E and W, <b>ANDS</b></li><li>Turning: N and S, <b>UNOS</b></li><li>Zero at magnetic equator</li><li>Reversed in the south</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 27 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> Variation is the angle between:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>True north and compass north</li><li>True north and magnetic north</li><li>Magnetic north and compass north</li><li>Grid north and true north</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> Variation is true to magnetic. Deviation is magnetic to compass.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> True track 045, variation 10E. The magnetic track is:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>055</li><li>035</li><li>045</li><li>025</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> East is least: 045 - 10 = 035.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> A direct reading compass becomes unreliable near the magnetic poles because:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Variation is zero there</li><li>The liquid freezes</li><li>Deviation is greatest there</li><li>The horizontal component H is too weak</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> Only H gives direction, and it fades towards the poles.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Compass acceleration error is greatest on headings of:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>North and south</li><li>Northeast and southwest</li><li>East and west</li><li>It is the same on all headings</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Zero on north and south, biggest on east and west.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> In the northern hemisphere, turning onto south using the compass, you should roll out:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Before it reads south</li><li>It does not matter</li><li>Exactly at south</li><li>After it reads south</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> UNOS: overshoot south. The compass runs ahead through south.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/nav/3/practice">Practise all 27 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/nav/3/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/nav/2-great-circles-rhumb-lines-departure-and-convergency/">← Module 2: Great Circles, Rhumb Lines, Departure and Convergency</a>
+            <a href="/ground-school/nav/4-time-the-sun-and-conversions/">Module 4: Time, the Sun and Conversions →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Fnav%2F3-direction-magnetism-and-the-compass%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

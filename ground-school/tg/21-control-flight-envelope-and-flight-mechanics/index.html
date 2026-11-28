@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control, Flight Envelope and Flight Mechanics: DGCA CPL Technical General notes, Module 21</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 21: How the controls work, adverse yaw and its cures, aileron reversal, balancing control forces (horn and…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/" />
+    <meta property="og:title" content="Control, Flight Envelope and Flight Mechanics: DGCA CPL Technical General notes, Module 21" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 21: How the controls work, adverse yaw and its cures, aileron reversal, balancing control forces (horn and…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Control, Flight Envelope and Flight Mechanics: DGCA CPL Technical General notes, Module 21" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Control, Flight Envelope and Flight Mechanics","item":"https://www.runwayzero.in/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Control, Flight Envelope and Flight Mechanics (DGCA CPL Technical General, Module 21)","description":"Free DGCA CPL Technical General notes, Module 21: How the controls work, adverse yaw and its cures, aileron reversal, balancing control forces (horn and…","url":"https://www.runwayzero.in/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["How the controls work","Reducing control forces","The flight envelope","Climbing and gliding","Turns","Asymmetric thrust and minimum control speeds","Emergency descent and windshear","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 21</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 21 · CAR 2.4, 2.6</p>
+        <h1>Control, Flight Envelope and Flight Mechanics</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Control%2C%20Flight%20Envelope%20and%20Flight%20Mechanics%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%2021%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F21-control-flight-envelope-and-flight-mechanics%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/21-control-flight-envelope-and-flight-mechanics/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/21/slides">Slides</a><a href="/ground-school.html#/tg/21/practice">Practice (30)</a><a href="/ground-school.html#/tg/21/cards">Flashcards (16)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-controls">How the controls work</a></li><li><a href="#sec-forces">Reducing control forces</a></li><li><a href="#sec-envelope">The flight envelope</a></li><li><a href="#sec-climb">Climbing and gliding</a></li><li><a href="#sec-turns">Turns</a></li><li><a href="#sec-asym">Asymmetric thrust and minimum control speeds</a></li><li><a href="#sec-special">Emergency descent and windshear</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">How the controls work, adverse yaw and its cures, aileron reversal, balancing control forces (horn and inset hinges, balance, anti-balance, servo and spring tabs), trimming, the manoeuvring and gust envelopes (VA, VB, VC, VD, VNO, VNE, load factors), forces in climbs, glides and turns, turn radius and rate, asymmetric thrust and minimum control speeds, emergency descent and windshear.</p>
+          <section id="sec-controls"><h2>How the controls work</h2><ul><li>Moving a control surface changes the <b>camber</b> (and so the lift) of the tailplane, fin or wing section it is on.</li><li><b>Elevator</b>: pitch. Its power depends on speed, the tail's AoA (wing <b>downwash</b> changes it) and the CG. With a <b>forward CG</b>, more up elevator is needed, which can limit the <b>flare</b> at low speed. <b>Ice</b> on the tail reduces its power.</li><li><b>Rudder</b>: yaw. Needed to balance turns, crosswinds, and <b>asymmetric thrust</b>. A <b>rudder ratio changer</b> or limiter reduces the rudder travel at high speed so it cannot overstress the fin.</li><li><b>Ailerons</b>: roll. Large aircraft use <b>outboard ailerons</b> at low speed only, and <b>inboard ailerons</b> plus <b>roll spoilers</b> at high speed.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Problem</th><th>Cause</th><th>Cure</th></tr></thead><tbody><tr><td><b>Adverse aileron yaw</b></td><td>The <b>down-going aileron</b> raises that wing's lift and its <b>induced drag</b>, so the nose yaws <b>away</b> from the turn</td><td><b>Differential ailerons</b> (up aileron moves further than the down one), <b>Frise ailerons</b> (the up aileron's nose sticks out below the wing and adds drag), <b>roll spoilers</b>, <b>aileron-rudder interconnection</b>, and using rudder</td></tr><tr><td><b>Aileron reversal</b></td><td>At <b>high speed</b>, aileron loads <b>twist</b> the flexible wing so its AoA changes the wrong way. Roll gets weaker and can even <b>reverse</b></td><td>Stiff wings, <b>inboard ailerons</b> at high speed, <b>roll spoilers</b></td></tr><tr><td><b>Flutter</b></td><td>Interaction of air loads, wing flexing and the surface's inertia</td><td><b>Mass balance</b>, stiffness, speed limits (Module 1)</td></tr></tbody></table></div></section>
+          <section id="sec-forces"><h2>Reducing control forces</h2><div class="gs-tablewrap"><table><thead><tr><th>Device</th><th>How it works</th></tr></thead><tbody><tr><td><b>Horn balance</b></td><td>Part of the surface sticks out <b>ahead of the hinge</b>, so the air pushes on it to help move the surface</td></tr><tr><td><b>Inset hinge</b></td><td>The hinge is set back from the leading edge of the surface, so the area ahead of it helps</td></tr><tr><td><b>Internal balance</b></td><td>A seal and a plate inside the wing use the pressure difference to help the surface move</td></tr><tr><td><b>Balance tab</b></td><td>Moves <b>opposite</b> to the surface, automatically, to <b>reduce</b> the force needed</td></tr><tr><td><b>Anti-balance tab</b></td><td>Moves the <b>same way</b> as the surface to <b>increase</b> the force and give feel. Used on <b>stabilators</b>, which would otherwise be too light</td></tr><tr><td><b>Servo tab</b></td><td>The pilot moves <b>only the tab</b>. The tab's air load moves the surface</td></tr><tr><td><b>Spring tab</b></td><td>A spring links the control to the tab. At <b>low speed</b> the surface moves directly. At <b>high speed</b> the spring gives and the tab helps, like a servo tab</td></tr><tr><td><b>Trim tab</b></td><td>Set by the pilot to <b>remove a steady force</b> (Module 3)</td></tr><tr><td><b>Mass balance</b></td><td>A weight ahead of the hinge. Prevents <b>flutter</b>, does not reduce stick force</td></tr></tbody></table></div><ul><li>Powered controls with <b>artificial feel</b> replace these on large aircraft (Module 3).</li><li><b>Trim rate</b> is often <b>slower at high speed</b>, so a trim runaway cannot overstress the aircraft quickly.</li><li><b>Take-off trim</b> must be set for the CG. Too nose down: hard to rotate. Too nose up: over-rotation and tail strike.</li></ul></section>
+          <section id="sec-envelope"><h2>The flight envelope</h2><figure class="gs-fig"><svg viewBox="0 0 640 270" role="img" aria-label="Load factor against speed: stall curves, limit load factors, VA and VD"><line class="gf-axis" x1="70" y1="170" x2="590" y2="170"/><line class="gf-axis" x1="70" y1="234" x2="70" y2="22.80000000000001"/><text class="gf-tick" x="62" y="222.6" text-anchor="end">-1.52</text><text class="gf-tick" x="62" y="142.0" text-anchor="end">1</text><text class="gf-tick" x="62" y="52.4" text-anchor="end">3.8</text><text class="gf-tick" x="62" y="26" text-anchor="end">n</text><text class="gf-tick" x="590" y="230.8" text-anchor="end">speed (EAS)</text><path class="gf-line" d="M213.0,138.0L218.2,135.6L223.4,133.2L228.6,130.6L233.8,128.0L239.0,125.3L244.2,122.5L249.4,119.6L254.6,116.7L259.8,113.6L265.0,110.5L270.2,107.3L275.4,104.0L280.6,100.6L285.8,97.1L291.0,93.6L296.2,89.9L301.4,86.2L306.6,82.4L311.8,78.5L317.0,74.5L322.2,70.5L327.4,66.3L332.6,62.1L337.8,57.8L343.0,53.4L348.2,48.9 L348.8,48.4 L538,48.400000000000006 L538,170 L434,218.64 L246.3,218.6"/><path class="gf-line" d="M213.0,202.0L218.2,204.4L223.4,206.8L228.6,209.4L233.8,212.0L239.0,214.7L244.2,217.5"/><line class="gf-dash" x1="348.8" y1="48.400000000000006" x2="348.8" y2="170"/><text class="gf-label" x="348.8" y="188" text-anchor="middle">VA</text><line class="gf-dash" x1="213" y1="138" x2="213" y2="170"/><text class="gf-label" x="213" y="188" text-anchor="middle">VS</text><text class="gf-label" x="538" y="188" text-anchor="middle">VD</text><text class="gf-small" x="356.8" y="40.400000000000006">positive limit load factor (+3.8)</text><text class="gf-small" x="319.6" y="236.64">negative limit (-1.52)</text><text class="gf-small" x="80.4" y="86.8">stall line:</text><text class="gf-small" x="80.4" y="101.8">cannot reach</text><text class="gf-small" x="80.4" y="116.8">higher n here</text><text class="gf-small" x="330" y="112.4">safe envelope</text><text class="gf-small" x="20" y="262">Below VA the aircraft stalls before it is overstressed. Above VA it can be overstressed.</text></svg><figcaption>Manoeuvring envelope (V-n diagram), normal category.</figcaption></figure><div class="gs-tablewrap"><table><caption>These are limit loads. The structure must carry 1.5 times them without breaking (Module 1).</caption><thead><tr><th>Category</th><th>Positive limit</th><th>Negative limit</th></tr></thead><tbody><tr><td><b>Normal</b></td><td><b>+3.8 g</b></td><td>-1.52 g</td></tr><tr><td><b>Utility</b></td><td>+4.4 g</td><td>-1.76 g</td></tr><tr><td><b>Aerobatic</b></td><td>+6.0 g</td><td>-3.0 g</td></tr><tr><td><b>Large transport</b></td><td><b>+2.5 g</b> (flaps up)</td><td>-1.0 g</td></tr><tr><td><b>Flaps down</b></td><td>+2.0 g</td><td>0 g</td></tr></tbody></table></div><div class="gs-tablewrap"><table><thead><tr><th>Speed</th><th>Meaning</th></tr></thead><tbody><tr><td><b>VA (design manoeuvring speed)</b></td><td>Below VA, full abrupt control movement will <b>stall</b> the aircraft before it is overstressed. <b>VA = VS x √(limit n)</b>. VA <b>falls with lower weight</b></td></tr><tr><td><b>VB</b></td><td>Design speed for <b>maximum gust intensity</b>. Close to the <b>turbulence penetration speed</b></td></tr><tr><td><b>VC</b></td><td>Design cruising speed</td></tr><tr><td><b>VD</b></td><td>Design <b>dive</b> speed, the highest speed in the envelope</td></tr><tr><td><b>VNO</b></td><td>Maximum structural <b>cruising</b> speed. Top of the <b>green arc</b>. Exceed only in <b>smooth air</b></td></tr><tr><td><b>VNE</b></td><td><b>Never exceed</b> speed. The <b>red line</b>. About 0.9 of VD</td></tr><tr><td><b>VFE</b></td><td>Max speed with <b>flaps</b> extended. Top of the <b>white arc</b></td></tr><tr><td><b>VLO / VLE</b></td><td>Max speed to <b>operate</b> the gear / with the gear <b>extended</b></td></tr></tbody></table></div><ul><li><b>Gust loads</b>: a vertical gust changes the wing's AoA suddenly. The load factor rise is <b>bigger</b> at <b>higher speed</b>, and for a <b>lighter</b> aircraft or one with <b>lower wing loading</b>. So in turbulence, slow to the turbulence speed.</li><li>Design gusts are <b>largest at VB</b> and smaller at VC and VD.</li></ul><aside class="gs-tip"><h4>Memory trick</h4><p>VA goes down as the aircraft gets lighter: a lighter aircraft stalls at a lower speed, so it can be overstressed at a lower speed too.</p></aside></section>
+          <section id="sec-climb"><h2>Climbing and gliding</h2><ul><li>In a steady <b>climb</b>, lift is a little <b>less than weight</b> (L = W cos γ), and <b>thrust is more than drag</b>: the extra thrust holds up the part of the weight acting back along the flight path (W sin γ).</li><li><b>Climb angle (gradient)</b> depends on <b>excess thrust</b> (thrust minus drag) divided by weight. <b>Rate of climb</b> depends on <b>excess power</b> divided by weight.</li><li><b>Vx</b>: best <b>angle</b> of climb, at the speed of <b>greatest excess thrust</b>. Used to clear obstacles. <b>Vy</b>: best <b>rate</b> of climb, at the speed of <b>greatest excess power</b>. <b>Vx is slower than Vy</b>.</li><li>As altitude increases, <b>Vx rises</b> and <b>Vy falls</b> (as IAS) until they <b>meet</b> at the <b>absolute ceiling</b>, where the aircraft cannot climb. The <b>service ceiling</b> is where the best rate of climb falls to <b>100 ft/min</b> (500 ft/min for jets).</li><li>More <b>weight</b>, higher <b>temperature</b> or altitude, flaps and gear all <b>reduce</b> climb performance. A <b>headwind</b> steepens the climb angle over the ground but does not change the rate of climb.</li></ul><ul><li>In a <b>glide</b> with no power, the <b>glide angle</b> depends <b>only on the lift/drag ratio</b>. <b>Glide ratio = L/D</b>. Best glide range is at the <b>best L/D speed</b> (VMD).</li><li><b>Weight</b> does <b>not change</b> the glide angle or the still air distance, but a <b>heavier</b> aircraft must glide <b>faster</b> to get it, so it arrives <b>sooner</b>.</li><li>A <b>headwind</b> shortens the glide distance over the ground. Fly a little faster than the best glide speed into a strong headwind.</li><li><b>Flaps, gear</b> or a windmilling propeller lower the L/D and steepen the glide.</li></ul><aside class="gs-example"><h4>Worked example: Glide with an L/D of 10 from 6,000 ft</h4><ol><li>Distance = height x L/D = 6,000 x 10 = 60,000 ft</li><li>60,000 / 6,080 = about <b>9.9 nm</b> in still air</li></ol></aside></section>
+          <section id="sec-turns"><h2>Turns</h2><figure class="gs-fig"><svg viewBox="0 0 560 280" role="img" aria-label="Forces in a level banked turn"><defs><marker id="tf1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-head"/></marker></defs><defs><marker id="tf2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-headb"/></marker></defs><defs><marker id="tf3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-headr"/></marker></defs><g transform="rotate(-30 280 150)"><rect class="gf-shape" x="160" y="145" width="240" height="10" rx="5"/><circle class="gf-shape" cx="280" cy="150" r="16"/></g><line class="gf-arrow" x1="280" y1="150" x2="220.0" y2="46.1" marker-end="url(#tf1)"/><text class="gf-label" x="212.0" y="40.1" text-anchor="end">Lift</text><line class="gf-arrowb" x1="280" y1="150" x2="280" y2="46.1" marker-end="url(#tf2)"/><text class="gf-small" x="288" y="56.1">L cos(bank) = weight</text><line class="gf-arrowb" x1="280" y1="150" x2="220.0" y2="150" marker-end="url(#tf2)"/><text class="gf-small" x="216.0" y="170" text-anchor="end">L sin(bank): turns it</text><line class="gf-arrowr" x1="280" y1="150" x2="280" y2="254" marker-end="url(#tf3)"/><text class="gf-label" x="288" y="250">Weight</text><text class="gf-small" x="20" y="268">Load factor n = lift / weight = 1 / cos(bank)</text></svg><figcaption>In a level turn the lift must be greater than the weight.</figcaption></figure><ul><li>In a <b>level turn</b>, the lift is <b>tilted</b> by the bank. Its <b>vertical part</b> must still equal the <b>weight</b>, so the total lift must be <b>greater</b> than the weight. The <b>horizontal part</b> pulls the aircraft round the turn (the centripetal force).</li><li><b>Load factor n = 1 / cos(bank)</b>: 2 at 60°. More lift means more <b>induced drag</b>, so <b>power</b> must be added to hold speed in a steep turn, and the <b>stall speed</b> rises by √n (Module 18).</li><li>In a <b>balanced</b> turn the slip ball is in the middle. <b>Slip</b>: too little rudder, the aircraft slides into the turn. <b>Skid</b>: too much rudder, it slides out.</li></ul><p class="gs-formula">Turn radius r = V² / (g x tan bank). Rate of turn = g x tan bank / V</p><ul><li>At a <b>constant bank</b>, a <b>higher speed</b> gives a <b>larger radius</b> and a <b>lower rate</b> of turn. (Radius goes with V².)</li><li>At a <b>constant speed</b>, more <b>bank</b> gives a <b>smaller radius</b> and a <b>higher rate</b>.</li><li>A <b>rate one</b> turn is <b>3° per second</b> (360° in 2 minutes). The bank needed is about <b>TAS / 10 + 7</b> degrees.</li></ul><aside class="gs-example"><h4>Worked example: Rate one turn at 120 kt TAS</h4><ol><li>Bank ≈ 120 / 10 + 7 = <b>19°</b></li><li>A 180° turn takes 60 seconds</li></ol></aside></section>
+          <section id="sec-asym"><h2>Asymmetric thrust and minimum control speeds</h2><ul><li>If an engine fails on a twin, the live engine's thrust and the dead engine's drag give a strong <b>yaw towards the dead engine</b>. The yaw makes the live wing go faster, so the aircraft also <b>rolls towards the dead engine</b>. The pilot holds it with <b>rudder</b> towards the live engine (<b>dead foot, dead engine</b>) and aileron.</li><li>The <b>critical engine</b> is the one whose failure is worst. On a twin with both propellers turning <b>clockwise</b> (seen from behind), it is the <b>left</b> engine, because the right engine's down-going blade (P-factor) has the <b>longer arm</b> from the centre line.</li><li>Banking about <b>5° towards the live engine</b> reduces the sideslip, so less rudder is needed and drag is less. With wings level, the aircraft flies with a sideslip, and a big sideslip with full rudder can <b>stall the fin</b>.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Speed</th><th>Meaning</th></tr></thead><tbody><tr><td><b>VMCA (VMC)</b></td><td>Minimum control speed <b>in the air</b>: the lowest speed at which the aircraft can be kept straight with the critical engine failed, using full rudder and <b>no more than 5° bank</b> towards the live engine</td></tr><tr><td><b>VMCG</b></td><td>Minimum control speed <b>on the ground</b>, using <b>rudder only</b> (no nosewheel steering), keeping within a set distance of the centre line</td></tr><tr><td><b>VMCL</b></td><td>Minimum control speed in the <b>landing</b> configuration</td></tr></tbody></table></div><ul><li>VMCA is <b>highest</b> with: <b>maximum power</b> on the live engine, an <b>aft CG</b> (shorter rudder arm), <b>low weight</b>, the dead propeller <b>windmilling</b> (not feathered), <b>low altitude</b> and <b>cold</b> air (more thrust), and wings level instead of 5° bank.</li><li>VMCA <b>falls with altitude</b>, as the live engine gives less thrust. At high altitude the <b>stall</b> may come <b>before</b> VMC, which is very dangerous in training.</li><li>Never fly slower than VMCA with asymmetric power. If control is lost, <b>reduce power</b> on the live engine.</li></ul></section>
+          <section id="sec-special"><h2>Emergency descent and windshear</h2><ul><li><b>Emergency descent</b> (after decompression): thrust <b>idle</b>, <b>speed brakes</b> out, and descend at a high speed, up to <b>VMO/MMO</b>, if the structure is not damaged. If damage is suspected, descend at a <b>lower speed</b>. Some types lower the gear to steepen the descent. Aim for <b>10,000 ft</b> or the minimum safe altitude.</li><li><b>Windshear</b> is a sudden change in wind speed or direction. A <b>headwind increase</b> (or tailwind decrease) raises the IAS and the aircraft goes <b>above</b> the glide path (<b>performance increasing</b>). A <b>headwind decrease</b> (or tailwind increase) lowers the IAS and the aircraft <b>sinks</b> below the path (<b>performance decreasing</b>). The second is dangerous near the ground.</li><li>In a <b>microburst</b> on the approach, the aircraft first meets a <b>headwind</b> (floats high and fast), then a strong <b>downdraft</b>, then a <b>tailwind</b> (sinks and slows): the most dangerous part.</li><li>Recovery: <b>maximum thrust</b>, raise the nose (often about <b>15°</b>, or up to the <b>stick shaker</b>), <b>do not change</b> flap or gear until clear, follow the flight director windshear guidance. <b>Avoid</b> known windshear and thunderstorms.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Adverse yaw: down aileron, more induced drag. Cures: <b>differential</b>, <b>Frise</b>, spoilers, interconnect.</li><li>Aileron reversal: <b>wing twist at high speed</b>. Inboard ailerons and spoilers.</li><li>Balance tab: <b>opposite</b>, reduces force. <b>Anti-balance</b>: <b>same</b> way, adds feel (stabilators). <b>Servo tab</b>: pilot moves tab only. <b>Spring tab</b>: helps at high speed.</li><li>Mass balance: <b>flutter</b>, not force.</li><li>Limit loads: normal <b>+3.8 / -1.52</b>, utility +4.4, aerobatic +6, transport <b>+2.5</b>.</li><li><b>VA = VS √n</b>, falls with less weight. VB: max gust. VNO: green arc top. <b>VNE</b>: red line.</li><li>Gusts: bigger load factor at higher speed and lighter weight.</li><li>Climb: lift &lt; weight. <b>Vx</b>: excess thrust, angle. <b>Vy</b>: excess power, rate. <b>Vx &lt; Vy</b>. Meet at the absolute ceiling.</li><li>Glide angle depends on <b>L/D only</b>. Weight: same distance, higher speed.</li><li>Level turn: <b>n = 1/cos bank</b>. <b>r = V² / g tan bank</b>. Rate one = 3°/s, bank ≈ <b>TAS/10 + 7</b>.</li><li>Engine out: yaw and roll <b>towards the dead engine</b>. Critical engine: <b>left</b> for clockwise props.</li><li><b>VMCA</b>: max 5° bank, full rudder. Higher with aft CG, max power, windmilling prop, low altitude.</li><li>Windshear: headwind loss = <b>sink</b>. Microburst: headwind, downdraft, tailwind. Max thrust, pitch up, no config change.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Adverse yaw</h3><ul><li>Down aileron: more induced drag</li><li>Nose yaws <b>away</b> from the turn</li><li>Differential and <b>Frise</b> ailerons</li><li>Roll spoilers, rudder</li></ul><h3>Tabs and balance</h3><ul><li>Balance tab: <b>opposite</b>, lighter</li><li>Anti-balance: <b>same</b> way, heavier</li><li>Servo tab: pilot moves the tab</li><li>Mass balance: flutter</li></ul><h3>Envelope</h3><ul><li>Normal +3.8, transport +2.5</li><li><b>VA = VS √n</b></li><li>VNO green top, <b>VNE</b> red</li><li>Gusts worse at high speed</li></ul><h3>Climb and glide</h3><ul><li>Vx: excess thrust, angle</li><li>Vy: excess power, rate</li><li>Glide angle: <b>L/D</b> only</li><li>Heavier: same distance, faster</li></ul><h3>Turns</h3><ul><li>n = 1 / cos bank</li><li>r = V² / g tan bank</li><li>Faster: bigger radius, lower rate</li><li>Rate one: TAS/10 + 7</li></ul><h3>Engine failure</h3><ul><li>Yaw and roll to dead engine</li><li>Critical engine: <b>left</b> (clockwise)</li><li><b>VMCA</b>: 5° bank to live engine</li><li>Aft CG, max power: VMCA up</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 30 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> Adverse aileron yaw is caused by:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>The up-going aileron having more drag</li><li>The down-going aileron raising the induced drag on its wing</li><li>The rudder</li><li>The fin</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> More lift on the rising wing means more induced drag there, so the nose yaws away from the turn.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> With a servo tab, the pilot's controls move:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>The control surface directly</li><li>Only the tab, whose air load then moves the surface</li><li>The trim wheel</li><li>The hinge</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> The surface floats and is driven by the tab.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> An aircraft stalls at 60 kt and its limit load factor is +4. Its VA is about:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>120 kt</li><li>240 kt</li><li>84 kt</li><li>60 kt</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> VA = 60 x √4 = 60 x 2 = 120 kt.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> The glide angle of an aircraft with no power depends only on its:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Weight</li><li>Altitude</li><li>Lift/drag ratio</li><li>Wind</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Glide ratio = L/D. Wind changes the distance over the ground but not the angle through the air.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> After an engine failure on a twin, the aircraft yaws and rolls:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Towards the live engine</li><li>Nose up</li><li>Towards the dead engine</li><li>It does not move</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Live engine thrust and dead engine drag yaw it towards the dead side, and the yaw makes it roll.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/21/practice">Practise all 30 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/21/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/20-stability/">← Module 20: Stability</a>
+            <a href="/ground-school/tg/">All Technical General modules →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F21-control-flight-envelope-and-flight-mechanics%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

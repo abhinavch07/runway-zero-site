@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS: DGCA CPL Air Navigation notes, Module 13</title>
+    <meta name="description" content="Free DGCA CPL Air Navigation notes, Module 13: How radar measures range and bearing, primary and secondary radar on the ground, transponder modes and…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/nav/13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/nav/13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas/" />
+    <meta property="og:title" content="Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS: DGCA CPL Air Navigation notes, Module 13" />
+    <meta property="og:description" content="Free DGCA CPL Air Navigation notes, Module 13: How radar measures range and bearing, primary and secondary radar on the ground, transponder modes and…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/nav.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS: DGCA CPL Air Navigation notes, Module 13" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/nav.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Air Navigation","item":"https://www.runwayzero.in/ground-school/nav/"},{"@type":"ListItem","position":3,"name":"Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS","item":"https://www.runwayzero.in/ground-school/nav/13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS (DGCA CPL Air Navigation, Module 13)","description":"Free DGCA CPL Air Navigation notes, Module 13: How radar measures range and bearing, primary and secondary radar on the ground, transponder modes and…","url":"https://www.runwayzero.in/ground-school/nav/13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Radar principles","Ground radar and SSR","Airborne weather radar","Radio altimeter","GPWS and TAWS","ACAS (TCAS)","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/nav/">Air Navigation</a> <i>/</i> <span>Module 13</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Air Navigation · Module 13</p>
+        <h1>Radar, SSR, Weather Radar, Radio Altimeter, GPWS and ACAS</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Radar%2C%20SSR%2C%20Weather%20Radar%2C%20Radio%20Altimeter%2C%20GPWS%20and%20ACAS%3A%20DGCA%20CPL%20Air%20Navigation%20notes%2C%20Module%2013%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Fnav%2F13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/nav/13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas/" aria-current="page">Notes</a><a href="/ground-school.html#/nav/13/slides">Slides</a><a href="/ground-school.html#/nav/13/practice">Practice (26)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-radar">Radar principles</a></li><li><a href="#sec-ground">Ground radar and SSR</a></li><li><a href="#sec-awr">Airborne weather radar</a></li><li><a href="#sec-ra">Radio altimeter</a></li><li><a href="#sec-gpws">GPWS and TAWS</a></li><li><a href="#sec-acas">ACAS (TCAS)</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">How radar measures range and bearing, primary and secondary radar on the ground, transponder modes and codes, airborne weather radar and its colours, the radio altimeter, ground proximity warnings and the collision avoidance system.</p>
+          <section id="sec-radar"><h2>Radar principles</h2><ul><li><b>Primary radar</b> sends a pulse and listens for the <b>echo</b> reflected off the target. It needs <b>nothing</b> in the aircraft.</li><li><b>Range</b> comes from the time the echo takes. <b>Bearing</b> comes from the direction the antenna is pointing.</li><li>Radar time: <b>12.36 microseconds</b> for each <b>nm</b> of range (there and back).</li><li><b>Pulse repetition frequency (PRF)</b>: pulses per second. A <b>lower PRF</b> gives a <b>longer maximum range</b> (more time to listen). Max range (nm) is about <b>81,000 / PRF</b>.</li><li><b>Pulse length</b> sets the <b>minimum range</b> and how close two targets can be and still show as two (<b>range resolution</b>).</li><li><b>Beam width</b> sets how close two targets can be side by side (<b>bearing resolution</b>). A narrow beam needs a <b>large antenna</b> or a <b>short wavelength</b>.</li><li>A <b>continuous wave</b> radar uses the <b>Doppler</b> shift instead of pulses, to find speed.</li></ul><p class="gs-formula">Range (nm) = time (microseconds) / 12.36.   Max range (nm) = 81,000 / PRF (about)</p></section>
+          <section id="sec-ground"><h2>Ground radar and SSR</h2><div class="gs-tablewrap"><table><thead><tr><th>Radar</th><th>Use</th></tr></thead><tbody><tr><td><b>Area (en route) radar</b></td><td>Long range, lower frequency, slow rotation</td></tr><tr><td><b>Terminal (approach) radar</b></td><td>About 50 to 60 nm round an airport</td></tr><tr><td><b>Surface movement radar (SMR)</b></td><td>Very short wavelength, high detail, shows traffic on the <b>ground</b></td></tr><tr><td><b>Precision approach radar (PAR)</b></td><td>Two beams, for a talk-down approach with azimuth and elevation guidance</td></tr></tbody></table></div><ul><li><b>Secondary surveillance radar (SSR)</b> asks the aircraft's <b>transponder</b> a question on <b>1,030 MHz</b>. The transponder answers on <b>1,090 MHz</b>.</li><li>SSR needs <b>less power</b> than primary radar, has <b>no ground clutter or weather echoes</b>, and gives <b>identity</b> and <b>level</b>.</li><li><b>Mode A</b>: a 4 digit <b>code</b> (digits <b>0 to 7</b>, so <b>4,096</b> codes). <b>Mode C</b>: <b>pressure altitude</b> in <b>100 ft</b> steps, from the encoding altimeter (always referred to <b>1013 hPa</b>). <b>Mode S</b>: a unique <b>24-bit address</b> for each aircraft, selective calls and data link. It also feeds <b>ACAS</b>.</li><li><b>IDENT</b> makes your return stand out on the controller's screen for a short time. Press it only when asked.</li><li>Problems: <b>garbling</b> (replies from two close aircraft overlap) and <b>FRUIT</b> (replies meant for other radars). Mode S cuts both.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Code</th><th>Meaning</th></tr></thead><tbody><tr><td><b>7500</b></td><td>Unlawful interference</td></tr><tr><td><b>7600</b></td><td>Radio failure</td></tr><tr><td><b>7700</b></td><td>Emergency</td></tr><tr><td><b>2000</b></td><td>No code given yet by ATC</td></tr></tbody></table></div></section>
+          <section id="sec-awr"><h2>Airborne weather radar</h2><ul><li>Works on about <b>9 GHz</b> (X band, wavelength about <b>3 cm</b>), which reflects well off <b>large water drops</b>.</li><li>It sees <b>wet</b> weather: rain and <b>wet hail</b>. <b>Dry hail</b>, snow and <b>clear air turbulence</b> show weakly or <b>not at all</b>.</li><li>Colours show return strength: <b>black</b> (none), <b>green</b> (light), <b>yellow (amber)</b> (moderate), <b>red</b> (heavy), <b>magenta</b> (very heavy or turbulence on some sets).</li><li>The <b>steeper</b> the colour change from green to red (a <b>tight gradient</b>), the worse the turbulence. Avoid <b>red</b> and <b>magenta</b> cells by at least <b>20 nm</b> at height.</li><li>Modes: <b>WX</b> (weather), <b>WX + T</b> (turbulence on some sets, using Doppler), <b>MAP</b> (ground mapping with a wider beam).</li><li><b>Tilt</b> points the beam up or down. Too much down tilt shows <b>ground returns</b>. A storm behind a heavy cell may be hidden by <b>attenuation</b> (the radar shadow).</li><li><b>Safety</b>: do not run the radar on the ground near <b>people</b> or <b>fuelling</b>, as the beam can harm them.</li></ul></section>
+          <section id="sec-ra"><h2>Radio altimeter</h2><ul><li>Measures <b>height above the ground</b> directly below, by timing a signal bounced off the surface.</li><li>Works on about <b>4.2 to 4.4 GHz</b> with <b>frequency modulated continuous wave (FMCW)</b>: the difference between the sent and received frequencies gives the height.</li><li>Range up to about <b>2,500 ft</b>. Accurate to within a few feet, which makes it essential for <b>CAT II and III</b> approaches and <b>autoland</b>.</li><li>It feeds the <b>GPWS</b>, the <b>decision height</b> alert, and autoland flare.</li></ul></section>
+          <section id="sec-gpws"><h2>GPWS and TAWS</h2><div class="gs-tablewrap"><table><thead><tr><th>GPWS mode</th><th>Warns of</th><th>Alert</th></tr></thead><tbody><tr><td><b>Mode 1</b></td><td><b>Excessive rate of descent</b></td><td>SINK RATE, PULL UP</td></tr><tr><td><b>Mode 2</b></td><td><b>Excessive closure rate</b> with terrain</td><td>TERRAIN TERRAIN, PULL UP</td></tr><tr><td><b>Mode 3</b></td><td><b>Height loss after take-off</b> or go-around</td><td>DON'T SINK</td></tr><tr><td><b>Mode 4</b></td><td><b>Unsafe terrain clearance</b> when not in landing configuration</td><td>TOO LOW GEAR, TOO LOW FLAPS, TOO LOW TERRAIN</td></tr><tr><td><b>Mode 5</b></td><td><b>Descent below the glide slope</b></td><td>GLIDESLOPE</td></tr><tr><td><b>Mode 6</b></td><td>Callouts and bank angle</td><td>Height callouts, BANK ANGLE</td></tr><tr><td><b>Mode 7</b></td><td><b>Wind shear</b></td><td>WINDSHEAR</td></tr></tbody></table></div><ul><li>Basic GPWS uses the <b>radio altimeter</b>, so it cannot see a cliff ahead. <b>Enhanced GPWS (EGPWS)</b> or <b>TAWS</b> adds a <b>terrain database</b> and GPS position to <b>look ahead</b>, and shows terrain on the ND.</li><li>On a <b>PULL UP</b> warning: at once, <b>full power</b>, <b>pitch up</b> to the stick shaker or the best climb, wings level, and keep climbing until the warning stops. Do not wait to check.</li></ul></section>
+          <section id="sec-acas"><h2>ACAS (TCAS)</h2><ul><li>ACAS <b>interrogates</b> other aircraft's <b>transponders</b>, works out their range, bearing and level, and predicts a collision. It needs <b>no ground station</b>.</li><li>It sees only aircraft with a <b>working transponder</b>. With <b>Mode C or S</b>, it can give advice in the vertical. With <b>Mode A only</b>, it gives traffic advisories without level.</li><li>A <b>traffic advisory (TA)</b> about <b>40 seconds</b> before the closest point: TRAFFIC TRAFFIC. Look, do not manoeuvre.</li><li>A <b>resolution advisory (RA)</b> about <b>25 seconds</b> before: CLIMB or DESCEND or MONITOR VERTICAL SPEED. <b>Follow it at once</b>, even against ATC, then tell ATC.</li><li>Two aircraft with <b>ACAS II</b> and <b>Mode S</b> <b>coordinate</b> their RAs so they do not both turn the same way.</li><li><b>ACAS II</b> gives <b>vertical</b> RAs only.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>TCAS display symbol</th><th>Meaning</th></tr></thead><tbody><tr><td><b>Open white (or cyan) diamond</b></td><td>Other traffic, not a threat</td></tr><tr><td><b>Filled white (or cyan) diamond</b></td><td><b>Proximate</b> traffic, within about 6 nm and 1,200 ft</td></tr><tr><td><b>Filled amber circle</b></td><td><b>Traffic advisory</b></td></tr><tr><td><b>Filled red square</b></td><td><b>Resolution advisory</b></td></tr></tbody></table></div></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Radar: <b>12.36 microseconds per nm</b>. Lower <b>PRF</b>, longer range. Pulse length: min range. Beam width: bearing resolution.</li><li>SSR: ground <b>1,030 MHz</b>, aircraft <b>1,090 MHz</b>. Mode A code (<b>4,096</b>), Mode C altitude (100 ft, 1013), Mode S address and data.</li><li>Weather radar <b>9 GHz</b>, sees <b>wet</b> drops. Green, yellow, red, magenta. Avoid red by <b>20 nm</b>. Tight gradient: turbulence.</li><li>Radio altimeter <b>4.2 to 4.4 GHz</b>, FMCW, up to <b>2,500 ft</b>.</li><li>GPWS modes: 1 <b>sink rate</b>, 2 <b>closure</b>, 3 <b>sink after take-off</b>, 4 <b>too low gear/flap</b>, 5 <b>glideslope</b>, 7 <b>windshear</b>.</li><li>EGPWS/TAWS: <b>terrain database</b>, looks ahead.</li><li>TCAS: TA about <b>40 s</b>, RA about <b>25 s</b>. Follow the RA. Amber circle TA, <b>red square RA</b>.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 5 revision slides for this module, as a list.</p>
+            <h3>Radar basics</h3><ul><li>Echo timing: 12.36 microseconds/nm</li><li>Lower PRF, longer range</li><li>Pulse length: min range</li><li>Beam width: bearing resolution</li></ul><h3>SSR</h3><ul><li>1,030 up, 1,090 down</li><li>Mode A code, Mode C level</li><li>Mode S address</li><li>7500, 7600, 7700</li></ul><h3>Weather radar</h3><ul><li>9 GHz, wet drops</li><li>Green, yellow, red, magenta</li><li>Avoid red by 20 nm</li><li>Watch the tilt</li></ul><h3>Radio altimeter and GPWS</h3><ul><li>RA 4.2 to 4.4 GHz, 2,500 ft</li><li>GPWS modes 1 to 7</li><li>EGPWS looks ahead</li><li>PULL UP: full power, climb</li></ul><h3>TCAS</h3><ul><li>Uses transponders</li><li>TA 40 s, RA 25 s</li><li>Follow the RA</li><li>Red square: RA</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 26 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> Primary radar needs, in the aircraft:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>A transponder</li><li>Nothing</li><li>A DME</li><li>A radio altimeter</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> It works on reflected echoes.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> SSR ground stations interrogate on:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>1,030 MHz</li><li>1,090 MHz</li><li>121.5 MHz</li><li>9,375 MHz</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> Aircraft reply on 1,090 MHz.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> Garbling in SSR is caused by:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Replies from two close aircraft overlapping</li><li>Rain</li><li>Mountains</li><li>Low power</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> Mode S reduces it.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Weather radar should not be run on the ground near:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>People or fuelling</li><li>Other aircraft</li><li>Taxiway lights</li><li>The tower</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> The beam can harm people and ignite fuel vapour.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> GPWS mode 3 warns of:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Height loss after take-off</li><li>Terrain closure</li><li>Bank angle</li><li>Glide slope</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> DON'T SINK.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/nav/13/practice">Practise all 26 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/nav/13/slides">Revise with 5 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/nav/12-dme-ils-and-markers/">← Module 12: DME, ILS and Markers</a>
+            <a href="/ground-school/nav/14-gnss-rnav-and-pbn/">Module 14: GNSS, RNAV and PBN →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Fnav%2F13-radar-ssr-weather-radar-radio-altimeter-gpws-and-acas%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

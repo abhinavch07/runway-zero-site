@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Turbine Engines: DGCA CPL Technical General notes, Module 13</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 13: How a jet makes thrust, the Brayton cycle, turbojet, turbofan, turboprop and turboshaft engines, bypass…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/13-gas-turbine-engines/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/13-gas-turbine-engines/" />
+    <meta property="og:title" content="Gas Turbine Engines: DGCA CPL Technical General notes, Module 13" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 13: How a jet makes thrust, the Brayton cycle, turbojet, turbofan, turboprop and turboshaft engines, bypass…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Gas Turbine Engines: DGCA CPL Technical General notes, Module 13" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"Gas Turbine Engines","item":"https://www.runwayzero.in/ground-school/tg/13-gas-turbine-engines/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gas Turbine Engines (DGCA CPL Technical General, Module 13)","description":"Free DGCA CPL Technical General notes, Module 13: How a jet makes thrust, the Brayton cycle, turbojet, turbofan, turboprop and turboshaft engines, bypass…","url":"https://www.runwayzero.in/ground-school/tg/13-gas-turbine-engines/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["How a gas turbine works","Engine types","Intakes","Compressors, stall and surge","Combustion","Turbines and exhaust","Thrust reversers","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 13</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 13 · CAR 1.3</p>
+        <h1>Gas Turbine Engines</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=Gas%20Turbine%20Engines%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%2013%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F13-gas-turbine-engines%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/13-gas-turbine-engines/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/13/slides">Slides</a><a href="/ground-school.html#/tg/13/practice">Practice (29)</a><a href="/ground-school.html#/tg/13/cards">Flashcards (15)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-principle">How a gas turbine works</a></li><li><a href="#sec-types">Engine types</a></li><li><a href="#sec-intake">Intakes</a></li><li><a href="#sec-comp">Compressors, stall and surge</a></li><li><a href="#sec-comb">Combustion</a></li><li><a href="#sec-turb">Turbines and exhaust</a></li><li><a href="#sec-reverse">Thrust reversers</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">How a jet makes thrust, the Brayton cycle, turbojet, turbofan, turboprop and turboshaft engines, bypass ratio and propulsive efficiency, intakes, centrifugal and axial compressors, compressor stall and surge and how they are prevented, combustion chambers and air distribution, turbines and creep, exhaust and noise reduction, thrust reversers, and how pressure, temperature and velocity change through the engine.</p>
+          <section id="sec-principle"><h2>How a gas turbine works</h2><ul><li>A jet engine takes in air, <b>compresses</b> it, adds fuel and <b>burns</b> it, and lets the hot gas <b>expand</b> through a <b>turbine</b> (which drives the compressor) and out of a <b>nozzle</b>. The engine pushes a mass of air <b>backwards</b>, so the engine is pushed <b>forwards</b> (<b>Newton's third law</b>).</li><li>The gas turbine works on the <b>Brayton cycle</b>: induction, compression, combustion and exhaust happen <b>continuously</b>, at the same time, in different parts of the engine. Combustion happens at <b>(nearly) constant pressure</b>. A piston engine's Otto cycle burns at constant volume.</li><li>Unlike a piston engine, the gas turbine does each job in its own section all the time, which makes it smooth and powerful for its weight.</li></ul><figure class="gs-fig"><svg viewBox="0 0 660 260" role="img" aria-label="Sections of a gas turbine engine from intake to exhaust"><defs><marker id="gt1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="gf-head"/></marker></defs><path class="gf-outline" d="M40,60 L150,70 L330,90 L360,80 L470,80 L520,95 L620,105 L620,155 L520,165 L470,180 L360,180 L330,170 L150,190 L40,200"/><line class="gf-thin" x1="120" y1="130" x2="480" y2="130" style="stroke-width:5"/><line class="gf-outline" x1="160" y1="78" x2="160" y2="182"/><line class="gf-outline" x1="178" y1="81.5" x2="178" y2="178.5"/><line class="gf-outline" x1="196" y1="85" x2="196" y2="175"/><line class="gf-outline" x1="214" y1="88.5" x2="214" y2="171.5"/><line class="gf-outline" x1="232" y1="92" x2="232" y2="168"/><line class="gf-outline" x1="250" y1="95.5" x2="250" y2="164.5"/><line class="gf-outline" x1="268" y1="99" x2="268" y2="161"/><line class="gf-outline" x1="286" y1="102.5" x2="286" y2="157.5"/><line class="gf-outline" x1="304" y1="106" x2="304" y2="154"/><path class="gf-shapew" d="M350,95 Q410,88 460,100 L460,160 Q410,172 350,165 Z"/><path class="gf-arrow" d="M370,130 q10,-12 20,0 q10,12 20,0 q10,-12 20,0" fill="none"/><line class="gf-line" x1="480" y1="84" x2="480" y2="176"/><line class="gf-line" x1="494" y1="87" x2="494" y2="173"/><line class="gf-line" x1="508" y1="90" x2="508" y2="170"/><path class="gf-shape" d="M525,112 L580,130 L525,148 Z"/><line class="gf-arrow" x1="5" y1="130" x2="60" y2="130" marker-end="url(#gt1)"/><line class="gf-arrow" x1="600" y1="130" x2="655" y2="130" marker-end="url(#gt1)"/><text class="gf-label" x="85" y="30" text-anchor="middle">Intake</text><text class="gf-label" x="230" y="232" text-anchor="middle">Compressor</text><text class="gf-label" x="405" y="30" text-anchor="middle">Combustion chamber</text><text class="gf-label" x="495" y="232" text-anchor="middle">Turbine</text><text class="gf-label" x="570" y="30" text-anchor="middle">Exhaust</text><text class="gf-small" x="20" y="252">Cold section: intake and compressor. Hot section: combustion, turbine, exhaust.</text></svg><figcaption>The five sections of a simple turbojet.</figcaption></figure><p class="gs-formula">Thrust = mass flow x (jet velocity - aircraft velocity), plus any pressure thrust at the nozzle</p><ul><li>Thrust can come from moving a <b>small mass very fast</b> (turbojet) or a <b>large mass a little faster</b> (turbofan, propeller). The second way is much more <b>efficient</b> at normal airliner speeds.</li><li><b>Momentum drag</b>: the air taken in already moves at the aircraft's speed, so as speed rises, the gain in velocity (and thrust) falls. <b>Ram</b> effect at higher speed partly makes up for it.</li></ul><p class="gs-formula">Propulsive efficiency = 2V / (V + Vj), V = aircraft speed, Vj = jet speed</p><aside class="gs-example"><h4>Worked example: Aircraft at 300 mph, jet at 900 mph</h4><ol><li>2 x 300 / (300 + 900) = 600 / 1,200</li><li>Propulsive efficiency = <b>50%</b></li><li>The closer the jet speed is to the aircraft speed, the higher the efficiency.</li></ol></aside></section>
+          <section id="sec-types"><h2>Engine types</h2><div class="gs-tablewrap"><table><thead><tr><th>Type</th><th>How it works</th><th>Best for</th></tr></thead><tbody><tr><td><b>Turbojet</b></td><td>All the air goes through the core. Fast, thin jet</td><td>High speed, supersonic. Noisy, thirsty at low speed</td></tr><tr><td><b>Turbofan</b></td><td>A large <b>fan</b> at the front. Most of its air <b>bypasses</b> the core. Fan air gives most of the thrust</td><td><b>Airliners</b> at high subsonic speeds. Quieter and far more economical</td></tr><tr><td><b>Turboprop</b></td><td>The turbine drives a <b>propeller</b> through a <b>reduction gearbox</b>. Often a <b>free (power) turbine</b> not connected to the compressor</td><td>Lower speeds (up to about 350 kt) and short routes. Very economical</td></tr><tr><td><b>Turboshaft</b></td><td>Like a turboprop, but drives a shaft (helicopter rotor, APU)</td><td>Helicopters, APUs</td></tr></tbody></table></div><ul><li><b>Bypass ratio</b> = mass of air going <b>round</b> the core / mass going <b>through</b> the core. Low bypass: about <b>1 or 2 : 1</b>. High bypass: <b>5 : 1</b> or more (modern engines about 10 : 1 or higher).</li><li>High bypass engines have <b>better propulsive efficiency</b>, lower <b>specific fuel consumption</b> and much <b>less noise</b>.</li><li><b>Spools</b>: a <b>twin spool</b> engine has a low pressure (LP) compressor driven by the LP turbine through an inner shaft (<b>N1</b>), and a high pressure (HP) compressor driven by the HP turbine through an outer shaft (<b>N2</b>). The spools turn at their own best speeds, which helps against stall. The <b>fan</b> is part of the N1 spool.</li></ul></section>
+          <section id="sec-intake"><h2>Intakes</h2><ul><li>The intake must deliver air to the compressor <b>smoothly</b> and at a steady speed, at all angles of attack and crosswinds.</li><li>A subsonic <b>pitot intake</b> is a <b>divergent</b> duct: it <b>slows</b> the air and <b>raises its pressure</b> before the compressor (ram compression). The compressor face must not meet <b>supersonic</b> air.</li><li>Supersonic aircraft use <b>convergent-divergent</b> intakes with shock waves (often adjustable ramps) to slow the air below Mach 1.</li><li>Disturbed or <b>turbulent</b> intake air (crosswinds, high AoA, ice, damage) can make the compressor <b>stall</b> or <b>surge</b>.</li><li><b>Foreign object damage (FOD)</b>: stones, ice or birds sucked in. Keep power low while taxiing and in reverse thrust. A <b>vortex</b> forms from the ground in front of the intake at high power and low speed and can lift debris.</li></ul></section>
+          <section id="sec-comp"><h2>Compressors, stall and surge</h2><div class="gs-tablewrap"><table><thead><tr><th></th><th>Centrifugal</th><th>Axial</th></tr></thead><tbody><tr><td><b>How</b></td><td>An <b>impeller</b> flings air outwards, a <b>diffuser</b> turns speed into pressure</td><td>Rows of rotating <b>rotor</b> blades and fixed <b>stator</b> vanes. Each stage raises the pressure a little</td></tr><tr><td><b>Pressure ratio</b></td><td>About <b>4 : 1</b> per stage (two in series about 15 : 1)</td><td>About <b>1.1 to 1.3</b> per stage, but many stages give <b>high overall ratios</b> (30 : 1 or more)</td></tr><tr><td><b>Good points</b></td><td>Simple, strong, short, <b>tolerant of damage (FOD)</b> and of stall, cheap</td><td>High mass flow, <b>small frontal area</b>, <b>more efficient</b></td></tr><tr><td><b>Bad points</b></td><td><b>Large frontal area</b>, limited mass flow</td><td>More delicate, costly, more prone to stall</td></tr><tr><td><b>Used in</b></td><td>Small turboprops, APUs, helicopters</td><td><b>All large jet engines</b></td></tr></tbody></table></div><ul><li>In an axial compressor the <b>annulus gets smaller</b> towards the back, because the air becomes denser. This keeps the <b>axial velocity</b> about steady.</li><li><b>Compressor stall</b>: the airflow <b>separates</b> from compressor blades because their <b>angle of attack is too high</b> (or too low). It may affect a few blades or a stage.</li><li><b>Surge</b>: a <b>complete breakdown of airflow</b> through the compressor. The flow may even <b>reverse</b>, with a <b>bang</b>, flames from the intake or exhaust, <b>high EGT</b>, loss of thrust, vibration and <b>yaw</b>.</li><li>Causes: <b>turbulent intake air</b>, <b>too fast throttle movement</b>, ice, FOD, worn or dirty blades, wrong fuel scheduling, bleed valves stuck closed.</li><li>Action for a surge: <b>slowly</b> close the thrust lever of that engine (do not slam it), then follow the checklist.</li></ul><div class="gs-tablewrap"><table><caption>One sign of a bleed valve stuck closed at low rpm is compressor stall.</caption><thead><tr><th>Anti-stall device</th><th>How it helps</th></tr></thead><tbody><tr><td><b>Bleed (blow-off) valves</b></td><td>Open at <b>low rpm</b> and during <b>acceleration</b> to let air out from the middle stages, so the front stages are not choked and their AoA stays right. Opening them <b>raises EGT</b> and fuel use</td></tr><tr><td><b>Variable inlet guide vanes (VIGVs) and variable stator vanes</b></td><td>Change angle with rpm to give the air the right <b>swirl</b>, keeping the blade AoA correct</td></tr><tr><td><b>Multiple spools</b></td><td>Each spool turns at its own best speed</td></tr><tr><td><b>Fuel control unit</b></td><td>Limits how fast fuel is added on acceleration</td></tr><tr><td><b>Active clearance control</b></td><td>Keeps blade tip gaps small and steady, improving efficiency and stall margin</td></tr></tbody></table></div></section>
+          <section id="sec-comb"><h2>Combustion</h2><ul><li>Air leaves the compressor too fast to burn in (a flame would blow out), so a <b>diffuser</b> slows it first.</li><li>Only about <b>20%</b> of the air (<b>primary air</b>) goes into the flame zone, where it mixes with fuel at about the <b>chemically correct ratio (15 : 1)</b>. <b>Swirl vanes</b> slow the air and make it recirculate so the flame stays lit.</li><li>The rest (<b>secondary and dilution air</b>) cools the chamber walls and <b>dilutes</b> the hot gas, bringing it down from about <b>2,000°C</b> to a temperature the <b>turbine</b> can stand (about 1,000 to 1,500°C). The <b>overall</b> air to fuel ratio is very weak (about 45 to 130 : 1).</li><li>If the mixture is too rich or too weak for the airflow, the flame goes out: a <b>flameout</b>. There is a <b>rich and weak extinction limit</b>, which gets narrower at high altitude and high speed.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Chamber type</th><th>Notes</th></tr></thead><tbody><tr><td><b>Multiple (can)</b></td><td>Separate cans round the engine, linked by <b>interconnectors</b> for flame spread. Easy to service, heavy</td></tr><tr><td><b>Can-annular (tubo-annular)</b></td><td>Flame tubes inside one common casing</td></tr><tr><td><b>Annular</b></td><td>One ring shaped chamber. <b>Shortest, lightest</b>, best gas temperature spread, used on modern engines</td></tr></tbody></table></div></section>
+          <section id="sec-turb"><h2>Turbines and exhaust</h2><ul><li><b>Nozzle guide vanes (NGVs)</b> before each turbine stage form <b>convergent</b> passages that <b>speed up</b> the gas and direct it onto the blades at the right angle.</li><li>Turbine blades may be <b>impulse</b> (gas pushes them), <b>reaction</b> (they act as small nozzles) or, most commonly, <b>impulse-reaction</b> (impulse at the root, reaction at the tip).</li><li>Turbine blades work in the <b>hottest</b> gas under huge <b>centrifugal</b> load, so they can <b>creep</b> (slowly stretch) and must be cooled by air through internal passages. They may be <b>single crystal</b> metal. <b>Shrouds</b> at the tips cut leakage and vibration.</li><li><b>Turbine gas temperature (TGT)</b> or <b>EGT</b> is the most important engine limit. It is measured by <b>thermocouples</b>.</li><li>The <b>exhaust cone</b> and <b>jet pipe</b> straighten and smooth the flow. The <b>propelling nozzle</b> is <b>convergent</b> on subsonic engines, which speeds up the gas. At high power it may be <b>choked</b> (gas at the speed of sound), giving pressure thrust as well.</li><li><b>Noise</b> comes mainly from the fast jet mixing with still air. It is reduced by <b>high bypass ratio</b>, <b>lobed (corrugated) mixers</b>, <b>chevron</b> nozzles and acoustic linings.</li><li><b>Afterburning (reheat)</b>: burning extra fuel in the jet pipe for a large thrust boost, at very high fuel use. Military aircraft.</li><li><b>Water (or water methanol) injection</b>: injected into the compressor inlet or combustion chamber to <b>restore thrust</b> on hot days and at high airfields by cooling the air and adding mass flow.</li></ul><div class="gs-tablewrap"><table><thead><tr><th>Through the engine</th><th>Highest at</th></tr></thead><tbody><tr><td><b>Pressure</b></td><td><b>Compressor outlet</b> (and the diffuser). Falls slightly through the combustion chamber</td></tr><tr><td><b>Temperature</b></td><td><b>In the combustion chamber</b></td></tr><tr><td><b>Velocity</b></td><td><b>At the propelling nozzle</b> (exit)</td></tr></tbody></table></div></section>
+          <section id="sec-reverse"><h2>Thrust reversers</h2><ul><li>Reversers turn the gas flow <b>forwards</b> to help slow the aircraft after landing, saving brakes and shortening the landing on wet or icy runways.</li><li><b>Clamshell or bucket (target) doors</b> close behind the jet and turn the hot gas forwards. Used on low bypass engines.</li><li><b>Cascade</b> reversers on high bypass engines: <b>blocker doors</b> close the <b>fan duct</b>, and the <b>fan air</b> goes out through <b>cascade vanes</b> angled forwards. Only the fan air is reversed.</li><li>Reverse is most effective at <b>high speed</b>. It is reduced to idle reverse by about <b>60 to 80 kt</b> so hot gas and debris are not <b>re-ingested</b>, which can cause surge and FOD.</li><li>Reversers have locks and interlocks so they can only deploy <b>on the ground</b> (squat switch) with the thrust levers at idle. Unwanted <b>deployment in flight</b> gives a big yaw and loss of lift.</li><li>Reverse thrust is <b>not</b> counted in normal <b>dry runway</b> landing distance calculations.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li>Newton's <b>third law</b>. <b>Brayton cycle</b>: combustion at <b>constant pressure</b>, all strokes continuous.</li><li>Thrust = <b>mass flow x (Vj - V)</b>. Propulsive efficiency = <b>2V / (V + Vj)</b>.</li><li>Bypass ratio: bypass air / core air. High bypass: efficient, quiet.</li><li>Twin spool: <b>N1</b> = LP (fan), <b>N2</b> = HP.</li><li>Subsonic intake: <b>divergent</b>, slows air, raises pressure.</li><li>Centrifugal: about <b>4 : 1</b>, robust, big frontal area. Axial: high overall ratio, efficient, small frontal area.</li><li>Axial annulus <b>converges</b> to keep axial velocity steady.</li><li><b>Stall</b>: blade AoA wrong. <b>Surge</b>: total breakdown of flow, bang, high EGT. Close the lever <b>slowly</b>.</li><li>Bleed valves open at <b>low rpm</b> and acceleration. Stuck closed: stall.</li><li>About <b>20% primary air</b> burns. Rest cools and dilutes.</li><li>Annular chamber: shortest, lightest.</li><li>NGVs: <b>convergent</b>, speed up the gas. Turbine blades <b>creep</b>.</li><li>Highest pressure: compressor outlet. Highest temperature: combustion. Highest velocity: nozzle.</li><li>Cascade reverser: fan air only. Cancel reverse by about <b>60 to 80 kt</b>.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Principle</h3><ul><li>Newton's <b>third law</b></li><li><b>Brayton</b>: constant pressure combustion</li><li>Thrust = mass flow x (Vj - V)</li><li>Big mass, small speed rise: efficient</li></ul><h3>Engine types</h3><ul><li>Turbojet: fast thin jet</li><li><b>Turbofan</b>: bypass air</li><li>Turboprop: free turbine, gearbox</li><li>N1 low pressure, N2 high pressure</li></ul><h3>Compressors</h3><ul><li>Centrifugal: <b>4 : 1</b>, robust</li><li>Axial: many stages, efficient</li><li>Annulus converges</li><li>Intake: divergent, slows air</li></ul><h3>Stall and surge</h3><ul><li>Stall: blade AoA wrong</li><li><b>Surge</b>: flow breaks down, bang</li><li>Bleed valves, VIGVs, spools</li><li>Close the lever <b>slowly</b></li></ul><h3>Combustion and turbine</h3><ul><li><b>20%</b> primary air burns</li><li>Rest cools and dilutes</li><li>Annular: shortest, lightest</li><li>NGVs speed the gas. Blades creep</li></ul><h3>Exhaust and reverse</h3><ul><li>Max T: combustion. Max V: nozzle</li><li>Noise: bypass, chevrons, mixers</li><li>Cascade: fan air reversed</li><li>Idle reverse by 60 to 80 kt</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 29 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> A gas turbine engine works on the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Otto cycle</li><li>Diesel cycle</li><li>Brayton cycle</li><li>Rankine cycle</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> The Brayton (constant pressure) cycle, with each process going on continuously.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> The bypass ratio of a turbofan is the ratio of:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Fan rpm to core rpm</li><li>Air going round the core to air going through the core</li><li>Thrust to weight</li><li>Fuel to air</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> A high bypass engine sends much more air round the core than through it.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> The annulus of an axial compressor gets smaller towards the rear in order to:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Keep the axial velocity of the air about constant as its density rises</li><li>Save weight</li><li>Raise the temperature</li><li>Reduce the number of blades</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> Denser air needs a smaller passage to keep moving at the same speed.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Variable inlet guide vanes help prevent stall by:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Cooling the air</li><li>Opening the bleed valves</li><li>Adding fuel</li><li>Changing the angle at which air meets the first compressor blades</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> They give the air the right swirl for the rpm, keeping the blade angle of attack correct.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> In a gas turbine, the highest gas velocity occurs:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>At the intake</li><li>In the combustion chamber</li><li>At the propelling nozzle</li><li>At the compressor</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> The convergent nozzle accelerates the gas to produce thrust.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/13/practice">Practise all 29 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/13/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/12-propellers/">← Module 12: Propellers</a>
+            <a href="/ground-school/tg/14-gas-turbine-systems-apu-and-rat/">Module 14: Gas Turbine Systems, APU and RAT →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F13-gas-turbine-engines%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

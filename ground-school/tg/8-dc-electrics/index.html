@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC Electrics: DGCA CPL Technical General notes, Module 8</title>
+    <meta name="description" content="Free DGCA CPL Technical General notes, Module 8: Voltage, current, resistance and power, Ohm's law, series and parallel circuits, how resistance changes…" />
+    <link rel="canonical" href="https://www.runwayzero.in/ground-school/tg/8-dc-electrics/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/ground-school/tg/8-dc-electrics/" />
+    <meta property="og:title" content="DC Electrics: DGCA CPL Technical General notes, Module 8" />
+    <meta property="og:description" content="Free DGCA CPL Technical General notes, Module 8: Voltage, current, resistance and power, Ohm's law, series and parallel circuits, how resistance changes…" />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DC Electrics: DGCA CPL Technical General notes, Module 8" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/tg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <link rel="stylesheet" crossorigin href="/assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-D5Js0Z9m.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ground School","item":"https://www.runwayzero.in/ground-school.html"},{"@type":"ListItem","position":2,"name":"Technical General","item":"https://www.runwayzero.in/ground-school/tg/"},{"@type":"ListItem","position":3,"name":"DC Electrics","item":"https://www.runwayzero.in/ground-school/tg/8-dc-electrics/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"DC Electrics (DGCA CPL Technical General, Module 8)","description":"Free DGCA CPL Technical General notes, Module 8: Voltage, current, resistance and power, Ohm's law, series and parallel circuits, how resistance changes…","url":"https://www.runwayzero.in/ground-school/tg/8-dc-electrics/","inLanguage":"en-IN","isAccessibleForFree":true,"learningResourceType":"Study notes","educationalLevel":"Commercial Pilot Licence","teaches":["Basic quantities and Ohm's law","Series and parallel circuits","Fuses and circuit breakers","Batteries","Magnetism, relays and DC generation","Distribution, bonding and static","Remember for the exam"],"provider":{"@type":"Organization","name":"Runway Zero","url":"https://www.runwayzero.in/"}}</script>
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="/">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="/ground-school.html" aria-current="page">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="/guides/">Guides</a>
+        <a href="/dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="/flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main">
+      <nav class="gs-crumbs" aria-label="You are here"><a href="/ground-school.html">Ground School</a> <i>/</i> <a href="/ground-school/tg/">Technical General</a> <i>/</i> <span>Module 8</span></nav>
+      <section class="gs-head gs-head-mod">
+        <p class="gs-kicker">DGCA CPL Technical General · Module 8 · CAR 1.2</p>
+        <h1>DC Electrics</h1>
+        <p class="gs-share"><a class="gs-share-wa" href="https://wa.me/?text=DC%20Electrics%3A%20DGCA%20CPL%20Technical%20General%20notes%2C%20Module%208%2C%20free%20on%20Runway%20Zero%3A%0Ahttps%3A%2F%2Fwww.runwayzero.in%2Fground-school%2Ftg%2F8-dc-electrics%2F" target="_blank" rel="noopener" data-share="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Share on WhatsApp</a><button type="button" class="gs-share-btn" data-share="native" hidden>Share</button><button type="button" class="gs-share-btn" data-share="copy">Copy link</button></p>
+      </section>
+      <nav class="gs-tabs" aria-label="Module parts"><a href="/ground-school/tg/8-dc-electrics/" aria-current="page">Notes</a><a href="/ground-school.html#/tg/8/slides">Slides</a><a href="/ground-school.html#/tg/8/practice">Practice (30)</a><a href="/ground-school.html#/tg/8/cards">Flashcards (15)</a></nav>
+      <div class="gs-notes">
+        <aside class="gs-toc"><h4>In this module</h4><ol><li><a href="#sec-basics">Basic quantities and Ohm's law</a></li><li><a href="#sec-circuits">Series and parallel circuits</a></li><li><a href="#sec-protect">Fuses and circuit breakers</a></li><li><a href="#sec-battery">Batteries</a></li><li><a href="#sec-magnet">Magnetism, relays and DC generation</a></li><li><a href="#sec-dist">Distribution, bonding and static</a></li><li><a href="#sec-exam">Remember for the exam</a></li><li><a href="#quick-revision">Quick revision</a></li><li><a href="#sample-questions">Sample questions</a></li></ol></aside>
+        <article class="gs-article">
+          <p class="gs-summary">Voltage, current, resistance and power, Ohm's law, series and parallel circuits, how resistance changes with temperature, fuses and circuit breakers, capacitors, lead acid and nickel cadmium batteries, magnetism, relays and solenoids, DC generators and alternators, voltage regulation and reverse current protection, bus bars and distribution, single wire earth return, bonding and static.</p>
+          <section id="sec-basics"><h2>Basic quantities and Ohm's law</h2><div class="gs-tablewrap"><table><thead><tr><th>Quantity</th><th>Symbol</th><th>Unit</th><th>Measured with</th></tr></thead><tbody><tr><td><b>Voltage</b> (electromotive force, potential difference)</td><td>V or E</td><td><b>Volt (V)</b></td><td><b>Voltmeter</b>, connected in <b>parallel</b></td></tr><tr><td><b>Current</b> (flow of electrons)</td><td>I</td><td><b>Ampere (A)</b></td><td><b>Ammeter</b>, connected in <b>series</b></td></tr><tr><td><b>Resistance</b> (opposition to current)</td><td>R</td><td><b>Ohm (Ω)</b></td><td>Ohmmeter, with the circuit off</td></tr><tr><td><b>Power</b></td><td>P</td><td><b>Watt (W)</b></td><td></td></tr></tbody></table></div><p class="gs-formula">Ohm's law: V = I x R, so I = V / R and R = V / I</p><p class="gs-formula">Power: P = V x I = I² x R = V² / R</p><aside class="gs-example"><h4>Worked example: A 28 V lamp draws 2 A</h4><ol><li>Resistance R = V / I = 28 / 2 = <b>14 Ω</b></li><li>Power P = V x I = 28 x 2 = <b>56 W</b></li></ol></aside><ul><li>Electric current has three main effects: <b>heating</b> (fuses, lamps), <b>magnetic</b> (motors, relays, generators) and <b>chemical</b> (battery charging).</li><li>Resistance depends on the <b>material</b> (silver is a better conductor than copper), <b>length</b> (longer, more resistance), <b>cross section</b> (thicker, less resistance) and <b>temperature</b>.</li><li>Most metals have a <b>positive temperature coefficient (PTC)</b>: resistance <b>rises</b> as they get hot. Carbon and many semiconductors have a negative coefficient.</li></ul></section>
+          <section id="sec-circuits"><h2>Series and parallel circuits</h2><figure class="gs-fig"><svg viewBox="0 0 660 260" role="img" aria-label="Resistors in series and in parallel, with a battery"><path class="gf-outline" d="M40,60 L60,60"/><path class="gf-outline" d="M60,60 l6,0 l4,-8 l8,16 l8,-16 l8,16 l8,-16 l4,8 l6,0"/><text class="gf-small" x="86" y="46" text-anchor="middle">R1</text><path class="gf-outline" d="M112,60 L140,60"/><path class="gf-outline" d="M140,60 l6,0 l4,-8 l8,16 l8,-16 l8,16 l8,-16 l4,8 l6,0"/><text class="gf-small" x="166" y="46" text-anchor="middle">R2</text><path class="gf-outline" d="M192,60 L250,60 L250,170 L40,170 L40,128"/><path class="gf-outline" d="M40,60 L40,110"/><line class="gf-outline" x1="28" y1="112" x2="52" y2="112"/><line class="gf-outline" x1="34" y1="120" x2="46" y2="120" style="stroke-width:4"/><text class="gf-label" x="145" y="205" text-anchor="middle">Series</text><text class="gf-small" x="145" y="225" text-anchor="middle">R total = R1 + R2</text><text class="gf-small" x="145" y="243" text-anchor="middle">same current through each</text><path class="gf-outline" d="M360,60 L560,60"/><path class="gf-outline" d="M360,170 L560,170"/><path class="gf-outline" d="M360,60 L360,110"/><line class="gf-outline" x1="348" y1="112" x2="372" y2="112"/><line class="gf-outline" x1="354" y1="120" x2="366" y2="120" style="stroke-width:4"/><path class="gf-outline" d="M360,120 L360,170"/><path class="gf-outline" d="M460,60 L460,90"/><path class="gf-outline" d="M460,90 l0,6 l-8,4 l16,8 l-16,8 l16,8 l-16,8 l8,4 l0,6"/><text class="gf-small" x="474" y="122" >R1</text><path class="gf-outline" d="M460,142 L460,170"/><path class="gf-outline" d="M560,60 L560,90"/><path class="gf-outline" d="M560,90 l0,6 l-8,4 l16,8 l-16,8 l16,8 l-16,8 l8,4 l0,6"/><text class="gf-small" x="574" y="122" >R2</text><path class="gf-outline" d="M560,142 L560,170"/><text class="gf-label" x="460" y="205" text-anchor="middle">Parallel</text><text class="gf-small" x="460" y="225" text-anchor="middle">1/R total = 1/R1 + 1/R2</text><text class="gf-small" x="460" y="243" text-anchor="middle">same voltage across each</text></svg><figcaption>Series: one path. Parallel: each load gets the full voltage.</figcaption></figure><div class="gs-tablewrap"><table><caption>Aircraft loads are wired in parallel, so each gets full voltage and one failure does not stop the others.</caption><thead><tr><th></th><th>Series</th><th>Parallel</th></tr></thead><tbody><tr><td><b>Current</b></td><td>The <b>same</b> through every part</td><td>Splits between the branches. Total = sum of branch currents</td></tr><tr><td><b>Voltage</b></td><td>Shared between the parts. Total = sum of the drops</td><td>The <b>same</b> across every branch</td></tr><tr><td><b>Total resistance</b></td><td><b>R1 + R2 + ...</b> (bigger than any one)</td><td><b>1/R = 1/R1 + 1/R2 + ...</b> (smaller than the smallest)</td></tr><tr><td><b>If one part fails open</b></td><td><b>Everything stops</b></td><td>The other branches <b>keep working</b></td></tr></tbody></table></div><aside class="gs-example"><h4>Worked example: Two 6 Ω resistors</h4><ol><li>In series: 6 + 6 = <b>12 Ω</b></li><li>In parallel: 1/R = 1/6 + 1/6 = 2/6, so R = <b>3 Ω</b></li><li>Equal resistors in parallel: one value divided by how many there are.</li></ol></aside><ul><li>Cells in <b>series</b>: voltages <b>add</b>, capacity (Ah) stays that of <b>one cell</b>. Cells in <b>parallel</b>: voltage of one cell, capacities <b>add</b>.</li><li>An <b>open circuit</b> is a break, so no current flows. A <b>short circuit</b> is a path with almost no resistance, so a very large current flows, which a fuse or breaker must stop.</li><li>A <b>capacitor</b> stores charge between two plates. It blocks steady DC but passes AC, and smooths voltage ripples. Unit: farad.</li></ul></section>
+          <section id="sec-protect"><h2>Fuses and circuit breakers</h2><ul><li>Protection devices are fitted in <b>series</b> with the load, as close to the <b>power source (bus bar)</b> as possible, to protect the <b>wiring</b> from overheating.</li><li>A <b>fuse</b> is a thin wire that <b>melts</b> when the current is too high. It is rated in <b>amps</b>. It usually opens <b>before the full fault current is reached</b>. It must be replaced, and only with one of the <b>same rating</b>. A <b>high rupture capacity (HRC)</b> fuse is used for very large currents.</li><li>A <b>circuit breaker (CB)</b> opens on a <b>thermal</b> (bimetal) or <b>magnetic</b> trip. It can be <b>reset</b>. Its time to trip is shorter for bigger overloads. It opens a little after the full fault current is reached.</li><li>A <b>trip free</b> CB <b>cannot be held closed</b> against a fault. Holding the button in does not stop it tripping. A <b>non trip free</b> CB can be held closed, which is only used where the load must be kept at any risk.</li><li>Rule for pilots: a tripped CB may be reset <b>once</b>, after a cooling pause, if the checklist allows. Never hold it in, and never reset a fuel pump CB in flight unless the checklist says so.</li><li>A <b>current limiter</b> is a slow blowing fuse for heavy loads that can stand a short overload.</li></ul></section>
+          <section id="sec-battery"><h2>Batteries</h2><ul><li>A <b>primary</b> cell cannot be recharged (torch cell). A <b>secondary</b> cell can be charged and discharged many times. Aircraft batteries are secondary cells.</li><li>The aircraft battery gives power for <b>engine starting</b> (and APU), <b>emergency power</b> when generators fail, and steadies the bus voltage.</li><li><b>Capacity</b> is in <b>ampere hours (Ah)</b>: current x time. A 40 Ah battery should give 40 A for 1 hour (at the 1 hour rate). It must be able to supply the <b>essential loads for 30 minutes</b> after a generator failure.</li><li>A <b>capacity test</b> is done regularly (about every 3 months). If the battery gives <b>less than 80%</b> of its rated capacity it is taken out of service.</li></ul><div class="gs-tablewrap"><table><caption>A 24 V lead acid battery has 12 cells. A 24 V NiCad has 19 or 20 cells.</caption><thead><tr><th></th><th>Lead acid</th><th>Nickel cadmium (NiCad)</th></tr></thead><tbody><tr><td><b>Plates</b></td><td>Lead peroxide (positive), spongy lead (negative)</td><td>Nickel oxide, cadmium</td></tr><tr><td><b>Electrolyte</b></td><td><b>Sulphuric acid</b> and water</td><td><b>Potassium hydroxide</b> (alkaline)</td></tr><tr><td><b>Cell voltage</b></td><td><b>2 V</b> (2.2 V off load)</td><td><b>1.2 V</b></td></tr><tr><td><b>State of charge</b></td><td><b>Specific gravity</b> shows it: <b>1.27 charged</b>, 1.17 flat (hydrometer)</td><td>SG does <b>not</b> change with charge, so it does not show the state of charge</td></tr><tr><td><b>Spill neutraliser</b></td><td><b>Sodium bicarbonate</b> (baking soda)</td><td><b>Boric acid</b></td></tr><tr><td><b>Strengths and problems</b></td><td>Cheap. Gives off hydrogen when charging, so vented</td><td>High current for starting, holds voltage well, long life. Risk of <b>thermal runaway</b></td></tr></tbody></table></div><ul><li><b>Thermal runaway</b> (mainly NiCad): a hot battery's resistance falls, so it takes <b>more charging current</b>, which makes it <b>hotter still</b>. It can boil, catch fire or explode. Shown by a <b>battery temperature</b> warning or a high charge current. The battery charger is switched off.</li><li>Never mix lead acid and NiCad tools or electrolytes, and keep them in separate rooms.</li><li>Lead acid batteries are stored <b>charged</b>. They slowly lose charge on the shelf (shelf life).</li></ul></section>
+          <section id="sec-magnet"><h2>Magnetism, relays and DC generation</h2><ul><li>A current through a wire makes a <b>magnetic field</b> round it. A coil (<b>solenoid</b>) with a soft iron core makes a strong <b>electromagnet</b>.</li><li>A <b>relay</b> is a switch worked by an electromagnet: a small current in the coil switches a big current in another circuit. A <b>solenoid</b> with a moving core can work a valve or a heavy switch (contactor).</li><li><b>Electromagnetic induction</b>: moving a conductor through a magnetic field, or changing the field round it, <b>induces a voltage</b>. This is how <b>generators</b> and <b>transformers</b> work.</li><li>A <b>DC generator</b> makes AC in its turning coils and changes it to DC with a <b>commutator</b> and brushes. A light aircraft <b>alternator</b> makes AC and changes it to DC with <b>diodes (rectifiers)</b>. Alternators give good output even at idle and are lighter.</li><li>A <b>starter-generator</b> on small turbine engines is one machine: a motor to start the engine, then a generator.</li><li>The <b>voltage regulator</b> keeps the output steady (about <b>28 V</b> on a 24 V system, <b>14 V</b> on a 12 V system) by controlling the <b>field current</b> as engine speed and load change. Generator voltage is set about <b>2 V above the battery for every 12 V</b>, so the battery charges.</li><li>A <b>reverse current cut-out (relay)</b> disconnects the generator from the bus when its output falls below the battery voltage, so the <b>battery does not discharge through the generator</b> (motoring it). In alternator systems the diodes do this job.</li><li>Over-voltage protection trips the generator off line if the regulator fails.</li></ul></section>
+          <section id="sec-dist"><h2>Distribution, bonding and static</h2><ul><li>Power goes from the sources to <b>bus bars</b>, and from them through fuses or CBs to the loads. Typical buses: <b>main</b>, <b>essential</b> (loads needed to fly safely) and <b>battery or hot battery bus</b> (always live from the battery, for things like fire bottles and clocks).</li><li><b>Load shedding</b>: when power is short, the less important loads (galley, cabin) are switched off automatically so the essential ones keep power.</li><li><b>Single wire (earth return) system</b>: the aircraft's <b>metal structure</b> carries the return current back to the source, saving the weight of return wires. Composite parts need separate return wires.</li><li><b>Bonding</b>: all metal parts are joined electrically so they are at the <b>same potential</b>. This stops <b>sparks</b> between parts, cuts radio <b>interference</b>, gives a safe path for <b>lightning</b>, and provides the earth return.</li><li><b>Static dischargers (static wicks)</b> on the trailing edges let static charge built up in flight leak away to the air quietly, reducing <b>radio noise</b>.</li><li>The <b>ammeter</b> shows the battery charging (plus) or discharging (minus), or the generator load. A <b>load meter</b> shows how much the generator is giving.</li></ul></section>
+          <section id="sec-exam"><h2>Remember for the exam</h2><aside class="gs-remember"><h4>Remember for the exam</h4><ul><li><b>V = I x R</b>. <b>P = V x I = I²R</b>.</li><li>Voltmeter in <b>parallel</b>, ammeter in <b>series</b>.</li><li>Metals: resistance <b>rises</b> with temperature (PTC).</li><li>Series: add resistances, same current. <b>Parallel</b>: 1/R adds, same voltage, smaller total.</li><li>Aircraft loads are in <b>parallel</b>.</li><li>Fuse: replace with the <b>same rating</b>. <b>Trip free</b> CB cannot be held in.</li><li>Capacity in <b>Ah</b>. Must give essential loads <b>30 minutes</b>. Under <b>80%</b> at test: remove.</li><li>Lead acid: <b>2 V</b> cell, sulphuric acid, SG <b>1.27</b> charged. Neutralise with <b>sodium bicarbonate</b>.</li><li>NiCad: <b>1.2 V</b> cell, potassium hydroxide, SG no guide. <b>Thermal runaway</b>. Neutralise with <b>boric acid</b>.</li><li>Relay: small current switches a big one.</li><li>Voltage regulator controls the <b>field current</b>. 28 V on a 24 V system.</li><li><b>Reverse current cut-out</b>: stops the battery discharging through the generator.</li><li>Bonding: same potential, no sparks, less radio noise, lightning path. Static wicks: less radio noise.</li></ul></aside></section>
+          <section id="quick-revision">
+            <h2>Quick revision</h2>
+            <p>The 6 revision slides for this module, as a list.</p>
+            <h3>Ohm's law</h3><ul><li><b>V = I x R</b></li><li><b>P = V x I</b></li><li>Volts, amps, ohms, watts</li><li>Voltmeter parallel, ammeter series</li></ul><h3>Circuits</h3><ul><li>Series: R adds, same current</li><li><b>Parallel</b>: same voltage, smaller R</li><li>Aircraft loads in parallel</li><li>Short circuit: huge current</li></ul><h3>Protection</h3><ul><li>Fuse: melts, same rating only</li><li>CB: thermal or magnetic, resettable</li><li><b>Trip free</b>: cannot be held in</li><li>Reset once, never hold in</li></ul><h3>Batteries</h3><ul><li>Lead acid: <b>2 V</b>, acid, SG 1.27</li><li>NiCad: <b>1.2 V</b>, alkaline, <b>thermal runaway</b></li><li>Capacity in <b>Ah</b>, 30 min essential</li><li>Capacity test: 80% minimum</li></ul><h3>Generation</h3><ul><li>Induction: moving field makes voltage</li><li>DC generator: commutator</li><li>Alternator: diodes rectify</li><li>Regulator controls <b>field current</b></li></ul><h3>Distribution</h3><ul><li>Main, essential, hot battery buses</li><li>Load shedding</li><li>Earth return through structure</li><li>Bonding and static wicks</li></ul>
+          </section>
+          <section id="sample-questions">
+            <h2>Sample questions</h2>
+            <p>5 of the 30 practice questions for this module. Tap "Show answer" to check yourself.</p>
+            <ol class="gs-samples"><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q1.</b> The unit of electrical resistance is the:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Volt</li><li>Ampere</li><li>Ohm</li><li>Watt</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> Resistance is measured in ohms (Ω).</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q2.</b> Two 10 Ω resistors are connected in parallel. The total resistance is:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>20 Ω</li><li>10 Ω</li><li>5 Ω</li><li>100 Ω</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: C.</b> 1/R = 1/10 + 1/10 = 2/10, so R = 5 Ω.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q3.</b> Compared with a circuit breaker, a fuse normally opens:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>After the full fault current is reached</li><li>Before the full fault current is reached</li><li>Only on a short circuit to earth</li><li>Never</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: B.</b> The fuse wire melts quickly as the current rises. A circuit breaker opens a little after the full fault current.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q4.</b> Thermal runaway is a danger mainly with:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Nickel cadmium batteries</li><li>Lead acid batteries</li><li>Fuses</li><li>Alternators</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: A.</b> A hot NiCad's resistance falls, so it draws more current and gets hotter, which can end in fire or explosion.</p>
+            
+          </details>
+        </li><li class="gs-sample">
+          <p class="gs-sample-q"><b>Q5.</b> A reverse current cut-out is fitted to stop:</p>
+          
+          <ol class="gs-sample-opts" type="A"><li>Over-voltage</li><li>Lightning damage</li><li>Radio noise</li><li>The battery discharging back through the generator when its output is low</li></ol>
+          <details><summary>Show answer</summary>
+            <p><b>Answer: D.</b> When generator voltage falls below battery voltage it disconnects the generator from the bus.</p>
+            
+          </details>
+        </li></ol>
+          </section>
+          <div class="gs-done">
+            <a class="w-btn w-btn-main" href="/ground-school.html#/tg/8/practice">Practise all 30 questions</a>
+            <a class="w-btn w-btn-quiet" href="/ground-school.html#/tg/8/slides">Revise with 6 slides</a>
+          </div>
+          <nav class="gs-prevnext" aria-label="Other modules">
+            <a href="/ground-school/tg/7-fuel-systems/">← Module 7: Fuel Systems</a>
+            <a href="/ground-school/tg/9-ac-electrics-and-basic-logic/">Module 9: AC Electrics and Basic Logic →</a>
+          </nav>
+        </article>
+      </div>
+      <p class="gs-notice"><b>For learning only.</b> Written in our own words from the DGCA syllabus (CAR Section 7, Series B, Part IV). Questions are our own practice questions, not real exam papers. Found a mistake? <a href="/feedback.html?ref=Ground%20School">Tell us here</a>.</p>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="/glossary.html">Glossary</a>
+      <a href="/lessons/">All lessons</a>
+      <a href="/guides/">Guides</a>
+      <a href="/feedback.html?ref=%2Fground-school%2Ftg%2F8-dc-electrics%2F">Send feedback or report a mistake</a>
+    </footer>
+    <script>
+      // Dark mode and the phone menu, without the app.
+      (function () {
+        var r = document.documentElement, t = document.getElementById("rz-theme");
+        function label() { t.textContent = r.dataset.theme === "dark" ? "Light mode" : "Dark mode"; }
+        t.addEventListener("click", function () {
+          if (r.dataset.theme === "dark") delete r.dataset.theme; else r.dataset.theme = "dark";
+          try { localStorage.setItem("runway-zero-theme", r.dataset.theme === "dark" ? "dark" : "light"); } catch (e) {}
+          label();
+        });
+        label();
+        var top = document.querySelector(".w-top"), b = document.getElementById("w-menu-btn");
+        function fit() { top.classList.remove("compact"); if (innerWidth > 760 && top.scrollWidth > top.clientWidth + 1) top.classList.add("compact"); }
+        fit(); addEventListener("resize", fit); if (document.fonts) document.fonts.ready.then(fit);
+        function open(o) { top.classList.toggle("open", o); b.setAttribute("aria-expanded", String(o)); b.textContent = o ? "Close" : "Menu"; }
+        b.addEventListener("click", function (e) { e.stopPropagation(); open(!top.classList.contains("open")); });
+        document.addEventListener("click", function (e) { if (!top.contains(e.target)) open(false); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") open(false); });
+        // Share row: the phone's own share sheet where there is one, copy link, and a count of shares.
+        var sh = document.querySelector(".gs-share");
+        if (sh) {
+          var nat = sh.querySelector('[data-share="native"]'), cp = sh.querySelector('[data-share="copy"]');
+          var info = { title: document.title, url: location.href.split("#")[0] };
+          var counted = function (how) { try { window.goatcounter && window.goatcounter.count({ path: "share-" + how + location.pathname, title: "Shared (" + how + ")", event: true }); } catch (e) {} };
+          if (navigator.share) { nat.hidden = false; nat.addEventListener("click", function () { navigator.share(info).then(function () { counted("native"); }).catch(function () {}); }); }
+          cp.addEventListener("click", function () {
+            var done = function () { cp.textContent = "Link copied"; setTimeout(function () { cp.textContent = "Copy link"; }, 2000); counted("copy"); };
+            if (navigator.clipboard) navigator.clipboard.writeText(info.url).then(done, function () {}); else { window.prompt("Copy this link", info.url); }
+          });
+          sh.querySelector('[data-share="whatsapp"]').addEventListener("click", function () { counted("whatsapp"); });
+        }
+        // Offline worker and the "Install app" button (see src/shell/pwa.ts).
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+        var ib = document.getElementById("rz-install"), offer = null;
+        window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); offer = e; ib.hidden = false; });
+        ib.addEventListener("click", function () { if (offer) { offer.prompt(); offer = null; ib.hidden = true; } });
+        window.addEventListener("appinstalled", function () { ib.hidden = true; });
+      })();
+    </script>
+    <script data-goatcounter="https://runwayzero.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback · Runway Zero</title>
+    <meta name="description" content="Report a mistake, a problem or an idea for Runway Zero and its DGCA Ground School." />
+    <link rel="canonical" href="https://www.runwayzero.in/feedback.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Runway Zero" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://www.runwayzero.in/feedback.html" />
+    <meta property="og:title" content="Feedback · Runway Zero" />
+    <meta property="og:description" content="Report a mistake, a problem or an idea for Runway Zero and its DGCA Ground School." />
+    <meta property="og:image" content="https://www.runwayzero.in/img/share/home.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Runway Zero: DGCA Ground School and cockpit trainer, free" />
+    <meta name="twitter:image" content="https://www.runwayzero.in/img/share/home.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Apply the saved reading theme before the page paints. Light is the default.
+      try { if (localStorage.getItem("runway-zero-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/feedback-BTIXVqSj.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-OatvUVQ2.js">
+    <link rel="modulepreload" crossorigin href="./assets/pwa-ClKDh_MO.js">
+    <link rel="stylesheet" crossorigin href="./assets/pwa-BabgPCBS.css">
+    <link rel="stylesheet" crossorigin href="./assets/feedback-C39s992x.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-D5Js0Z9m.css">
+  </head>
+  <body class="welcome rz-paper">
+    <header class="w-top">
+      <a class="w-brand" href="./">Runway Zero</a>
+      <button class="w-menu-btn" id="w-menu-btn" type="button" aria-expanded="false" aria-controls="w-nav">Menu</button>
+      <nav aria-label="Page" id="w-nav">
+        <a href="ground-school.html">Ground School</a>
+        <a href="/#cockpit">Cockpit trainer</a>
+        <a href="guides/">Guides</a>
+        <a href="dgca-notices/" data-notices-latest="2026-11-26">DGCA notices</a>
+        <a href="flight-computer.html">Flight computer</a>
+        <button class="rz-theme-btn rz-install-btn" id="rz-install" type="button" hidden>Install app</button>
+        <button class="rz-theme-btn" id="rz-theme" type="button">Dark mode</button>
+      </nav>
+    </header>
+
+    <main class="gs-main fb-main">
+      <section class="gs-head">
+        <h1>Send feedback</h1>
+        <p class="gs-lead">Found a mistake in a lesson or a question, something not working, or an idea for a new topic? Tell us here. Every message is read.</p>
+      </section>
+      <ul class="fb-list">
+        <li><b>Mistake in Ground School:</b> give the module and the question number (like m6-22) or the section title.</li>
+        <li><b>Problem in a cockpit lesson:</b> say which aircraft and lesson, and what you clicked just before.</li>
+        <li><b>Idea:</b> any topic, aircraft or feature you would like to see.</li>
+      </ul>
+      <div class="fb-ref" id="fb-ref" hidden></div>
+      <div class="fb-form" id="fb-form"></div>
+    </main>
+
+    <footer class="w-foot">
+      <span>Runway Zero</span>
+      <a href="ground-school.html">Ground School</a>
+      <a href="glossary.html">Glossary</a>
+    </footer>
+
+  <script>
+      // NEW badge on the DGCA notices tab (scripts/pages/notices.ts).
+      (function () {
+        var tabs = document.querySelectorAll("a[data-notices-latest]");
+        if (!tabs.length) return;
+        var latest = tabs[0].getAttribute("data-notices-latest"), key = "runway-zero-notices-seen", seen = "";
+        try { seen = localStorage.getItem(key) || ""; } catch (e) {}
+        if (location.pathname.indexOf("/dgca-notices/") === 0) { try { localStorage.setItem(key, latest); } catch (e) {} return; }
+        var age = (Date.now() - new Date(latest + "T00:00:00+05:30").getTime()) / 864e5;
+        if (age > 3 || seen >= latest) return;
+        tabs.forEach(function (a) { a.classList.add("rz-has-new"); a.insertAdjacentHTML("beforeend", ' <span class="rz-new" aria-label="new notices">NEW</span>'); });
+        var m = document.getElementById("w-menu-btn"); if (m) m.classList.add("rz-has-new");
+      })();
+    </script>
+  </body>
+</html>
